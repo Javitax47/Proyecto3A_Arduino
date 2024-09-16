@@ -25,9 +25,7 @@ public:
   // .........................................................
   void esperarDisponible() {
 
-	while ( !Serial ) {
-	  delay(10);   
-	}
+	delay(10);   
 
   } // ()
 
