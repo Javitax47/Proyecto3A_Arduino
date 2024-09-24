@@ -1,0 +1,160 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Proyecto3\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}A\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Arduino}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tabla de Contenidos}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Descripción}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Características}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Instalación}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Uso}{2}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Estructura de Archivos}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Contribuciones}{2}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Licencia}{2}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Índice de espacios de nombres}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista de espacios de nombres}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Índice de clases}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista de clases}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Índice de archivos}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Lista de archivos}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Documentación de espacios de nombres}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Referencia del espacio de nombres Globales}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Descripción detallada}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Documentación de variables}{9}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}elLED}{9}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}elMedidor}{9}{subsubsection.5.1.2.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.3}elPublicador}{10}{subsubsection.5.1.2.3}%
+\contentsline {subsubsection}{\numberline {5.1.2.4}elPuerto}{10}{subsubsection.5.1.2.4}%
+\contentsline {section}{\numberline {5.2}Referencia del espacio de nombres Loop}{10}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Descripción detallada}{10}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Documentación de variables}{10}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}cont}{10}{subsubsection.5.2.2.1}%
+\contentsline {chapter}{\numberline {6}Documentación de clases}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Referencia de la clase Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Caracteristica}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Descripción detallada}{12}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Documentación de constructores y destructores}{12}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Caracteristica()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{12}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}Caracteristica()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{13}{subsubsection.6.1.2.2}%
+\contentsline {subsection}{\numberline {6.1.3}Documentación de funciones miembro}{13}{subsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}activar()}{13}{subsubsection.6.1.3.1}%
+\contentsline {subsubsection}{\numberline {6.1.3.2}asignarPermisos()}{14}{subsubsection.6.1.3.2}%
+\contentsline {subsubsection}{\numberline {6.1.3.3}asignarPropiedades()}{14}{subsubsection.6.1.3.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.4}asignarPropiedadesPermisosYTamanyoDatos()}{14}{subsubsection.6.1.3.4}%
+\contentsline {subsubsection}{\numberline {6.1.3.5}asignarTamanyoDatos()}{15}{subsubsection.6.1.3.5}%
+\contentsline {subsubsection}{\numberline {6.1.3.6}escribirDatos()}{15}{subsubsection.6.1.3.6}%
+\contentsline {subsubsection}{\numberline {6.1.3.7}instalarCallbackCaracteristicaEscrita()}{15}{subsubsection.6.1.3.7}%
+\contentsline {subsubsection}{\numberline {6.1.3.8}notificarDatos()}{15}{subsubsection.6.1.3.8}%
+\contentsline {subsection}{\numberline {6.1.4}Documentación de datos miembro}{16}{subsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.4.1}laCaracteristica}{16}{subsubsection.6.1.4.1}%
+\contentsline {subsubsection}{\numberline {6.1.4.2}uuidCaracteristica}{16}{subsubsection.6.1.4.2}%
+\contentsline {section}{\numberline {6.2}Referencia de la clase Emisora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLE}{16}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Descripción detallada}{18}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Documentación de los «\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Typedef» miembros de la clase}{18}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}CallbackConexionEstablecida}{18}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}CallbackConexionTerminada}{19}{subsubsection.6.2.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Documentación de constructores y destructores}{19}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}EmisoraBLE()}{19}{subsubsection.6.2.3.1}%
+\contentsline {subsection}{\numberline {6.2.4}Documentación de funciones miembro}{19}{subsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.1}anyadirServicio()}{19}{subsubsection.6.2.4.1}%
+\contentsline {subsubsection}{\numberline {6.2.4.2}anyadirServicioConSusCaracteristicas()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{20}{subsubsection.6.2.4.2}%
+\contentsline {subsubsection}{\numberline {6.2.4.3}anyadirServicioConSusCaracteristicas()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{20}{subsubsection.6.2.4.3}%
+\contentsline {subsubsection}{\numberline {6.2.4.4}anyadirServicioConSusCaracteristicasYActivar()}{21}{subsubsection.6.2.4.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.5}detenerAnuncio()}{22}{subsubsection.6.2.4.5}%
+\contentsline {subsubsection}{\numberline {6.2.4.6}emitirAnuncioIBeacon()}{22}{subsubsection.6.2.4.6}%
+\contentsline {subsubsection}{\numberline {6.2.4.7}emitirAnuncioIBeaconLibre()}{23}{subsubsection.6.2.4.7}%
+\contentsline {subsubsection}{\numberline {6.2.4.8}encenderEmisora()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{23}{subsubsection.6.2.4.8}%
+\contentsline {subsubsection}{\numberline {6.2.4.9}encenderEmisora()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{24}{subsubsection.6.2.4.9}%
+\contentsline {subsubsection}{\numberline {6.2.4.10}estaAnunciando()}{24}{subsubsection.6.2.4.10}%
+\contentsline {subsubsection}{\numberline {6.2.4.11}getConexion()}{24}{subsubsection.6.2.4.11}%
+\contentsline {subsubsection}{\numberline {6.2.4.12}instalarCallbackConexionEstablecida()}{25}{subsubsection.6.2.4.12}%
+\contentsline {subsubsection}{\numberline {6.2.4.13}instalarCallbackConexionTerminada()}{25}{subsubsection.6.2.4.13}%
+\contentsline {subsection}{\numberline {6.2.5}Documentación de datos miembro}{25}{subsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.5.1}fabricanteID}{25}{subsubsection.6.2.5.1}%
+\contentsline {subsubsection}{\numberline {6.2.5.2}nombreEmisora}{26}{subsubsection.6.2.5.2}%
+\contentsline {subsubsection}{\numberline {6.2.5.3}txPower}{26}{subsubsection.6.2.5.3}%
+\contentsline {section}{\numberline {6.3}Referencia de la clase LED}{26}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Descripción detallada}{27}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Documentación de constructores y destructores}{27}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}LED()}{27}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}Documentación de funciones miembro}{27}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}alternar()}{27}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}apagar()}{28}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}brillar()}{28}{subsubsection.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}encender()}{29}{subsubsection.6.3.3.4}%
+\contentsline {subsection}{\numberline {6.3.4}Documentación de datos miembro}{30}{subsection.6.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.4.1}encendido}{30}{subsubsection.6.3.4.1}%
+\contentsline {subsubsection}{\numberline {6.3.4.2}numeroLED}{30}{subsubsection.6.3.4.2}%
+\contentsline {section}{\numberline {6.4}Referencia de la clase Medidor}{30}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Descripción detallada}{31}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Documentación de constructores y destructores}{31}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}Medidor()}{31}{subsubsection.6.4.2.1}%
+\contentsline {subsection}{\numberline {6.4.3}Documentación de funciones miembro}{31}{subsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}iniciarMedidor()}{31}{subsubsection.6.4.3.1}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}medirCO2()}{31}{subsubsection.6.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.4.3.3}medirTemperatura()}{32}{subsubsection.6.4.3.3}%
+\contentsline {section}{\numberline {6.5}Referencia de la clase Publicador}{33}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Descripción detallada}{34}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Documentación de las enumeraciones miembro de la clase}{34}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}MedicionesID}{34}{subsubsection.6.5.2.1}%
+\contentsline {subsection}{\numberline {6.5.3}Documentación de constructores y destructores}{35}{subsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}Publicador()}{35}{subsubsection.6.5.3.1}%
+\contentsline {subsection}{\numberline {6.5.4}Documentación de funciones miembro}{35}{subsection.6.5.4}%
+\contentsline {subsubsection}{\numberline {6.5.4.1}encenderEmisora()}{35}{subsubsection.6.5.4.1}%
+\contentsline {subsubsection}{\numberline {6.5.4.2}publicarCO2()}{35}{subsubsection.6.5.4.2}%
+\contentsline {subsubsection}{\numberline {6.5.4.3}publicarTemperatura()}{36}{subsubsection.6.5.4.3}%
+\contentsline {subsection}{\numberline {6.5.5}Documentación de datos miembro}{37}{subsection.6.5.5}%
+\contentsline {subsubsection}{\numberline {6.5.5.1}beaconUUID}{37}{subsubsection.6.5.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.5.2}laEmisora}{37}{subsubsection.6.5.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.5.3}RSSI}{38}{subsubsection.6.5.5.3}%
+\contentsline {section}{\numberline {6.6}Referencia de la clase Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie}{38}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Descripción detallada}{38}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Documentación de constructores y destructores}{38}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}PuertoSerie()}{38}{subsubsection.6.6.2.1}%
+\contentsline {subsection}{\numberline {6.6.3}Documentación de funciones miembro}{39}{subsection.6.6.3}%
+\contentsline {subsubsection}{\numberline {6.6.3.1}escribir()}{39}{subsubsection.6.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.6.3.2}esperarDisponible()}{40}{subsubsection.6.6.3.2}%
+\contentsline {section}{\numberline {6.7}Referencia de la clase Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora}{40}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Descripción detallada}{41}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Documentación de los «\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Typedef» miembros de la clase}{41}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}CallbackCaracteristicaEscrita}{41}{subsubsection.6.7.2.1}%
+\contentsline {subsection}{\numberline {6.7.3}Documentación de constructores y destructores}{41}{subsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.1}ServicioEnEmisora()}{41}{subsubsection.6.7.3.1}%
+\contentsline {subsection}{\numberline {6.7.4}Documentación de funciones miembro}{42}{subsection.6.7.4}%
+\contentsline {subsubsection}{\numberline {6.7.4.1}activarServicio()}{42}{subsubsection.6.7.4.1}%
+\contentsline {subsubsection}{\numberline {6.7.4.2}anyadirCaracteristica()}{42}{subsubsection.6.7.4.2}%
+\contentsline {subsubsection}{\numberline {6.7.4.3}escribeUUID()}{43}{subsubsection.6.7.4.3}%
+\contentsline {subsubsection}{\numberline {6.7.4.4}operator BLEService \&()}{43}{subsubsection.6.7.4.4}%
+\contentsline {subsection}{\numberline {6.7.5}Documentación de datos miembro}{43}{subsection.6.7.5}%
+\contentsline {subsubsection}{\numberline {6.7.5.1}elServicio}{43}{subsubsection.6.7.5.1}%
+\contentsline {subsubsection}{\numberline {6.7.5.2}lasCaracteristicas}{43}{subsubsection.6.7.5.2}%
+\contentsline {subsubsection}{\numberline {6.7.5.3}uuidServicio}{43}{subsubsection.6.7.5.3}%
+\contentsline {chapter}{\numberline {7}Documentación de archivos}{45}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLE.h}{45}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Descripción detallada}{46}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Emisora\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}BLE.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon.ino}{49}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Descripción detallada}{51}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Documentación de funciones}{51}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}inicializarPlaquita()}{51}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}loop()}{51}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}lucecitas()}{52}{subsubsection.7.3.2.3}%
+\contentsline {subsubsection}{\numberline {7.3.2.4}setup()}{52}{subsubsection.7.3.2.4}%
+\contentsline {section}{\numberline {7.4}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED.h}{53}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Descripción detallada}{54}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Documentación de funciones}{54}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}esperar()}{54}{subsubsection.7.4.2.1}%
+\contentsline {section}{\numberline {7.5}LED.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Medidor.h}{55}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Descripción detallada}{56}{subsection.7.6.1}%
+\contentsline {section}{\numberline {7.7}Medidor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Publicador.h}{56}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Descripción detallada}{57}{subsection.7.8.1}%
+\contentsline {section}{\numberline {7.9}Publicador.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.h}{58}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}Descripción detallada}{58}{subsection.7.10.1}%
+\contentsline {section}{\numberline {7.11}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{58}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.h}{59}{section.7.12}%
+\contentsline {subsection}{\numberline {7.12.1}Descripción detallada}{60}{subsection.7.12.1}%
+\contentsline {subsection}{\numberline {7.12.2}Documentación de funciones}{60}{subsection.7.12.2}%
+\contentsline {subsubsection}{\numberline {7.12.2.1}alReves()}{60}{subsubsection.7.12.2.1}%
+\contentsline {subsubsection}{\numberline {7.12.2.2}stringAUint8AlReves()}{60}{subsubsection.7.12.2.2}%
+\contentsline {section}{\numberline {7.13}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{61}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Referencia del archivo README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md}{62}{section.7.14}%

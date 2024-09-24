@@ -1,0 +1,133 @@
+\doxysection{Servicio\+En\+Emisora.\+h}
+\hypertarget{_servicio_en_emisora_8h_source}{}\label{_servicio_en_emisora_8h_source}\index{HolaMundoIBeacon/ServicioEnEmisora.h@{HolaMundoIBeacon/ServicioEnEmisora.h}}
+\mbox{\hyperlink{_servicio_en_emisora_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ -\/*-\/\ mode:\ c++\ -\/*-\/}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ SERVICIO\_EMISORA\_H\_INCLUIDO}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ SERVICIO\_EMISORA\_H\_INCLUIDO}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{template}<\ \textcolor{keyword}{typename}\ T\ >}
+\DoxyCodeLine{00024\ T\ *\ \mbox{\hyperlink{_servicio_en_emisora_8h_aada7529d57b6678988eaa3e0acf84aff}{alReves}}(\ T\ *\ p,\ \textcolor{keywordtype}{int}\ n\ )\ \{}
+\DoxyCodeLine{00025\ \ \ T\ aux;}
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordflow}{for}(\ \textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n\ /\ 2;\ i++\ )\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ aux\ =\ p[i];}
+\DoxyCodeLine{00028\ \ \ \ \ p[i]\ =\ p[n\ -\/\ i\ -\/\ 1];}
+\DoxyCodeLine{00029\ \ \ \ \ p[n\ -\/\ i\ -\/\ 1]\ =\ aux;}
+\DoxyCodeLine{00030\ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \textcolor{keywordflow}{return}\ p;}
+\DoxyCodeLine{00032\ \}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00042\ uint8\_t\ *\ \mbox{\hyperlink{_servicio_en_emisora_8h_a4493ee26019e14ff5945192a58d5da3a}{stringAUint8AlReves}}(\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ pString,\ uint8\_t\ *\ pUint,\ \textcolor{keywordtype}{int}\ tamMax\ )\ \{}
+\DoxyCodeLine{00043\ \ \ \textcolor{keywordtype}{int}\ longitudString\ =\ strlen(\ pString\ );}
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{int}\ longitudCopiar\ =\ (\ longitudString\ >\ tamMax\ ?\ tamMax\ :\ longitudString\ );}
+\DoxyCodeLine{00045\ \ \ \textcolor{keywordflow}{for}(\ \textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ longitudCopiar\ -\/\ 1;\ i++\ )\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ pUint[\ tamMax\ -\/\ i\ -\/\ 1\ ]\ =\ pString[\ i\ ];}
+\DoxyCodeLine{00047\ \ \ \}}
+\DoxyCodeLine{00048\ \ \ \textcolor{keywordflow}{return}\ pUint;}
+\DoxyCodeLine{00049\ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_servicio_en_emisora}{ServicioEnEmisora}}\ \{}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00063\ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{CallbackCaracteristicaEscrita}}\ =\ void\ (uint16\_t\ conn\_handle,\ BLECharacteristic\ *\ chr,\ uint8\_t\ *\ data,\ uint16\_t\ len);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}}\ \{}
+\DoxyCodeLine{00070\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00071\ \ \ \ \ uint8\_t\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac408acdaae053ae4c005f1f9162d60c7}{uuidCaracteristica}}[16]\ =\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},\ \textcolor{charliteral}{'2'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'4'},\ \textcolor{charliteral}{'5'},\ \textcolor{charliteral}{'6'},\ \textcolor{charliteral}{'7'},\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \textcolor{charliteral}{'8'},\ \textcolor{charliteral}{'9'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'B'},\ \textcolor{charliteral}{'C'},\ \textcolor{charliteral}{'D'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'F'}}
+\DoxyCodeLine{00074\ \ \ \ \ \};}
+\DoxyCodeLine{00075\ \ \ \ \ BLECharacteristic\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a639f47133a8406e84aa237c123fd2e63}{Caracteristica}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ nombreCaracteristica\_)}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}(\mbox{\hyperlink{_servicio_en_emisora_8h_a4493ee26019e14ff5945192a58d5da3a}{stringAUint8AlReves}}(nombreCaracteristica\_,\ \&\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac408acdaae053ae4c005f1f9162d60c7}{uuidCaracteristica}}[0],\ 16))\ \{\}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c}{Caracteristica}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ nombreCaracteristica\_,\ uint8\_t\ props,\ SecureMode\_t\ permisoRead,\ SecureMode\_t\ permisoWrite,\ uint8\_t\ tam)\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}}(nombreCaracteristica\_)\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c}{asignarPropiedadesPermisosYTamanyoDatos}}(props,\ permisoRead,\ permisoWrite,\ tam);}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e}{asignarPropiedades}}(uint8\_t\ props)\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.setProperties(props);}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e}{asignarPermisos}}(SecureMode\_t\ permisoRead,\ SecureMode\_t\ permisoWrite)\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.setPermission(permisoRead,\ permisoWrite);}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54}{asignarTamanyoDatos}}(uint8\_t\ tam)\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.setMaxLen(tam);}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c}{asignarPropiedadesPermisosYTamanyoDatos}}(uint8\_t\ props,\ SecureMode\_t\ permisoRead,\ SecureMode\_t\ permisoWrite,\ uint8\_t\ tam)\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e}{asignarPropiedades}}(props);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e}{asignarPermisos}}(permisoRead,\ permisoWrite);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54}{asignarTamanyoDatos}}(tam);}
+\DoxyCodeLine{00121\ \ \ \ \ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00129\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac6642d92b4f2d80ee6c21081972987d7}{escribirDatos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ str)\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.write(str);}
+\DoxyCodeLine{00131\ \ \ \ \ \}}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00139\ \ \ \ \ uint16\_t\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ae3369332d51fb6e70a300b54c3a4f95d}{notificarDatos}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ str)\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.notify(\&str[0]);}
+\DoxyCodeLine{00141\ \ \ \ \ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac3355c1918c2eddf58d34df1b30dd60d}{instalarCallbackCaracteristicaEscrita}}(\mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{CallbackCaracteristicaEscrita}}\ cb)\ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.setWriteCallback(cb);}
+\DoxyCodeLine{00148\ \ \ \ \ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b}{activar}}()\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ err\_t\ error\ =\ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{laCaracteristica}}.begin();}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \mbox{\hyperlink{namespace_globales_abcaa665203ee4dad9eaf09ad64aa7354}{Globales::elPuerto}}.\mbox{\hyperlink{class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4}{escribir}}(\textcolor{stringliteral}{"{}laCaracteristica.begin();\ error\ =\ "{}});}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \mbox{\hyperlink{namespace_globales_abcaa665203ee4dad9eaf09ad64aa7354}{Globales::elPuerto}}.\mbox{\hyperlink{class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4}{escribir}}(error);}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00161\ \ \ uint8\_t\ \mbox{\hyperlink{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd}{uuidServicio}}[16]\ =\ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},\ \textcolor{charliteral}{'2'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'4'},\ \textcolor{charliteral}{'5'},\ \textcolor{charliteral}{'6'},\ \textcolor{charliteral}{'7'},\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{charliteral}{'8'},\ \textcolor{charliteral}{'9'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'B'},\ \textcolor{charliteral}{'C'},\ \textcolor{charliteral}{'D'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'F'}}
+\DoxyCodeLine{00164\ \ \ \};}
+\DoxyCodeLine{00165\ \ \ BLEService\ \mbox{\hyperlink{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}{elServicio}};}
+\DoxyCodeLine{00166\ \ \ std::vector<Caracteristica\ *>\ \mbox{\hyperlink{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d}{lasCaracteristicas}};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00174\ \ \ \mbox{\hyperlink{class_servicio_en_emisora_a17d9dcafb552b3e76bc7ff2e6fb238f2}{ServicioEnEmisora}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ nombreServicio\_)\ }
+\DoxyCodeLine{00175\ \ \ \ \ :\ \mbox{\hyperlink{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}{elServicio}}(\mbox{\hyperlink{_servicio_en_emisora_8h_a4493ee26019e14ff5945192a58d5da3a}{stringAUint8AlReves}}(nombreServicio\_,\ \&\mbox{\hyperlink{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd}{uuidServicio}}[0],\ 16))\ \{\}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00180\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_a59267e82dca13b83913e578efacce794}{escribeUUID}}()\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ Serial.println(\textcolor{stringliteral}{"{}**********"{}});}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <=\ 15;\ i++)\ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ Serial.print((\textcolor{keywordtype}{char})\ \mbox{\hyperlink{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd}{uuidServicio}}[i]);}
+\DoxyCodeLine{00184\ \ \ \ \ \}}
+\DoxyCodeLine{00185\ \ \ \ \ Serial.println(\textcolor{stringliteral}{"{}\(\backslash\)n**********"{}});}
+\DoxyCodeLine{00186\ \ \ \}}
+\DoxyCodeLine{00187\ }
+\DoxyCodeLine{00193\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf}{anyadirCaracteristica}}(\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}}\ \&\ car)\ \{}
+\DoxyCodeLine{00194\ \ \ \ \ \mbox{\hyperlink{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d}{lasCaracteristicas}}.push\_back(\&car);}
+\DoxyCodeLine{00195\ \ \ \}}
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00200\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23}{activarServicio}}()\ \{}
+\DoxyCodeLine{00201\ \ \ \ \ err\_t\ error\ =\ \mbox{\hyperlink{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}{elServicio}}.begin();}
+\DoxyCodeLine{00202\ \ \ \ \ Serial.print(\textcolor{stringliteral}{"{}elServicio.begin();\ error\ =\ "{}});}
+\DoxyCodeLine{00203\ \ \ \ \ Serial.println(error);}
+\DoxyCodeLine{00204\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ pCar\ :\ \mbox{\hyperlink{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d}{lasCaracteristicas}})\ \{}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ pCar-\/>activar();}
+\DoxyCodeLine{00206\ \ \ \ \ \}}
+\DoxyCodeLine{00207\ \ \ \}}
+\DoxyCodeLine{00208\ }
+\DoxyCodeLine{00214\ \ \ \textcolor{keyword}{operator}\ BLEService\&()\ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}{elServicio}};}
+\DoxyCodeLine{00216\ \ \ \}}
+\DoxyCodeLine{00217\ \};}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SERVICIO\_EMISORA\_H\_INCLUIDO}}
+
+\end{DoxyCode}

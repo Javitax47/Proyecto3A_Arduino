@@ -1,0 +1,13 @@
+<map id="LED::apagar" name="LED::apagar">
+<area shape="rect" id="Node000001" title="Apaga el LED." alt="" coords="366,56,461,83"/>
+<area shape="rect" id="Node000002" href="$class_l_e_d.html#a9b1361dbee5de756d142b1a2c3e685da" title="Alterna el estado del LED." alt="" coords="220,5,318,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,53,309,35,310,30,360,48"/>
+<area shape="rect" id="Node000003" href="$class_l_e_d.html#a7431e9efb39a2890f75b4e235b8f617e" title="Hace que el LED brille por un tiempo determinado." alt="" coords="226,56,312,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,72,313,72,313,67,351,67"/>
+<area shape="rect" id="Node000006" href="$class_l_e_d.html#a027bcd6d546b47fd3ef22685ed1f73e2" title="Constructor de la clase LED." alt="" coords="228,107,310,133"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="360,91,310,109,309,104,358,86"/>
+<area shape="rect" id="Node000004" href="$_hola_mundo_i_beacon_8ino.html#a27ffed2fef5d69b87e240022e59c59ff" title="Realiza una secuencia de encendido y apagado del LED. Utiliza tiempos de espera definidos entre cambi..." alt="" coords="99,56,172,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,72,173,72,173,67,210,67"/>
+<area shape="rect" id="Node000005" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,56,51,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="83,72,51,72,51,67,83,67"/>
+</map>

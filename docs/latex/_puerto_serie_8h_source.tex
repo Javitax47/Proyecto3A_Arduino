@@ -1,0 +1,33 @@
+\doxysection{Puerto\+Serie.\+h}
+\hypertarget{_puerto_serie_8h_source}{}\label{_puerto_serie_8h_source}\index{HolaMundoIBeacon/PuertoSerie.h@{HolaMundoIBeacon/PuertoSerie.h}}
+\mbox{\hyperlink{_puerto_serie_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ -\/*-\/\ mode:\ c++\ -\/*-\/}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ PUERTO\_SERIE\_H\_INCLUIDO}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ PUERTO\_SERIE\_H\_INCLUIDO}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_puerto_serie}{PuertoSerie}}\ \{}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{class_puerto_serie_a8f0bfae3f90577642131689eab4489b1}{PuertoSerie}}\ (\textcolor{keywordtype}{long}\ baudios)\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ Serial.begin(\ baudios\ );}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Evitar\ usar\ el\ bloqueo\ de\ while\ (!Serial)\ para\ permitir\ un\ arranque\ fluido.}}
+\DoxyCodeLine{00034\ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_puerto_serie_acdb696d30440a38dac61f5f73625935a}{esperarDisponible}}()\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ delay(10);\ \ \ }
+\DoxyCodeLine{00043\ \ \ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00054\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4}{escribir}}\ (T\ mensaje)\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ Serial.print(\ mensaje\ );}
+\DoxyCodeLine{00056\ \ \ \}}
+\DoxyCodeLine{00057\ \ \ }
+\DoxyCodeLine{00058\ \};\ \textcolor{comment}{//\ class\ PuertoSerie}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PUERTO\_SERIE\_H\_INCLUIDO}}
+
+\end{DoxyCode}

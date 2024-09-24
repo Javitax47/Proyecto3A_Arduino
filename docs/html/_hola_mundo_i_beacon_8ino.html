@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto3A_Arduino: Referencia del archivo HolaMundoIBeacon/HolaMundoIBeacon.ino</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Proyecto3A_Arduino
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_57e557693f04122e6735f024670d514d.html">HolaMundoIBeacon</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">Espacios de nombres</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo HolaMundoIBeacon.ino</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación principal del programa que utiliza BLE para publicar datos de sensores.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;bluefruit.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_l_e_d_8h_source.html">LED.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_puerto_serie_8h_source.html">PuertoSerie.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_emisora_b_l_e_8h_source.html">EmisoraBLE.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_publicador_8h_source.html">Publicador.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_medidor_8h_source.html">Medidor.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en HolaMundoIBeacon.ino:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino__incl.svg" width="646" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Espacios de nombres</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html">Globales</a></td></tr>
+<tr class="memdesc:namespace_globales"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contiene objetos globales para manejar el <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a>, la comunicación por puerto serie y otros módulos. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_loop.html">Loop</a></td></tr>
+<tr class="memdesc:namespace_loop"><td class="mdescLeft">&#160;</td><td class="mdescRight">Espacio de nombres para variables del bucle principal. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a555a607e0a0ed0a3f553843b6e96a5aa" id="r_a555a607e0a0ed0a3f553843b6e96a5aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a555a607e0a0ed0a3f553843b6e96a5aa">inicializarPlaquita</a> ()</td></tr>
+<tr class="memdesc:a555a607e0a0ed0a3f553843b6e96a5aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa la placa y sus módulos. Actualmente no hace nada.  <br /></td></tr>
+<tr class="separator:a555a607e0a0ed0a3f553843b6e96a5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d" id="r_a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación.  <br /></td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ffed2fef5d69b87e240022e59c59ff" id="r_a27ffed2fef5d69b87e240022e59c59ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27ffed2fef5d69b87e240022e59c59ff">lucecitas</a> ()</td></tr>
+<tr class="memdesc:a27ffed2fef5d69b87e240022e59c59ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una secuencia de encendido y apagado del <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a>. Utiliza tiempos de espera definidos entre cambios de estado.  <br /></td></tr>
+<tr class="separator:a27ffed2fef5d69b87e240022e59c59ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe461d27b9c48d5921c00d521181f12f" id="r_afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.  <br /></td></tr>
+<tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab111d6488b416ae3b584e786a283ee82" id="r_ab111d6488b416ae3b584e786a283ee82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_e_d.html">LED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#ab111d6488b416ae3b584e786a283ee82">Globales::elLED</a> (7)</td></tr>
+<tr class="memdesc:ab111d6488b416ae3b584e786a283ee82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para controlar el <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a> conectado al pin 7.  <br /></td></tr>
+<tr class="separator:ab111d6488b416ae3b584e786a283ee82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcaa665203ee4dad9eaf09ad64aa7354" id="r_abcaa665203ee4dad9eaf09ad64aa7354"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_puerto_serie.html">PuertoSerie</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#abcaa665203ee4dad9eaf09ad64aa7354">Globales::elPuerto</a> (115200)</td></tr>
+<tr class="memdesc:abcaa665203ee4dad9eaf09ad64aa7354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para gestionar la comunicación por puerto serie a 115200 baudios.  <br /></td></tr>
+<tr class="separator:abcaa665203ee4dad9eaf09ad64aa7354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c541012072e5d61fe17517e3e61980" id="r_af2c541012072e5d61fe17517e3e61980"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_publicador.html">Publicador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#af2c541012072e5d61fe17517e3e61980">Globales::elPublicador</a></td></tr>
+<tr class="memdesc:af2c541012072e5d61fe17517e3e61980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para manejar la publicación de datos vía BLE.  <br /></td></tr>
+<tr class="separator:af2c541012072e5d61fe17517e3e61980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99f35d2ec84b83cbbf433390e920956" id="r_ae99f35d2ec84b83cbbf433390e920956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_medidor.html">Medidor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#ae99f35d2ec84b83cbbf433390e920956">Globales::elMedidor</a></td></tr>
+<tr class="memdesc:ae99f35d2ec84b83cbbf433390e920956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para gestionar las mediciones de CO2 y temperatura.  <br /></td></tr>
+<tr class="separator:ae99f35d2ec84b83cbbf433390e920956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41be37d8b3f6fee591134483a15b8987" id="r_a41be37d8b3f6fee591134483a15b8987"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_loop.html#a41be37d8b3f6fee591134483a15b8987">Loop::cont</a> = 0</td></tr>
+<tr class="separator:a41be37d8b3f6fee591134483a15b8987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Implementación principal del programa que utiliza BLE para publicar datos de sensores. </p>
+</div><h2 class="groupheader">Documentación de funciones</h2>
+<a id="a555a607e0a0ed0a3f553843b6e96a5aa" name="a555a607e0a0ed0a3f553843b6e96a5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555a607e0a0ed0a3f553843b6e96a5aa">&#9670;&#160;</a></span>inicializarPlaquita()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inicializarPlaquita </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa la placa y sus módulos. Actualmente no hace nada. </p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph.svg" width="235" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="afe461d27b9c48d5921c00d521181f12f" name="afe461d27b9c48d5921c00d521181f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&#160;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon. </p>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a27ffed2fef5d69b87e240022e59c59ff" name="a27ffed2fef5d69b87e240022e59c59ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ffed2fef5d69b87e240022e59c59ff">&#9670;&#160;</a></span>lucecitas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lucecitas </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza una secuencia de encendido y apagado del <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a>. Utiliza tiempos de espera definidos entre cambios de estado. </p>
+<div class="dotgraph">
+</div>
+ <div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.svg" width="375" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph.svg" width="178" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación. </p>
+<div class="dotgraph">
+</div>
+ <div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="314" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

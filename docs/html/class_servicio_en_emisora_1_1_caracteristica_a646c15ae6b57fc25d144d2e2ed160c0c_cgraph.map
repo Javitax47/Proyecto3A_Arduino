@@ -1,0 +1,11 @@
+<map id="ServicioEnEmisora::Caracteristica::Caracteristica" name="ServicioEnEmisora::Caracteristica::Caracteristica">
+<area shape="rect" id="Node000001" title="Constructor que permite definir propiedades y permisos de la característica." alt="" coords="5,72,197,115"/>
+<area shape="rect" id="Node000002" href="$class_servicio_en_emisora_1_1_caracteristica.html#a7fe53370615887c50304300457c1114c" title="Asigna propiedades, permisos y tamaño de datos de la característica." alt="" coords="245,64,469,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,91,229,91,229,96,197,96"/>
+<area shape="rect" id="Node000003" href="$class_servicio_en_emisora_1_1_caracteristica.html#a0b9429aace3771c7809a9b65ea84482e" title=" " alt="" coords="526,5,733,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,63,524,50,525,55,470,68"/>
+<area shape="rect" id="Node000004" href="$class_servicio_en_emisora_1_1_caracteristica.html#a1d99a13ca16b3306b11e6d7ad50d059e" title=" " alt="" coords="517,72,741,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="469,91,501,91,501,96,469,96"/>
+<area shape="rect" id="Node000005" href="$class_servicio_en_emisora_1_1_caracteristica.html#a224fe13056debc329ea6e68458821f54" title=" " alt="" coords="526,139,732,197"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="467,121,513,133,511,138,466,126"/>
+</map>

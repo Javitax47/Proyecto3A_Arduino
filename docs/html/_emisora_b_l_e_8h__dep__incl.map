@@ -1,0 +1,5 @@
+<map id="HolaMundoIBeacon/EmisoraBLE.h" name="HolaMundoIBeacon/EmisoraBLE.h">
+<area shape="rect" id="Node000001" title="Clase para manejar la emisora BLE y la emisión de beacons." alt="" coords="14,5,202,48"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html" title="Implementación principal del programa que utiliza BLE para publicar datos de sensores." alt="" coords="5,96,211,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,64,111,96,105,96,105,64"/>
+</map>

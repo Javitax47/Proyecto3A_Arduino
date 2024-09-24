@@ -1,0 +1,241 @@
+\doxysection{Referencia de la clase Publicador}
+\hypertarget{class_publicador}{}\label{class_publicador}\index{Publicador@{Publicador}}
+
+
+Clase para publicar mediciones de CO2 y temperatura mediante BLE.  
+
+
+
+
+{\ttfamily \#include $<$Publicador.\+h$>$}
+
+
+
+Diagrama de colaboración de Publicador\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_publicador__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Mediciones\+ID}} \{ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}{CO2}} = 11
+, \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047}{TEMPERATURA}} = 12
+, \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4}{RUIDO}} = 13
+ \}
+\begin{DoxyCompactList}\small\item\em Identificadores de tipo de medición para el campo major de i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_publicador_aa6e6635cf76f5be0d84b8e7780156151}{Publicador}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_publicador}{Publicador}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_publicador_a10f309e5dfd232d204c5d2952581fe16}{encender\+Emisora}} ()
+\begin{DoxyCompactList}\small\item\em Enciende la emisora BLE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_publicador_a2ed2009b9cec631024263659be882985}{publicar\+CO2}} (int16\+\_\+t valor\+CO2, uint8\+\_\+t contador, long tiempo\+Espera)
+\begin{DoxyCompactList}\small\item\em Publica un valor de CO2 mediante un anuncio i\+Beacon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_publicador_a674ec7d8321b9792835cd935c6196dec}{publicar\+Temperatura}} (int16\+\_\+t valor\+Temperatura, uint8\+\_\+t contador, long tiempo\+Espera)
+\begin{DoxyCompactList}\small\item\em Publica un valor de temperatura mediante un anuncio i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_emisora_b_l_e}{Emisora\+BLE}} \mbox{\hyperlink{class_publicador_a86ef036c1b64668ac54dfe87b595aec5}{la\+Emisora}}
+\begin{DoxyCompactList}\small\item\em Emisora BLE que se encarga de realizar los anuncios. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_publicador_a339fb2ba061a53478572ade00866408c}{RSSI}} = -\/53
+\begin{DoxyCompactList}\small\item\em Nivel RSSI utilizado para los anuncios. Valor predeterminado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_publicador_afdd05d23d289af8d520938cbec79b93d}{beacon\+UUID}} \mbox{[}16\mbox{]}
+\begin{DoxyCompactList}\small\item\em UUID del beacon utilizado para identificar el origen de los anuncios. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase para publicar mediciones de CO2 y temperatura mediante BLE. 
+
+Esta clase permite emitir anuncios BLE con los valores medidos de CO2 y temperatura. Se utiliza la clase \doxylink{class_emisora_b_l_e}{Emisora\+BLE} para manejar los anuncios de tipo i\+Beacon. 
+
+\doxysubsection{Documentación de las enumeraciones miembro de la clase}
+\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}\index{Publicador@{Publicador}!MedicionesID@{MedicionesID}}
+\index{MedicionesID@{MedicionesID}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{MedicionesID}{MedicionesID}}
+{\footnotesize\ttfamily \label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
+enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Publicador\+::\+Mediciones\+ID}}}
+
+
+
+Identificadores de tipo de medición para el campo major de i\+Beacon. 
+
+Estos valores se utilizan para distinguir entre distintos tipos de mediciones en los anuncios. \begin{DoxyEnumFields}[2]{Valores de enumeraciones}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CO2@{CO2}!Publicador@{Publicador}}\index{Publicador@{Publicador}!CO2@{CO2}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
+CO2&Identificador de la medición de CO2. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TEMPERATURA@{TEMPERATURA}!Publicador@{Publicador}}\index{Publicador@{Publicador}!TEMPERATURA@{TEMPERATURA}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
+TEMPERATURA&Identificador de la medición de temperatura. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUIDO@{RUIDO}!Publicador@{Publicador}}\index{Publicador@{Publicador}!RUIDO@{RUIDO}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
+RUIDO&Identificador de la medición de ruido (no implementado). \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_publicador_aa6e6635cf76f5be0d84b8e7780156151}\index{Publicador@{Publicador}!Publicador@{Publicador}}
+\index{Publicador@{Publicador}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{Publicador()}{Publicador()}}
+{\footnotesize\ttfamily \label{class_publicador_aa6e6635cf76f5be0d84b8e7780156151} 
+Publicador\+::\+Publicador (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{class_publicador}{Publicador}. 
+
+Inicializa el publicador, pero no enciende la emisora BLE. La emisora debe encenderse explícitamente llamando a {\ttfamily \doxylink{class_publicador_a10f309e5dfd232d204c5d2952581fe16}{encender\+Emisora()}}. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_publicador_a10f309e5dfd232d204c5d2952581fe16}\index{Publicador@{Publicador}!encenderEmisora@{encenderEmisora}}
+\index{encenderEmisora@{encenderEmisora}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{encenderEmisora()}{encenderEmisora()}}
+{\footnotesize\ttfamily \label{class_publicador_a10f309e5dfd232d204c5d2952581fe16} 
+void Publicador\+::encender\+Emisora (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enciende la emisora BLE. 
+
+Este método debe ser llamado desde el setup del sistema para iniciar la emisora BLE. Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_publicador_a2ed2009b9cec631024263659be882985}\index{Publicador@{Publicador}!publicarCO2@{publicarCO2}}
+\index{publicarCO2@{publicarCO2}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{publicarCO2()}{publicarCO2()}}
+{\footnotesize\ttfamily \label{class_publicador_a2ed2009b9cec631024263659be882985} 
+void Publicador\+::publicar\+CO2 (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{valor\+CO2}{, }\item[{uint8\+\_\+t}]{contador}{, }\item[{long}]{tiempo\+Espera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publica un valor de CO2 mediante un anuncio i\+Beacon. 
+
+Emite un anuncio BLE con el valor de CO2 especificado, incluyendo un contador para diferenciar anuncios.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em valor\+CO2} & Valor de la medición de CO2 (minor). \\
+\hline
+{\em contador} & Contador para identificar la secuencia de anuncios (parte del major). \\
+\hline
+{\em tiempo\+Espera} & Tiempo de espera antes de detener el anuncio. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_publicador_a2ed2009b9cec631024263659be882985_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_publicador_a2ed2009b9cec631024263659be882985_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_publicador_a674ec7d8321b9792835cd935c6196dec}\index{Publicador@{Publicador}!publicarTemperatura@{publicarTemperatura}}
+\index{publicarTemperatura@{publicarTemperatura}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{publicarTemperatura()}{publicarTemperatura()}}
+{\footnotesize\ttfamily \label{class_publicador_a674ec7d8321b9792835cd935c6196dec} 
+void Publicador\+::publicar\+Temperatura (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{valor\+Temperatura}{, }\item[{uint8\+\_\+t}]{contador}{, }\item[{long}]{tiempo\+Espera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Publica un valor de temperatura mediante un anuncio i\+Beacon. 
+
+Emite un anuncio BLE con el valor de temperatura especificado, incluyendo un contador para diferenciar anuncios.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em valor\+Temperatura} & Valor de la medición de temperatura (minor). \\
+\hline
+{\em contador} & Contador para identificar la secuencia de anuncios (parte del major). \\
+\hline
+{\em tiempo\+Espera} & Tiempo de espera antes de detener el anuncio. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_publicador_afdd05d23d289af8d520938cbec79b93d}\index{Publicador@{Publicador}!beaconUUID@{beaconUUID}}
+\index{beaconUUID@{beaconUUID}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{beaconUUID}{beaconUUID}}
+{\footnotesize\ttfamily \label{class_publicador_afdd05d23d289af8d520938cbec79b93d} 
+uint8\+\_\+t Publicador\+::beacon\+UUID\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'I'},\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'Y'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+UUID del beacon utilizado para identificar el origen de los anuncios. 
+
+\Hypertarget{class_publicador_a86ef036c1b64668ac54dfe87b595aec5}\index{Publicador@{Publicador}!laEmisora@{laEmisora}}
+\index{laEmisora@{laEmisora}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{laEmisora}{laEmisora}}
+{\footnotesize\ttfamily \label{class_publicador_a86ef036c1b64668ac54dfe87b595aec5} 
+\mbox{\hyperlink{class_emisora_b_l_e}{Emisora\+BLE}} Publicador\+::la\+Emisora}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}GTI-\/3A"{}},}
+\DoxyCodeLine{\ \ \ \ 0x004c,}
+\DoxyCodeLine{\ \ \ \ 4}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+
+
+Emisora BLE que se encarga de realizar los anuncios. 
+
+Nombre de la emisora BLE. ID del fabricante (Apple). Potencia de transmisión (tx\+Power). \Hypertarget{class_publicador_a339fb2ba061a53478572ade00866408c}\index{Publicador@{Publicador}!RSSI@{RSSI}}
+\index{RSSI@{RSSI}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{RSSI}{RSSI}}
+{\footnotesize\ttfamily \label{class_publicador_a339fb2ba061a53478572ade00866408c} 
+const int Publicador\+::\+RSSI = -\/53}
+
+
+
+Nivel RSSI utilizado para los anuncios. Valor predeterminado. 
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+Hola\+Mundo\+IBeacon/\mbox{\hyperlink{_publicador_8h}{Publicador.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="EmisoraBLE::encenderEmisora" name="EmisoraBLE::encenderEmisora">
+<area shape="rect" id="Node000001" title="Enciende la emisora BLE con callbacks de conexión." alt="" coords="5,64,209,91"/>
+<area shape="rect" id="Node000002" href="$class_emisora_b_l_e.html#a31f9c768b91b9e353f693f509af3ea73" title="Enciende la emisora BLE." alt="" coords="257,5,460,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,61,283,33,284,39,168,66"/>
+<area shape="rect" id="Node000003" href="$class_emisora_b_l_e.html#ae15e223776af83a8cac07564c168d0b9" title="Instala el callback para manejar la conexión establecida." alt="" coords="261,56,456,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,75,245,75,245,80,209,80"/>
+<area shape="rect" id="Node000004" href="$class_emisora_b_l_e.html#a2bb6b319046a10641619c1388f7fe351" title="Instala el callback para manejar la desconexión." alt="" coords="261,123,456,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,89,261,116,260,121,160,94"/>
+</map>

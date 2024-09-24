@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto3A_Arduino: Archivo de código fuente HolaMundoIBeacon/ServicioEnEmisora.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Proyecto3A_Arduino
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_57e557693f04122e6735f024670d514d.html">HolaMundoIBeacon</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">ServicioEnEmisora.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_servicio_en_emisora_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// -*- mode: c++ -*-</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef SERVICIO_EMISORA_H_INCLUIDO</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define SERVICIO_EMISORA_H_INCLUIDO</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_servicio_en_emisora_8h.html#aada7529d57b6678988eaa3e0acf84aff">   24</a></span>T * <a class="code hl_function" href="_servicio_en_emisora_8h.html#aada7529d57b6678988eaa3e0acf84aff">alReves</a>( T * p, <span class="keywordtype">int</span> n ) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  T aux;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt; n / 2; i++ ) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    aux = p[i];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    p[i] = p[n - i - 1];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    p[n - i - 1] = aux;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> p;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="_servicio_en_emisora_8h.html#a4493ee26019e14ff5945192a58d5da3a">   42</a></span>uint8_t * <a class="code hl_function" href="_servicio_en_emisora_8h.html#a4493ee26019e14ff5945192a58d5da3a">stringAUint8AlReves</a>( <span class="keyword">const</span> <span class="keywordtype">char</span> * pString, uint8_t * pUint, <span class="keywordtype">int</span> tamMax ) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">int</span> longitudString = strlen( pString );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">int</span> longitudCopiar = ( longitudString &gt; tamMax ? tamMax : longitudString );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">for</span>( <span class="keywordtype">int</span> i = 0; i &lt;= longitudCopiar - 1; i++ ) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    pUint[ tamMax - i - 1 ] = pString[ i ];</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">return</span> pUint;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html">   57</a></span><span class="keyword">class </span><a class="code hl_class" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#aa21a5f11259198a76f03d037776e07f8">   63</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="class_servicio_en_emisora.html#aa21a5f11259198a76f03d037776e07f8">CallbackCaracteristicaEscrita</a> = void (uint16_t conn_handle, BLECharacteristic * chr, uint8_t * data, uint16_t len);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html">   69</a></span>  <span class="keyword">class </span><a class="code hl_class" href="class_servicio_en_emisora_1_1_caracteristica.html">Caracteristica</a> {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#ac408acdaae053ae4c005f1f9162d60c7">   71</a></span>    uint8_t <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#ac408acdaae053ae4c005f1f9162d60c7">uuidCaracteristica</a>[16] = {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;7&#39;</span>, </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;C&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;F&#39;</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    };</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">   75</a></span>    BLECharacteristic <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a639f47133a8406e84aa237c123fd2e63">   83</a></span>    <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a639f47133a8406e84aa237c123fd2e63">Caracteristica</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * nombreCaracteristica_)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      : <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>(<a class="code hl_function" href="_servicio_en_emisora_8h.html#a4493ee26019e14ff5945192a58d5da3a">stringAUint8AlReves</a>(nombreCaracteristica_, &amp;<a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#ac408acdaae053ae4c005f1f9162d60c7">uuidCaracteristica</a>[0], 16)) {}</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a646c15ae6b57fc25d144d2e2ed160c0c">   95</a></span>    <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a646c15ae6b57fc25d144d2e2ed160c0c">Caracteristica</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * nombreCaracteristica_, uint8_t props, SecureMode_t permisoRead, SecureMode_t permisoWrite, uint8_t tam) </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      : <a class="code hl_class" href="class_servicio_en_emisora_1_1_caracteristica.html">Caracteristica</a>(nombreCaracteristica_) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a7fe53370615887c50304300457c1114c">asignarPropiedadesPermisosYTamanyoDatos</a>(props, permisoRead, permisoWrite, tam);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a1d99a13ca16b3306b11e6d7ad50d059e">  101</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a1d99a13ca16b3306b11e6d7ad50d059e">asignarPropiedades</a>(uint8_t props) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.setProperties(props);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="}">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a0b9429aace3771c7809a9b65ea84482e">  105</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a0b9429aace3771c7809a9b65ea84482e">asignarPermisos</a>(SecureMode_t permisoRead, SecureMode_t permisoWrite) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.setPermission(permisoRead, permisoWrite);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a224fe13056debc329ea6e68458821f54">  109</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a224fe13056debc329ea6e68458821f54">asignarTamanyoDatos</a>(uint8_t tam) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.setMaxLen(tam);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#a7fe53370615887c50304300457c1114c">  117</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a7fe53370615887c50304300457c1114c">asignarPropiedadesPermisosYTamanyoDatos</a>(uint8_t props, SecureMode_t permisoRead, SecureMode_t permisoWrite, uint8_t tam) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a1d99a13ca16b3306b11e6d7ad50d059e">asignarPropiedades</a>(props);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a0b9429aace3771c7809a9b65ea84482e">asignarPermisos</a>(permisoRead, permisoWrite);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#a224fe13056debc329ea6e68458821f54">asignarTamanyoDatos</a>(tam);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#ac6642d92b4f2d80ee6c21081972987d7">  129</a></span>    uint16_t <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#ac6642d92b4f2d80ee6c21081972987d7">escribirDatos</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * str) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keywordflow">return</span> <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.write(str);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
+</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#ae3369332d51fb6e70a300b54c3a4f95d">  139</a></span>    uint16_t <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#ae3369332d51fb6e70a300b54c3a4f95d">notificarDatos</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * str) {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      <span class="keywordflow">return</span> <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.notify(&amp;str[0]);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#ac3355c1918c2eddf58d34df1b30dd60d">  146</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#ac3355c1918c2eddf58d34df1b30dd60d">instalarCallbackCaracteristicaEscrita</a>(<a class="code hl_typedef" href="class_servicio_en_emisora.html#aa21a5f11259198a76f03d037776e07f8">CallbackCaracteristicaEscrita</a> cb) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.setWriteCallback(cb);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora_1_1_caracteristica.html#ad93e0c5998aeb15c920cd5d6db7a0e3b">  153</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora_1_1_caracteristica.html#ad93e0c5998aeb15c920cd5d6db7a0e3b">activar</a>() {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      err_t error = <a class="code hl_variable" href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">laCaracteristica</a>.begin();</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <a class="code hl_variable" href="namespace_globales.html#abcaa665203ee4dad9eaf09ad64aa7354">Globales::elPuerto</a>.<a class="code hl_function" href="class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4">escribir</a>(<span class="stringliteral">&quot;laCaracteristica.begin(); error = &quot;</span>);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <a class="code hl_variable" href="namespace_globales.html#abcaa665203ee4dad9eaf09ad64aa7354">Globales::elPuerto</a>.<a class="code hl_function" href="class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4">escribir</a>(error);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
+</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  };</div>
+</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="};">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd">  161</a></span>  uint8_t <a class="code hl_variable" href="class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd">uuidServicio</a>[16] = {</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="charliteral">&#39;0&#39;</span>, <span class="charliteral">&#39;1&#39;</span>, <span class="charliteral">&#39;2&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;4&#39;</span>, <span class="charliteral">&#39;5&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;7&#39;</span>, </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="charliteral">&#39;8&#39;</span>, <span class="charliteral">&#39;9&#39;</span>, <span class="charliteral">&#39;A&#39;</span>, <span class="charliteral">&#39;B&#39;</span>, <span class="charliteral">&#39;C&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;F&#39;</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  };</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">  165</a></span>  BLEService <a class="code hl_variable" href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">elServicio</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#ae585b790ccdf4367d3a9aaa452295b0d">  166</a></span>  std::vector&lt;Caracteristica *&gt; <a class="code hl_variable" href="class_servicio_en_emisora.html#ae585b790ccdf4367d3a9aaa452295b0d">lasCaracteristicas</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00174" data-start="{" data-end="}">
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a17d9dcafb552b3e76bc7ff2e6fb238f2">  174</a></span>  <a class="code hl_function" href="class_servicio_en_emisora.html#a17d9dcafb552b3e76bc7ff2e6fb238f2">ServicioEnEmisora</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * nombreServicio_) </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    : <a class="code hl_variable" href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">elServicio</a>(<a class="code hl_function" href="_servicio_en_emisora_8h.html#a4493ee26019e14ff5945192a58d5da3a">stringAUint8AlReves</a>(nombreServicio_, &amp;<a class="code hl_variable" href="class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd">uuidServicio</a>[0], 16)) {}</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a59267e82dca13b83913e578efacce794">  180</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora.html#a59267e82dca13b83913e578efacce794">escribeUUID</a>() {</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    Serial.println(<span class="stringliteral">&quot;**********&quot;</span>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= 15; i++) {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      Serial.print((<span class="keywordtype">char</span>) <a class="code hl_variable" href="class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd">uuidServicio</a>[i]);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    Serial.println(<span class="stringliteral">&quot;\n**********&quot;</span>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  }</div>
+</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#af25a77d5c2b3edfe5c99fc9fa00729bf">  193</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora.html#af25a77d5c2b3edfe5c99fc9fa00729bf">anyadirCaracteristica</a>(<a class="code hl_class" href="class_servicio_en_emisora_1_1_caracteristica.html">Caracteristica</a> &amp; car) {</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_variable" href="class_servicio_en_emisora.html#ae585b790ccdf4367d3a9aaa452295b0d">lasCaracteristicas</a>.push_back(&amp;car);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  }</div>
+</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="foldopen" id="foldopen00200" data-start="{" data-end="}">
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a387f170420610e1ba1fe71b471c1ca23">  200</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_servicio_en_emisora.html#a387f170420610e1ba1fe71b471c1ca23">activarServicio</a>() {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    err_t error = <a class="code hl_variable" href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">elServicio</a>.begin();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    Serial.print(<span class="stringliteral">&quot;elServicio.begin(); error = &quot;</span>);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    Serial.println(error);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> pCar : <a class="code hl_variable" href="class_servicio_en_emisora.html#ae585b790ccdf4367d3a9aaa452295b0d">lasCaracteristicas</a>) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      pCar-&gt;activar();</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    }</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  }</div>
+</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="foldopen" id="foldopen00214" data-start="{" data-end="}">
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="class_servicio_en_emisora.html#a0d04b53b2379140293924ef1ecbfeebe">  214</a></span>  <span class="keyword">operator</span> BLEService&amp;() {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">elServicio</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  }</div>
+</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>};</div>
+</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#endif </span><span class="comment">// SERVICIO_EMISORA_H_INCLUIDO</span></div>
+<div class="ttc" id="a_servicio_en_emisora_8h_html_a4493ee26019e14ff5945192a58d5da3a"><div class="ttname"><a href="_servicio_en_emisora_8h.html#a4493ee26019e14ff5945192a58d5da3a">stringAUint8AlReves</a></div><div class="ttdeci">uint8_t * stringAUint8AlReves(const char *pString, uint8_t *pUint, int tamMax)</div><div class="ttdoc">Convierte una cadena de caracteres a un array de uint8_t en orden inverso.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:42</div></div>
+<div class="ttc" id="a_servicio_en_emisora_8h_html_aada7529d57b6678988eaa3e0acf84aff"><div class="ttname"><a href="_servicio_en_emisora_8h.html#aada7529d57b6678988eaa3e0acf84aff">alReves</a></div><div class="ttdeci">T * alReves(T *p, int n)</div><div class="ttdoc">Función que invierte el contenido de un array.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:24</div></div>
+<div class="ttc" id="aclass_puerto_serie_html_ab1b6cecc098aa30e5704dc294deec1f4"><div class="ttname"><a href="class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4">PuertoSerie::escribir</a></div><div class="ttdeci">void escribir(T mensaje)</div><div class="ttdoc">Escribe un mensaje a través del puerto serie.</div><div class="ttdef"><b>Definition</b> PuertoSerie.h:54</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html">ServicioEnEmisora::Caracteristica</a></div><div class="ttdoc">Clase que representa una característica dentro de un servicio BLE.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:69</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a0b9429aace3771c7809a9b65ea84482e"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a0b9429aace3771c7809a9b65ea84482e">ServicioEnEmisora::Caracteristica::asignarPermisos</a></div><div class="ttdeci">void asignarPermisos(SecureMode_t permisoRead, SecureMode_t permisoWrite)</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:105</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a1d99a13ca16b3306b11e6d7ad50d059e"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a1d99a13ca16b3306b11e6d7ad50d059e">ServicioEnEmisora::Caracteristica::asignarPropiedades</a></div><div class="ttdeci">void asignarPropiedades(uint8_t props)</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:101</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a224fe13056debc329ea6e68458821f54"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a224fe13056debc329ea6e68458821f54">ServicioEnEmisora::Caracteristica::asignarTamanyoDatos</a></div><div class="ttdeci">void asignarTamanyoDatos(uint8_t tam)</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:109</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a385b01fc1535fa1ba0cb62918d70cdcd"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a385b01fc1535fa1ba0cb62918d70cdcd">ServicioEnEmisora::Caracteristica::laCaracteristica</a></div><div class="ttdeci">BLECharacteristic laCaracteristica</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:75</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a639f47133a8406e84aa237c123fd2e63"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a639f47133a8406e84aa237c123fd2e63">ServicioEnEmisora::Caracteristica::Caracteristica</a></div><div class="ttdeci">Caracteristica(const char *nombreCaracteristica_)</div><div class="ttdoc">Constructor que inicializa la característica con su UUID.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:83</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a646c15ae6b57fc25d144d2e2ed160c0c"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a646c15ae6b57fc25d144d2e2ed160c0c">ServicioEnEmisora::Caracteristica::Caracteristica</a></div><div class="ttdeci">Caracteristica(const char *nombreCaracteristica_, uint8_t props, SecureMode_t permisoRead, SecureMode_t permisoWrite, uint8_t tam)</div><div class="ttdoc">Constructor que permite definir propiedades y permisos de la característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:95</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_a7fe53370615887c50304300457c1114c"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#a7fe53370615887c50304300457c1114c">ServicioEnEmisora::Caracteristica::asignarPropiedadesPermisosYTamanyoDatos</a></div><div class="ttdeci">void asignarPropiedadesPermisosYTamanyoDatos(uint8_t props, SecureMode_t permisoRead, SecureMode_t permisoWrite, uint8_t tam)</div><div class="ttdoc">Asigna propiedades, permisos y tamaño de datos de la característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:117</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_ac3355c1918c2eddf58d34df1b30dd60d"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#ac3355c1918c2eddf58d34df1b30dd60d">ServicioEnEmisora::Caracteristica::instalarCallbackCaracteristicaEscrita</a></div><div class="ttdeci">void instalarCallbackCaracteristicaEscrita(CallbackCaracteristicaEscrita cb)</div><div class="ttdoc">Instala un callback para cuando se escriben datos en la característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:146</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_ac408acdaae053ae4c005f1f9162d60c7"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#ac408acdaae053ae4c005f1f9162d60c7">ServicioEnEmisora::Caracteristica::uuidCaracteristica</a></div><div class="ttdeci">uint8_t uuidCaracteristica[16]</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:71</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_ac6642d92b4f2d80ee6c21081972987d7"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#ac6642d92b4f2d80ee6c21081972987d7">ServicioEnEmisora::Caracteristica::escribirDatos</a></div><div class="ttdeci">uint16_t escribirDatos(const char *str)</div><div class="ttdoc">Escribe datos en la característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:129</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_ad93e0c5998aeb15c920cd5d6db7a0e3b"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#ad93e0c5998aeb15c920cd5d6db7a0e3b">ServicioEnEmisora::Caracteristica::activar</a></div><div class="ttdeci">void activar()</div><div class="ttdoc">Activa la característica para que esté lista para operar.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:153</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_1_1_caracteristica_html_ae3369332d51fb6e70a300b54c3a4f95d"><div class="ttname"><a href="class_servicio_en_emisora_1_1_caracteristica.html#ae3369332d51fb6e70a300b54c3a4f95d">ServicioEnEmisora::Caracteristica::notificarDatos</a></div><div class="ttdeci">uint16_t notificarDatos(const char *str)</div><div class="ttdoc">Notifica datos a los suscriptores de la característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:139</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html"><div class="ttname"><a href="class_servicio_en_emisora.html">ServicioEnEmisora</a></div><div class="ttdoc">Clase que gestiona un servicio BLE con características.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:57</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_a17d9dcafb552b3e76bc7ff2e6fb238f2"><div class="ttname"><a href="class_servicio_en_emisora.html#a17d9dcafb552b3e76bc7ff2e6fb238f2">ServicioEnEmisora::ServicioEnEmisora</a></div><div class="ttdeci">ServicioEnEmisora(const char *nombreServicio_)</div><div class="ttdoc">Constructor que inicializa el servicio con su UUID.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:174</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_a387f170420610e1ba1fe71b471c1ca23"><div class="ttname"><a href="class_servicio_en_emisora.html#a387f170420610e1ba1fe71b471c1ca23">ServicioEnEmisora::activarServicio</a></div><div class="ttdeci">void activarServicio()</div><div class="ttdoc">Activa el servicio y todas sus características.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:200</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_a59267e82dca13b83913e578efacce794"><div class="ttname"><a href="class_servicio_en_emisora.html#a59267e82dca13b83913e578efacce794">ServicioEnEmisora::escribeUUID</a></div><div class="ttdeci">void escribeUUID()</div><div class="ttdoc">Escribe el UUID del servicio en el puerto serie.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:180</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_a6c8dad351b6453c0a08a1c5e4a78c7dd"><div class="ttname"><a href="class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd">ServicioEnEmisora::uuidServicio</a></div><div class="ttdeci">uint8_t uuidServicio[16]</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:161</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_a98d4770be02c0fff4cc9c67660fd3a62"><div class="ttname"><a href="class_servicio_en_emisora.html#a98d4770be02c0fff4cc9c67660fd3a62">ServicioEnEmisora::elServicio</a></div><div class="ttdeci">BLEService elServicio</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:165</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_aa21a5f11259198a76f03d037776e07f8"><div class="ttname"><a href="class_servicio_en_emisora.html#aa21a5f11259198a76f03d037776e07f8">ServicioEnEmisora::CallbackCaracteristicaEscrita</a></div><div class="ttdeci">void(uint16_t conn_handle, BLECharacteristic *chr, uint8_t *data, uint16_t len) CallbackCaracteristicaEscrita</div><div class="ttdoc">Definición del tipo de callback que se ejecuta al escribir en una característica.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:63</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_ae585b790ccdf4367d3a9aaa452295b0d"><div class="ttname"><a href="class_servicio_en_emisora.html#ae585b790ccdf4367d3a9aaa452295b0d">ServicioEnEmisora::lasCaracteristicas</a></div><div class="ttdeci">std::vector&lt; Caracteristica * &gt; lasCaracteristicas</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:166</div></div>
+<div class="ttc" id="aclass_servicio_en_emisora_html_af25a77d5c2b3edfe5c99fc9fa00729bf"><div class="ttname"><a href="class_servicio_en_emisora.html#af25a77d5c2b3edfe5c99fc9fa00729bf">ServicioEnEmisora::anyadirCaracteristica</a></div><div class="ttdeci">void anyadirCaracteristica(Caracteristica &amp;car)</div><div class="ttdoc">Añade una característica al servicio.</div><div class="ttdef"><b>Definition</b> ServicioEnEmisora.h:193</div></div>
+<div class="ttc" id="anamespace_globales_html_abcaa665203ee4dad9eaf09ad64aa7354"><div class="ttname"><a href="namespace_globales.html#abcaa665203ee4dad9eaf09ad64aa7354">Globales::elPuerto</a></div><div class="ttdeci">PuertoSerie elPuerto(115200)</div><div class="ttdoc">Objeto para gestionar la comunicación por puerto serie a 115200 baudios.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

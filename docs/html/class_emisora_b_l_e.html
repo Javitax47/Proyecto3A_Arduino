@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto3A_Arduino: Referencia de la clase EmisoraBLE</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Proyecto3A_Arduino
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos públicos</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_emisora_b_l_e-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase EmisoraBLE</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para manejar la emisora Bluetooth Low Energy (BLE).  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_emisora_b_l_e_8h_source.html">EmisoraBLE.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración de EmisoraBLE:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e__coll__graph.svg" width="267" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Tipos públicos</h2></td></tr>
+<tr class="memitem:a922f7f1ab1063eb40c99e4a3676be258" id="r_a922f7f1ab1063eb40c99e4a3676be258"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">CallbackConexionEstablecida</a> = void ( uint16_t connHandle )</td></tr>
+<tr class="memdesc:a922f7f1ab1063eb40c99e4a3676be258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tipo de callback para manejar conexiones establecidas.  <br /></td></tr>
+<tr class="separator:a922f7f1ab1063eb40c99e4a3676be258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6faaf6a924a50ea027046703300b0b" id="r_afd6faaf6a924a50ea027046703300b0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd6faaf6a924a50ea027046703300b0b">CallbackConexionTerminada</a> = void ( uint16_t connHandle, uint8_t reason)</td></tr>
+<tr class="memdesc:afd6faaf6a924a50ea027046703300b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tipo de callback para manejar conexiones terminadas.  <br /></td></tr>
+<tr class="separator:afd6faaf6a924a50ea027046703300b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ae2e94b95bde4cddf0038deb0368cc5bf" id="r_ae2e94b95bde4cddf0038deb0368cc5bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2e94b95bde4cddf0038deb0368cc5bf">EmisoraBLE</a> (const char *nombreEmisora_, const uint16_t fabricanteID_, const int8_t txPower_)</td></tr>
+<tr class="memdesc:ae2e94b95bde4cddf0038deb0368cc5bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase <a class="el" href="class_emisora_b_l_e.html" title="Clase para manejar la emisora Bluetooth Low Energy (BLE).">EmisoraBLE</a>.  <br /></td></tr>
+<tr class="separator:ae2e94b95bde4cddf0038deb0368cc5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f9c768b91b9e353f693f509af3ea73" id="r_a31f9c768b91b9e353f693f509af3ea73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31f9c768b91b9e353f693f509af3ea73">encenderEmisora</a> ()</td></tr>
+<tr class="memdesc:a31f9c768b91b9e353f693f509af3ea73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enciende la emisora BLE.  <br /></td></tr>
+<tr class="separator:a31f9c768b91b9e353f693f509af3ea73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada243f2f1185a7d66ea33de6bdb06590" id="r_ada243f2f1185a7d66ea33de6bdb06590"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada243f2f1185a7d66ea33de6bdb06590">encenderEmisora</a> (<a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">CallbackConexionEstablecida</a> cbce, <a class="el" href="#afd6faaf6a924a50ea027046703300b0b">CallbackConexionTerminada</a> cbct)</td></tr>
+<tr class="memdesc:ada243f2f1185a7d66ea33de6bdb06590"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enciende la emisora BLE con callbacks de conexión.  <br /></td></tr>
+<tr class="separator:ada243f2f1185a7d66ea33de6bdb06590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeede390b7a6502baecb48e9db77120b4" id="r_aeede390b7a6502baecb48e9db77120b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeede390b7a6502baecb48e9db77120b4">detenerAnuncio</a> ()</td></tr>
+<tr class="memdesc:aeede390b7a6502baecb48e9db77120b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detiene el anuncio BLE actual.  <br /></td></tr>
+<tr class="separator:aeede390b7a6502baecb48e9db77120b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32548698cf69ecef9e96941fc2e1b94" id="r_ac32548698cf69ecef9e96941fc2e1b94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32548698cf69ecef9e96941fc2e1b94">estaAnunciando</a> ()</td></tr>
+<tr class="memdesc:ac32548698cf69ecef9e96941fc2e1b94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si la emisora está anunciando.  <br /></td></tr>
+<tr class="separator:ac32548698cf69ecef9e96941fc2e1b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff23b85351177e685353b1ee92a1558f" id="r_aff23b85351177e685353b1ee92a1558f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff23b85351177e685353b1ee92a1558f">emitirAnuncioIBeacon</a> (uint8_t *beaconUUID, int16_t major, int16_t minor, uint8_t rssi)</td></tr>
+<tr class="memdesc:aff23b85351177e685353b1ee92a1558f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emite un iBeacon con los valores especificados.  <br /></td></tr>
+<tr class="separator:aff23b85351177e685353b1ee92a1558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8439d1e85ec8d630fcd33b01d8987d41" id="r_a8439d1e85ec8d630fcd33b01d8987d41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8439d1e85ec8d630fcd33b01d8987d41">emitirAnuncioIBeaconLibre</a> (const char *carga, const uint8_t tamanyoCarga)</td></tr>
+<tr class="memdesc:a8439d1e85ec8d630fcd33b01d8987d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emite un anuncio iBeacon con una carga libre.  <br /></td></tr>
+<tr class="separator:a8439d1e85ec8d630fcd33b01d8987d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f027a1c447357c5fe79200b36451731" id="r_a0f027a1c447357c5fe79200b36451731"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f027a1c447357c5fe79200b36451731">anyadirServicio</a> (<a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;servicio)</td></tr>
+<tr class="memdesc:a0f027a1c447357c5fe79200b36451731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un servicio a la emisora BLE.  <br /></td></tr>
+<tr class="separator:a0f027a1c447357c5fe79200b36451731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074a16066fc8ae37567a342e3df63bf5" id="r_a074a16066fc8ae37567a342e3df63bf5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074a16066fc8ae37567a342e3df63bf5">anyadirServicioConSusCaracteristicas</a> (<a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;servicio)</td></tr>
+<tr class="memdesc:a074a16066fc8ae37567a342e3df63bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un servicio junto con sus características a la emisora BLE.  <br /></td></tr>
+<tr class="separator:a074a16066fc8ae37567a342e3df63bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa589659b63ae877910eab1b39a93a339" id="r_aa589659b63ae877910eab1b39a93a339"><td class="memTemplParams" colspan="2">template&lt;typename ... T&gt; </td></tr>
+<tr class="memitem:aa589659b63ae877910eab1b39a93a339"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa589659b63ae877910eab1b39a93a339">anyadirServicioConSusCaracteristicas</a> (<a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;servicio, <a class="el" href="class_servicio_en_emisora_1_1_caracteristica.html">ServicioEnEmisora::Caracteristica</a> &amp;caracteristica, T &amp;... restoCaracteristicas)</td></tr>
+<tr class="memdesc:aa589659b63ae877910eab1b39a93a339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un servicio con múltiples características a la emisora BLE.  <br /></td></tr>
+<tr class="separator:aa589659b63ae877910eab1b39a93a339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0673823174ce9ffb96fb1c0dfb11ab" id="r_a0a0673823174ce9ffb96fb1c0dfb11ab"><td class="memTemplParams" colspan="2">template&lt;typename ... T&gt; </td></tr>
+<tr class="memitem:a0a0673823174ce9ffb96fb1c0dfb11ab"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a0673823174ce9ffb96fb1c0dfb11ab">anyadirServicioConSusCaracteristicasYActivar</a> (<a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;servicio, T &amp;... restoCaracteristicas)</td></tr>
+<tr class="memdesc:a0a0673823174ce9ffb96fb1c0dfb11ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Añade un servicio y sus características y luego lo activa.  <br /></td></tr>
+<tr class="separator:a0a0673823174ce9ffb96fb1c0dfb11ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15e223776af83a8cac07564c168d0b9" id="r_ae15e223776af83a8cac07564c168d0b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae15e223776af83a8cac07564c168d0b9">instalarCallbackConexionEstablecida</a> (<a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">CallbackConexionEstablecida</a> cb)</td></tr>
+<tr class="memdesc:ae15e223776af83a8cac07564c168d0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instala el callback para manejar la conexión establecida.  <br /></td></tr>
+<tr class="separator:ae15e223776af83a8cac07564c168d0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb6b319046a10641619c1388f7fe351" id="r_a2bb6b319046a10641619c1388f7fe351"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bb6b319046a10641619c1388f7fe351">instalarCallbackConexionTerminada</a> (<a class="el" href="#afd6faaf6a924a50ea027046703300b0b">CallbackConexionTerminada</a> cb)</td></tr>
+<tr class="memdesc:a2bb6b319046a10641619c1388f7fe351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instala el callback para manejar la desconexión.  <br /></td></tr>
+<tr class="separator:a2bb6b319046a10641619c1388f7fe351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa863c5f29e1f0d4dd1ae023b30350960" id="r_aa863c5f29e1f0d4dd1ae023b30350960"><td class="memItemLeft" align="right" valign="top">BLEConnection *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa863c5f29e1f0d4dd1ae023b30350960">getConexion</a> (uint16_t connHandle)</td></tr>
+<tr class="memdesc:aa863c5f29e1f0d4dd1ae023b30350960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la conexión BLE a través del manejador.  <br /></td></tr>
+<tr class="separator:aa863c5f29e1f0d4dd1ae023b30350960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:adc123f5bc5a383104ad2f4fd0315b089" id="r_adc123f5bc5a383104ad2f4fd0315b089"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc123f5bc5a383104ad2f4fd0315b089">nombreEmisora</a></td></tr>
+<tr class="separator:adc123f5bc5a383104ad2f4fd0315b089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b97ebd2b35b10066f0857629c6b950" id="r_a67b97ebd2b35b10066f0857629c6b950"><td class="memItemLeft" align="right" valign="top">const uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67b97ebd2b35b10066f0857629c6b950">fabricanteID</a></td></tr>
+<tr class="separator:a67b97ebd2b35b10066f0857629c6b950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62d2364ae61d48e27ebe6da63732e0d" id="r_aa62d2364ae61d48e27ebe6da63732e0d"><td class="memItemLeft" align="right" valign="top">const int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa62d2364ae61d48e27ebe6da63732e0d">txPower</a></td></tr>
+<tr class="separator:aa62d2364ae61d48e27ebe6da63732e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase para manejar la emisora Bluetooth Low Energy (BLE). </p>
+<p>Esta clase permite gestionar la activación de la emisora, la configuración de iBeacons, y la adición de servicios BLE. </p>
+</div><h2 class="groupheader">Documentación de los «Typedef» miembros de la clase</h2>
+<a id="a922f7f1ab1063eb40c99e4a3676be258" name="a922f7f1ab1063eb40c99e4a3676be258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922f7f1ab1063eb40c99e4a3676be258">&#9670;&#160;</a></span>CallbackConexionEstablecida</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">EmisoraBLE::CallbackConexionEstablecida</a> = void ( uint16_t connHandle )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tipo de callback para manejar conexiones establecidas. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connHandle</td><td>Identificador del manejador de la conexión. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd6faaf6a924a50ea027046703300b0b" name="afd6faaf6a924a50ea027046703300b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6faaf6a924a50ea027046703300b0b">&#9670;&#160;</a></span>CallbackConexionTerminada</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#afd6faaf6a924a50ea027046703300b0b">EmisoraBLE::CallbackConexionTerminada</a> = void ( uint16_t connHandle, uint8_t reason)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tipo de callback para manejar conexiones terminadas. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connHandle</td><td>Identificador del manejador de la conexión. </td></tr>
+    <tr><td class="paramname">reason</td><td>Razón por la cual se terminó la conexión. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="ae2e94b95bde4cddf0038deb0368cc5bf" name="ae2e94b95bde4cddf0038deb0368cc5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e94b95bde4cddf0038deb0368cc5bf">&#9670;&#160;</a></span>EmisoraBLE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EmisoraBLE::EmisoraBLE </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>nombreEmisora_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint16_t</td>          <td class="paramname"><span class="paramname"><em>fabricanteID_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int8_t</td>          <td class="paramname"><span class="paramname"><em>txPower_</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor de la clase <a class="el" href="class_emisora_b_l_e.html" title="Clase para manejar la emisora Bluetooth Low Energy (BLE).">EmisoraBLE</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombreEmisora_</td><td>Nombre de la emisora BLE. </td></tr>
+    <tr><td class="paramname">fabricanteID_</td><td>ID del fabricante para los beacons. </td></tr>
+    <tr><td class="paramname">txPower_</td><td>Potencia de transmisión de la emisora. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a0f027a1c447357c5fe79200b36451731" name="a0f027a1c447357c5fe79200b36451731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f027a1c447357c5fe79200b36451731">&#9670;&#160;</a></span>anyadirServicio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmisoraBLE::anyadirServicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>servicio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Añade un servicio a la emisora BLE. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">servicio</td><td>Servicio BLE a añadir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el servicio fue añadido exitosamente, false en caso contrario. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph.svg" width="390" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a074a16066fc8ae37567a342e3df63bf5" name="a074a16066fc8ae37567a342e3df63bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a074a16066fc8ae37567a342e3df63bf5">&#9670;&#160;</a></span>anyadirServicioConSusCaracteristicas() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmisoraBLE::anyadirServicioConSusCaracteristicas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>servicio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Añade un servicio junto con sus características a la emisora BLE. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">servicio</td><td>Servicio BLE a añadir. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el servicio y las características fueron añadidos exitosamente. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph.svg" width="456" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa589659b63ae877910eab1b39a93a339" name="aa589659b63ae877910eab1b39a93a339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa589659b63ae877910eab1b39a93a339">&#9670;&#160;</a></span>anyadirServicioConSusCaracteristicas() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmisoraBLE::anyadirServicioConSusCaracteristicas </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>servicio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_servicio_en_emisora_1_1_caracteristica.html">ServicioEnEmisora::Caracteristica</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>caracteristica</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;...</td>          <td class="paramname"><span class="paramname"><em>restoCaracteristicas</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Añade un servicio con múltiples características a la emisora BLE. </p>
+<dl class="tparams"><dt>Parámetros de plantilla</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Tipos de características adicionales. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">servicio</td><td>Servicio BLE a añadir. </td></tr>
+    <tr><td class="paramname">caracteristica</td><td>Primera característica. </td></tr>
+    <tr><td class="paramname">restoCaracteristicas</td><td>Otras características adicionales. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si todo fue añadido correctamente. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph.svg" width="442" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0a0673823174ce9ffb96fb1c0dfb11ab" name="a0a0673823174ce9ffb96fb1c0dfb11ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0673823174ce9ffb96fb1c0dfb11ab">&#9670;&#160;</a></span>anyadirServicioConSusCaracteristicasYActivar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmisoraBLE::anyadirServicioConSusCaracteristicasYActivar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_servicio_en_emisora.html">ServicioEnEmisora</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>servicio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;...</td>          <td class="paramname"><span class="paramname"><em>restoCaracteristicas</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Añade un servicio y sus características y luego lo activa. </p>
+<dl class="tparams"><dt>Parámetros de plantilla</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Tipos de características adicionales. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">servicio</td><td>Servicio BLE a añadir y activar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si todo fue añadido y activado correctamente. </dd></dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph.svg" width="456" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aeede390b7a6502baecb48e9db77120b4" name="aeede390b7a6502baecb48e9db77120b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeede390b7a6502baecb48e9db77120b4">&#9670;&#160;</a></span>detenerAnuncio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::detenerAnuncio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Detiene el anuncio BLE actual. </p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.svg" width="296" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aff23b85351177e685353b1ee92a1558f" name="aff23b85351177e685353b1ee92a1558f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff23b85351177e685353b1ee92a1558f">&#9670;&#160;</a></span>emitirAnuncioIBeacon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::emitirAnuncioIBeacon </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *</td>          <td class="paramname"><span class="paramname"><em>beaconUUID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>major</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>minor</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>rssi</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emite un iBeacon con los valores especificados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beaconUUID</td><td>UUID del iBeacon. </td></tr>
+    <tr><td class="paramname">major</td><td>Valor mayor del iBeacon. </td></tr>
+    <tr><td class="paramname">minor</td><td>Valor menor del iBeacon. </td></tr>
+    <tr><td class="paramname">rssi</td><td>Valor de la señal de transmisión (RSSI). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8439d1e85ec8d630fcd33b01d8987d41" name="a8439d1e85ec8d630fcd33b01d8987d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8439d1e85ec8d630fcd33b01d8987d41">&#9670;&#160;</a></span>emitirAnuncioIBeaconLibre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::emitirAnuncioIBeaconLibre </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>carga</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t</td>          <td class="paramname"><span class="paramname"><em>tamanyoCarga</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emite un anuncio iBeacon con una carga libre. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">carga</td><td>Datos que se desean transmitir. </td></tr>
+    <tr><td class="paramname">tamanyoCarga</td><td>Tamaño de los datos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.svg" width="380" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.svg" width="286" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a31f9c768b91b9e353f693f509af3ea73" name="a31f9c768b91b9e353f693f509af3ea73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f9c768b91b9e353f693f509af3ea73">&#9670;&#160;</a></span>encenderEmisora() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::encenderEmisora </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enciende la emisora BLE. </p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.svg" width="466" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ada243f2f1185a7d66ea33de6bdb06590" name="ada243f2f1185a7d66ea33de6bdb06590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada243f2f1185a7d66ea33de6bdb06590">&#9670;&#160;</a></span>encenderEmisora() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::encenderEmisora </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">CallbackConexionEstablecida</a></td>          <td class="paramname"><span class="paramname"><em>cbce</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afd6faaf6a924a50ea027046703300b0b">CallbackConexionTerminada</a></td>          <td class="paramname"><span class="paramname"><em>cbct</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enciende la emisora BLE con callbacks de conexión. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cbce</td><td>Callback para conexión establecida. </td></tr>
+    <tr><td class="paramname">cbct</td><td>Callback para conexión terminada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph.svg" width="466" height="171"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac32548698cf69ecef9e96941fc2e1b94" name="ac32548698cf69ecef9e96941fc2e1b94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32548698cf69ecef9e96941fc2e1b94">&#9670;&#160;</a></span>estaAnunciando()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EmisoraBLE::estaAnunciando </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verifica si la emisora está anunciando. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si la emisora está anunciando, false en caso contrario. </dd></dl>
+
+</div>
+</div>
+<a id="aa863c5f29e1f0d4dd1ae023b30350960" name="aa863c5f29e1f0d4dd1ae023b30350960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa863c5f29e1f0d4dd1ae023b30350960">&#9670;&#160;</a></span>getConexion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BLEConnection * EmisoraBLE::getConexion </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>connHandle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtiene la conexión BLE a través del manejador. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">connHandle</td><td>Manejador de la conexión. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la conexión BLE. </dd></dl>
+
+</div>
+</div>
+<a id="ae15e223776af83a8cac07564c168d0b9" name="ae15e223776af83a8cac07564c168d0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15e223776af83a8cac07564c168d0b9">&#9670;&#160;</a></span>instalarCallbackConexionEstablecida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::instalarCallbackConexionEstablecida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a922f7f1ab1063eb40c99e4a3676be258">CallbackConexionEstablecida</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instala el callback para manejar la conexión establecida. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>Callback de conexión establecida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph.svg" width="458" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2bb6b319046a10641619c1388f7fe351" name="a2bb6b319046a10641619c1388f7fe351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb6b319046a10641619c1388f7fe351">&#9670;&#160;</a></span>instalarCallbackConexionTerminada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EmisoraBLE::instalarCallbackConexionTerminada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#afd6faaf6a924a50ea027046703300b0b">CallbackConexionTerminada</a></td>          <td class="paramname"><span class="paramname"><em>cb</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instala el callback para manejar la desconexión. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>Callback de desconexión. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph.svg" width="458" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="a67b97ebd2b35b10066f0857629c6b950" name="a67b97ebd2b35b10066f0857629c6b950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b97ebd2b35b10066f0857629c6b950">&#9670;&#160;</a></span>fabricanteID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint16_t EmisoraBLE::fabricanteID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc123f5bc5a383104ad2f4fd0315b089" name="adc123f5bc5a383104ad2f4fd0315b089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc123f5bc5a383104ad2f4fd0315b089">&#9670;&#160;</a></span>nombreEmisora</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* EmisoraBLE::nombreEmisora</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa62d2364ae61d48e27ebe6da63732e0d" name="aa62d2364ae61d48e27ebe6da63732e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62d2364ae61d48e27ebe6da63732e0d">&#9670;&#160;</a></span>txPower</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int8_t EmisoraBLE::txPower</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>HolaMundoIBeacon/<a class="el" href="_emisora_b_l_e_8h_source.html">EmisoraBLE.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

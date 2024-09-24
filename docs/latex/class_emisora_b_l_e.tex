@@ -1,0 +1,461 @@
+\doxysection{Referencia de la clase Emisora\+BLE}
+\hypertarget{class_emisora_b_l_e}{}\label{class_emisora_b_l_e}\index{EmisoraBLE@{EmisoraBLE}}
+
+
+Clase para manejar la emisora Bluetooth Low Energy (BLE).  
+
+
+
+
+{\ttfamily \#include $<$Emisora\+BLE.\+h$>$}
+
+
+
+Diagrama de colaboración de Emisora\+BLE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_emisora_b_l_e__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Callback\+Conexion\+Establecida}} = void ( uint16\+\_\+t conn\+Handle )
+\begin{DoxyCompactList}\small\item\em Tipo de callback para manejar conexiones establecidas. \end{DoxyCompactList}\item 
+using \mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Callback\+Conexion\+Terminada}} = void ( uint16\+\_\+t conn\+Handle, uint8\+\_\+t reason)
+\begin{DoxyCompactList}\small\item\em Tipo de callback para manejar conexiones terminadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_emisora_b_l_e_ae2e94b95bde4cddf0038deb0368cc5bf}{Emisora\+BLE}} (const char \texorpdfstring{$\ast$}{*}nombre\+Emisora\+\_\+, const uint16\+\_\+t fabricante\+ID\+\_\+, const int8\+\_\+t tx\+Power\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_emisora_b_l_e}{Emisora\+BLE}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73}{encender\+Emisora}} ()
+\begin{DoxyCompactList}\small\item\em Enciende la emisora BLE. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590}{encender\+Emisora}} (\mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Callback\+Conexion\+Establecida}} cbce, \mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Callback\+Conexion\+Terminada}} cbct)
+\begin{DoxyCompactList}\small\item\em Enciende la emisora BLE con callbacks de conexión. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4}{detener\+Anuncio}} ()
+\begin{DoxyCompactList}\small\item\em Detiene el anuncio BLE actual. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_emisora_b_l_e_ac32548698cf69ecef9e96941fc2e1b94}{esta\+Anunciando}} ()
+\begin{DoxyCompactList}\small\item\em Verifica si la emisora está anunciando. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_aff23b85351177e685353b1ee92a1558f}{emitir\+Anuncio\+IBeacon}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}beacon\+UUID, int16\+\_\+t major, int16\+\_\+t minor, uint8\+\_\+t rssi)
+\begin{DoxyCompactList}\small\item\em Emite un i\+Beacon con los valores especificados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41}{emitir\+Anuncio\+IBeacon\+Libre}} (const char \texorpdfstring{$\ast$}{*}carga, const uint8\+\_\+t tamanyo\+Carga)
+\begin{DoxyCompactList}\small\item\em Emite un anuncio i\+Beacon con una carga libre. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731}{anyadir\+Servicio}} (\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&servicio)
+\begin{DoxyCompactList}\small\item\em Añade un servicio a la emisora BLE. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5}{anyadir\+Servicio\+Con\+Sus\+Caracteristicas}} (\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&servicio)
+\begin{DoxyCompactList}\small\item\em Añade un servicio junto con sus características a la emisora BLE. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename ... T$>$ }\\bool \mbox{\hyperlink{class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339}{anyadir\+Servicio\+Con\+Sus\+Caracteristicas}} (\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&servicio, \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Servicio\+En\+Emisora\+::\+Caracteristica}} \&caracteristica, T \&... resto\+Caracteristicas)
+\begin{DoxyCompactList}\small\item\em Añade un servicio con múltiples características a la emisora BLE. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename ... T$>$ }\\bool \mbox{\hyperlink{class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab}{anyadir\+Servicio\+Con\+Sus\+Caracteristicas\+YActivar}} (\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&servicio, T \&... resto\+Caracteristicas)
+\begin{DoxyCompactList}\small\item\em Añade un servicio y sus características y luego lo activa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9}{instalar\+Callback\+Conexion\+Establecida}} (\mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Callback\+Conexion\+Establecida}} cb)
+\begin{DoxyCompactList}\small\item\em Instala el callback para manejar la conexión establecida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351}{instalar\+Callback\+Conexion\+Terminada}} (\mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Callback\+Conexion\+Terminada}} cb)
+\begin{DoxyCompactList}\small\item\em Instala el callback para manejar la desconexión. \end{DoxyCompactList}\item 
+BLEConnection \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_emisora_b_l_e_aa863c5f29e1f0d4dd1ae023b30350960}{get\+Conexion}} (uint16\+\_\+t conn\+Handle)
+\begin{DoxyCompactList}\small\item\em Obtiene la conexión BLE a través del manejador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_emisora_b_l_e_adc123f5bc5a383104ad2f4fd0315b089}{nombre\+Emisora}}
+\item 
+const uint16\+\_\+t \mbox{\hyperlink{class_emisora_b_l_e_a67b97ebd2b35b10066f0857629c6b950}{fabricante\+ID}}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{class_emisora_b_l_e_aa62d2364ae61d48e27ebe6da63732e0d}{tx\+Power}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase para manejar la emisora Bluetooth Low Energy (BLE). 
+
+Esta clase permite gestionar la activación de la emisora, la configuración de i\+Beacons, y la adición de servicios BLE. 
+
+\doxysubsection{Documentación de los «\+Typedef» miembros de la clase}
+\Hypertarget{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}\index{EmisoraBLE@{EmisoraBLE}!CallbackConexionEstablecida@{CallbackConexionEstablecida}}
+\index{CallbackConexionEstablecida@{CallbackConexionEstablecida}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{CallbackConexionEstablecida}{CallbackConexionEstablecida}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258} 
+using \mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Emisora\+BLE\+::\+Callback\+Conexion\+Establecida}} = void ( uint16\+\_\+t conn\+Handle )}
+
+
+
+Tipo de callback para manejar conexiones establecidas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conn\+Handle} & Identificador del manejador de la conexión. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}\index{EmisoraBLE@{EmisoraBLE}!CallbackConexionTerminada@{CallbackConexionTerminada}}
+\index{CallbackConexionTerminada@{CallbackConexionTerminada}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{CallbackConexionTerminada}{CallbackConexionTerminada}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b} 
+using \mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Emisora\+BLE\+::\+Callback\+Conexion\+Terminada}} = void ( uint16\+\_\+t conn\+Handle, uint8\+\_\+t reason)}
+
+
+
+Tipo de callback para manejar conexiones terminadas. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conn\+Handle} & Identificador del manejador de la conexión. \\
+\hline
+{\em reason} & Razón por la cual se terminó la conexión. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_emisora_b_l_e_ae2e94b95bde4cddf0038deb0368cc5bf}\index{EmisoraBLE@{EmisoraBLE}!EmisoraBLE@{EmisoraBLE}}
+\index{EmisoraBLE@{EmisoraBLE}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{EmisoraBLE()}{EmisoraBLE()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_ae2e94b95bde4cddf0038deb0368cc5bf} 
+Emisora\+BLE\+::\+Emisora\+BLE (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nombre\+Emisora\+\_\+}{, }\item[{const uint16\+\_\+t}]{fabricante\+ID\+\_\+}{, }\item[{const int8\+\_\+t}]{tx\+Power\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{class_emisora_b_l_e}{Emisora\+BLE}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre\+Emisora\+\_\+} & Nombre de la emisora BLE. \\
+\hline
+{\em fabricante\+ID\+\_\+} & ID del fabricante para los beacons. \\
+\hline
+{\em tx\+Power\+\_\+} & Potencia de transmisión de la emisora. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731}\index{EmisoraBLE@{EmisoraBLE}!anyadirServicio@{anyadirServicio}}
+\index{anyadirServicio@{anyadirServicio}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{anyadirServicio()}{anyadirServicio()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731} 
+bool Emisora\+BLE\+::anyadir\+Servicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&}]{servicio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un servicio a la emisora BLE. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em servicio} & Servicio BLE a añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el servicio fue añadido exitosamente, false en caso contrario. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5}\index{EmisoraBLE@{EmisoraBLE}!anyadirServicioConSusCaracteristicas@{anyadirServicioConSusCaracteristicas}}
+\index{anyadirServicioConSusCaracteristicas@{anyadirServicioConSusCaracteristicas}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{anyadirServicioConSusCaracteristicas()}{anyadirServicioConSusCaracteristicas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5} 
+bool Emisora\+BLE\+::anyadir\+Servicio\+Con\+Sus\+Caracteristicas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&}]{servicio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un servicio junto con sus características a la emisora BLE. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em servicio} & Servicio BLE a añadir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el servicio y las características fueron añadidos exitosamente. 
+\end{DoxyReturn}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339}\index{EmisoraBLE@{EmisoraBLE}!anyadirServicioConSusCaracteristicas@{anyadirServicioConSusCaracteristicas}}
+\index{anyadirServicioConSusCaracteristicas@{anyadirServicioConSusCaracteristicas}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{anyadirServicioConSusCaracteristicas()}{anyadirServicioConSusCaracteristicas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339} 
+template$<$typename ... T$>$ \\
+bool Emisora\+BLE\+::anyadir\+Servicio\+Con\+Sus\+Caracteristicas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&}]{servicio}{, }\item[{\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Servicio\+En\+Emisora\+::\+Caracteristica}} \&}]{caracteristica}{, }\item[{T \&...}]{resto\+Caracteristicas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un servicio con múltiples características a la emisora BLE. 
+
+
+\begin{DoxyTemplParams}{Parámetros de plantilla}
+{\em T} & Tipos de características adicionales. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parámetros}
+{\em servicio} & Servicio BLE a añadir. \\
+\hline
+{\em caracteristica} & Primera característica. \\
+\hline
+{\em resto\+Caracteristicas} & Otras características adicionales. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si todo fue añadido correctamente. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab}\index{EmisoraBLE@{EmisoraBLE}!anyadirServicioConSusCaracteristicasYActivar@{anyadirServicioConSusCaracteristicasYActivar}}
+\index{anyadirServicioConSusCaracteristicasYActivar@{anyadirServicioConSusCaracteristicasYActivar}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{anyadirServicioConSusCaracteristicasYActivar()}{anyadirServicioConSusCaracteristicasYActivar()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab} 
+template$<$typename ... T$>$ \\
+bool Emisora\+BLE\+::anyadir\+Servicio\+Con\+Sus\+Caracteristicas\+YActivar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora}{Servicio\+En\+Emisora}} \&}]{servicio}{, }\item[{T \&...}]{resto\+Caracteristicas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un servicio y sus características y luego lo activa. 
+
+
+\begin{DoxyTemplParams}{Parámetros de plantilla}
+{\em T} & Tipos de características adicionales. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parámetros}
+{\em servicio} & Servicio BLE a añadir y activar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si todo fue añadido y activado correctamente. 
+\end{DoxyReturn}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4}\index{EmisoraBLE@{EmisoraBLE}!detenerAnuncio@{detenerAnuncio}}
+\index{detenerAnuncio@{detenerAnuncio}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{detenerAnuncio()}{detenerAnuncio()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4} 
+void Emisora\+BLE\+::detener\+Anuncio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Detiene el anuncio BLE actual. 
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_aff23b85351177e685353b1ee92a1558f}\index{EmisoraBLE@{EmisoraBLE}!emitirAnuncioIBeacon@{emitirAnuncioIBeacon}}
+\index{emitirAnuncioIBeacon@{emitirAnuncioIBeacon}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{emitirAnuncioIBeacon()}{emitirAnuncioIBeacon()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_aff23b85351177e685353b1ee92a1558f} 
+void Emisora\+BLE\+::emitir\+Anuncio\+IBeacon (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{beacon\+UUID}{, }\item[{int16\+\_\+t}]{major}{, }\item[{int16\+\_\+t}]{minor}{, }\item[{uint8\+\_\+t}]{rssi}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emite un i\+Beacon con los valores especificados. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em beacon\+UUID} & UUID del i\+Beacon. \\
+\hline
+{\em major} & Valor mayor del i\+Beacon. \\
+\hline
+{\em minor} & Valor menor del i\+Beacon. \\
+\hline
+{\em rssi} & Valor de la señal de transmisión (RSSI). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41}\index{EmisoraBLE@{EmisoraBLE}!emitirAnuncioIBeaconLibre@{emitirAnuncioIBeaconLibre}}
+\index{emitirAnuncioIBeaconLibre@{emitirAnuncioIBeaconLibre}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{emitirAnuncioIBeaconLibre()}{emitirAnuncioIBeaconLibre()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41} 
+void Emisora\+BLE\+::emitir\+Anuncio\+IBeacon\+Libre (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{carga}{, }\item[{const uint8\+\_\+t}]{tamanyo\+Carga}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emite un anuncio i\+Beacon con una carga libre. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em carga} & Datos que se desean transmitir. \\
+\hline
+{\em tamanyo\+Carga} & Tamaño de los datos. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73}\index{EmisoraBLE@{EmisoraBLE}!encenderEmisora@{encenderEmisora}}
+\index{encenderEmisora@{encenderEmisora}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{encenderEmisora()}{encenderEmisora()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73} 
+void Emisora\+BLE\+::encender\+Emisora (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enciende la emisora BLE. 
+
+Gráfico de llamadas a esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590}\index{EmisoraBLE@{EmisoraBLE}!encenderEmisora@{encenderEmisora}}
+\index{encenderEmisora@{encenderEmisora}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{encenderEmisora()}{encenderEmisora()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590} 
+void Emisora\+BLE\+::encender\+Emisora (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Callback\+Conexion\+Establecida}}}]{cbce}{, }\item[{\mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Callback\+Conexion\+Terminada}}}]{cbct}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enciende la emisora BLE con callbacks de conexión. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cbce} & Callback para conexión establecida. \\
+\hline
+{\em cbct} & Callback para conexión terminada. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas de esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_ac32548698cf69ecef9e96941fc2e1b94}\index{EmisoraBLE@{EmisoraBLE}!estaAnunciando@{estaAnunciando}}
+\index{estaAnunciando@{estaAnunciando}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{estaAnunciando()}{estaAnunciando()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_ac32548698cf69ecef9e96941fc2e1b94} 
+bool Emisora\+BLE\+::esta\+Anunciando (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifica si la emisora está anunciando. 
+
+\begin{DoxyReturn}{Devuelve}
+true si la emisora está anunciando, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{class_emisora_b_l_e_aa863c5f29e1f0d4dd1ae023b30350960}\index{EmisoraBLE@{EmisoraBLE}!getConexion@{getConexion}}
+\index{getConexion@{getConexion}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{getConexion()}{getConexion()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_aa863c5f29e1f0d4dd1ae023b30350960} 
+BLEConnection \texorpdfstring{$\ast$}{*} Emisora\+BLE\+::get\+Conexion (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{conn\+Handle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene la conexión BLE a través del manejador. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em conn\+Handle} & Manejador de la conexión. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Puntero a la conexión BLE. 
+\end{DoxyReturn}
+\Hypertarget{class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9}\index{EmisoraBLE@{EmisoraBLE}!instalarCallbackConexionEstablecida@{instalarCallbackConexionEstablecida}}
+\index{instalarCallbackConexionEstablecida@{instalarCallbackConexionEstablecida}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{instalarCallbackConexionEstablecida()}{instalarCallbackConexionEstablecida()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9} 
+void Emisora\+BLE\+::instalar\+Callback\+Conexion\+Establecida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_emisora_b_l_e_a922f7f1ab1063eb40c99e4a3676be258}{Callback\+Conexion\+Establecida}}}]{cb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instala el callback para manejar la conexión establecida. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cb} & Callback de conexión establecida. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351}\index{EmisoraBLE@{EmisoraBLE}!instalarCallbackConexionTerminada@{instalarCallbackConexionTerminada}}
+\index{instalarCallbackConexionTerminada@{instalarCallbackConexionTerminada}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{instalarCallbackConexionTerminada()}{instalarCallbackConexionTerminada()}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351} 
+void Emisora\+BLE\+::instalar\+Callback\+Conexion\+Terminada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_emisora_b_l_e_afd6faaf6a924a50ea027046703300b0b}{Callback\+Conexion\+Terminada}}}]{cb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instala el callback para manejar la desconexión. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em cb} & Callback de desconexión. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_emisora_b_l_e_a67b97ebd2b35b10066f0857629c6b950}\index{EmisoraBLE@{EmisoraBLE}!fabricanteID@{fabricanteID}}
+\index{fabricanteID@{fabricanteID}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{fabricanteID}{fabricanteID}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_a67b97ebd2b35b10066f0857629c6b950} 
+const uint16\+\_\+t Emisora\+BLE\+::fabricante\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_emisora_b_l_e_adc123f5bc5a383104ad2f4fd0315b089}\index{EmisoraBLE@{EmisoraBLE}!nombreEmisora@{nombreEmisora}}
+\index{nombreEmisora@{nombreEmisora}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{nombreEmisora}{nombreEmisora}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_adc123f5bc5a383104ad2f4fd0315b089} 
+const char\texorpdfstring{$\ast$}{*} Emisora\+BLE\+::nombre\+Emisora\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_emisora_b_l_e_aa62d2364ae61d48e27ebe6da63732e0d}\index{EmisoraBLE@{EmisoraBLE}!txPower@{txPower}}
+\index{txPower@{txPower}!EmisoraBLE@{EmisoraBLE}}
+\doxysubsubsection{\texorpdfstring{txPower}{txPower}}
+{\footnotesize\ttfamily \label{class_emisora_b_l_e_aa62d2364ae61d48e27ebe6da63732e0d} 
+const int8\+\_\+t Emisora\+BLE\+::tx\+Power\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+Hola\+Mundo\+IBeacon/\mbox{\hyperlink{_emisora_b_l_e_8h}{Emisora\+BLE.\+h}}\end{DoxyCompactItemize}

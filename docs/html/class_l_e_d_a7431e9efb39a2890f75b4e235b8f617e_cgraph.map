@@ -1,0 +1,9 @@
+<map id="LED::brillar" name="LED::brillar">
+<area shape="rect" id="Node000001" title="Hace que el LED brille por un tiempo determinado." alt="" coords="5,56,92,83"/>
+<area shape="rect" id="Node000002" href="$class_l_e_d.html#a7f961959fa7405fec54de6121415db80" title="Apaga el LED." alt="" coords="147,5,241,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,53,138,35,140,40,90,58"/>
+<area shape="rect" id="Node000003" href="$class_l_e_d.html#a58660bafc0f4d6016392feabac555812" title="Enciende el LED." alt="" coords="140,56,248,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="92,67,124,67,124,72,92,72"/>
+<area shape="rect" id="Node000004" href="$_l_e_d_8h.html#a2fb17dd710d89b92e59a349551733fa0" title="Función auxiliar para pausar la ejecución por un tiempo determinado." alt="" coords="162,107,226,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="90,81,148,101,146,106,88,86"/>
+</map>

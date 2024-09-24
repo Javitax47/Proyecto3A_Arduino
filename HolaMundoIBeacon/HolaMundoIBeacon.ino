@@ -1,102 +1,121 @@
 // -*-c++-*-
 
-// --------------------------------------------------------------
-//
-// Jordi Bataller i Mascarell
-// 2019-07-07
-//
-// --------------------------------------------------------------
-
-// https://learn.sparkfun.com/tutorials/nrf52840-development-with-arduino-and-circuitpython
-
-// https://stackoverflow.com/questions/29246805/can-an-ibeacon-have-a-data-payload
-
-// --------------------------------------------------------------
-// --------------------------------------------------------------
 #include <bluefruit.h>
 
-#undef min // vaya tela, están definidos en bluefruit.h y  !
-#undef max // colisionan con los de la biblioteca estándar
+#undef min // Definiciones en bluefruit.h que colisionan con la biblioteca estándar
+#undef max
 
-// --------------------------------------------------------------
+/**
+ * @file HolaMundoIBeacon.ino
+ * @brief Implementación principal del programa que utiliza BLE para publicar datos de sensores.
+ */
+
 // --------------------------------------------------------------
 #include "LED.h"
 #include "PuertoSerie.h"
 
 // --------------------------------------------------------------
-// --------------------------------------------------------------
+
+/**
+ * @namespace Globales
+ * @brief Contiene objetos globales para manejar el LED, la comunicación por puerto serie y otros módulos.
+ */
 namespace Globales {
   
+  /**
+   * @brief Objeto para controlar el LED conectado al pin 7.
+   */
   LED elLED ( /* NUMERO DEL PIN LED = */ 7 );
 
-  PuertoSerie elPuerto ( /* velocidad = */ 115200 ); // 115200 o 9600 o ...
+  /**
+   * @brief Objeto para gestionar la comunicación por puerto serie a 115200 baudios.
+   */
+  PuertoSerie elPuerto ( /* velocidad = */ 115200 );
 
-  // Serial1 en el ejemplo de Curro creo que es la conexión placa-sensor 
+  // Serial1 en el ejemplo de Curro creo que es la conexión placa-sensor
 };
 
-// --------------------------------------------------------------
 // --------------------------------------------------------------
 #include "EmisoraBLE.h"
 #include "Publicador.h"
 #include "Medidor.h"
 
-
-// --------------------------------------------------------------
 // --------------------------------------------------------------
 namespace Globales {
 
+  /**
+   * @brief Objeto para manejar la publicación de datos vía BLE.
+   */
   Publicador elPublicador;
 
+  /**
+   * @brief Objeto para gestionar las mediciones de CO2 y temperatura.
+   */
   Medidor elMedidor;
 
 }; // namespace
 
 // --------------------------------------------------------------
-// --------------------------------------------------------------
+
+/**
+ * @brief Inicializa la placa y sus módulos.
+ * Actualmente no hace nada.
+ */
 void inicializarPlaquita () {
-
   // de momento nada
-
-} // ()
+} // () 
 
 // --------------------------------------------------------------
-// setup()
-// --------------------------------------------------------------
+
+/**
+ * @brief Función de configuración (setup).
+ * Inicializa los módulos de comunicación, medición y publicación.
+ * @dot
+ * digraph setup {
+ *   setup -> Globales::elPuerto.esperarDisponible;
+ *   setup -> inicializarPlaquita;
+ *   setup -> Globales::elPublicador.encenderEmisora;
+ *   setup -> Globales::elMedidor.iniciarMedidor;
+ *   setup -> esperar;
+ *   setup -> Globales::elPuerto.escribir;
+ * }
+ * @enddot
+ */
 void setup() {
 
   Globales::elPuerto.esperarDisponible();
 
-  // 
-  // 
-  // 
   inicializarPlaquita();
 
-  // Suspend Loop() to save power
-  // suspendLoop();
-
-  // 
-  // 
-  // 
+  // Enciende la emisora BLE
   Globales::elPublicador.encenderEmisora();
 
-  // Globales::elPublicador.laEmisora.pruebaEmision();
-  
-  // 
-  // 
-  // 
+  // Inicia el medidor de sensores
   Globales::elMedidor.iniciarMedidor();
 
-  // 
-  // 
-  // 
   esperar( 1000 );
 
   Globales::elPuerto.escribir( "---- setup(): fin ---- \n " );
-
 } // setup ()
 
 // --------------------------------------------------------------
-// --------------------------------------------------------------
+
+/**
+ * @brief Realiza una secuencia de encendido y apagado del LED.
+ * Utiliza tiempos de espera definidos entre cambios de estado.
+ * @dot
+ * digraph lucecitas {
+ *   lucecitas -> Globales::elLED.brillar [label="100ms encendido"];
+ *   lucecitas -> esperar [label="400ms"];
+ *   lucecitas -> Globales::elLED.brillar [label="100ms encendido"];
+ *   lucecitas -> esperar [label="400ms"];
+ *   lucecitas -> Globales::elLED.brillar [label="100ms encendido"];
+ *   lucecitas -> esperar [label="400ms"];
+ *   lucecitas -> Globales::elLED.brillar [label="1000ms encendido"];
+ *   lucecitas -> esperar [label="1000ms"];
+ * }
+ * @enddot
+ */
 inline void lucecitas() {
   using namespace Globales;
 
@@ -111,14 +130,21 @@ inline void lucecitas() {
 } // ()
 
 // --------------------------------------------------------------
-// loop ()
-// --------------------------------------------------------------
+
+/**
+ * @namespace Loop
+ * @brief Espacio de nombres para variables del bucle principal.
+ */
 namespace Loop {
-  uint8_t cont = 0;
+  uint8_t cont = 0; /**< Contador de iteraciones del loop. */
 };
 
-// ..............................................................
-// ..............................................................
+// --------------------------------------------------------------
+
+/**
+ * @brief Función principal (loop) del programa.
+ * Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.
+ */
 void loop () {
 
   using namespace Loop;
@@ -130,12 +156,10 @@ void loop () {
   elPuerto.escribir( cont );
   elPuerto.escribir( "\n" );
 
-
+  // Secuencia de luces
   lucecitas();
 
-  // 
-  // mido y publico
-  // 
+  // Mide el valor de CO2 y lo publica
   int valorCO2 = elMedidor.medirCO2();
   
   elPublicador.publicarCO2( valorCO2,
@@ -143,9 +167,7 @@ void loop () {
 							1000 // intervalo de emisión
 							);
   
-  // 
-  // mido y publico
-  // 
+  // Mide la temperatura y la publica
   int valorTemperatura = elMedidor.medirTemperatura();
   
   elPublicador.publicarTemperatura( valorTemperatura, 
@@ -153,13 +175,7 @@ void loop () {
 									1000 // intervalo de emisión
 									);
 
-  // 
-  // prueba para emitir un iBeacon y poner
-  // en la carga (21 bytes = uuid 16 major 2 minor 2 txPower 1 )
-  // lo que queramos (sin seguir dicho formato)
-  // 
-  // Al terminar la prueba hay que hacer Publicador::laEmisora privado
-  // 
+  // Prueba de emisión iBeacon con datos personalizados
   char datos[21] = {
 	'H', 'o', 'l', 'a',
 	'H', 'o', 'l', 'a',
@@ -169,22 +185,14 @@ void loop () {
 	'H'
   };
 
-  // elPublicador.laEmisora.emitirAnuncioIBeaconLibre ( &datos[0], 21 );
   elPublicador.laEmisora.emitirAnuncioIBeaconLibre ( &datos[0], 21 );
 
   esperar( 2000 );
 
   elPublicador.laEmisora.detenerAnuncio();
-  
-  // 
-  // 
-  // 
+
   elPuerto.escribir( "---- loop(): acaba **** " );
   elPuerto.escribir( cont );
   elPuerto.escribir( "\n" );
   
 } // loop ()
-// --------------------------------------------------------------
-// --------------------------------------------------------------
-// --------------------------------------------------------------
-// --------------------------------------------------------------

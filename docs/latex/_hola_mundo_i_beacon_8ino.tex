@@ -1,0 +1,142 @@
+\doxysection{Referencia del archivo Hola\+Mundo\+IBeacon/\+Hola\+Mundo\+IBeacon.ino}
+\hypertarget{_hola_mundo_i_beacon_8ino}{}\label{_hola_mundo_i_beacon_8ino}\index{HolaMundoIBeacon/HolaMundoIBeacon.ino@{HolaMundoIBeacon/HolaMundoIBeacon.ino}}
+
+
+Implementación principal del programa que utiliza BLE para publicar datos de sensores.  
+
+
+{\ttfamily \#include $<$bluefruit.\+h$>$}\newline
+{\ttfamily \#include "{}LED.\+h"{}}\newline
+{\ttfamily \#include "{}Puerto\+Serie.\+h"{}}\newline
+{\ttfamily \#include "{}Emisora\+BLE.\+h"{}}\newline
+{\ttfamily \#include "{}Publicador.\+h"{}}\newline
+{\ttfamily \#include "{}Medidor.\+h"{}}\newline
+Gráfico de dependencias incluidas en Hola\+Mundo\+IBeacon.\+ino\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_hola_mundo_i_beacon_8ino__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Espacios de nombres}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_globales}{Globales}}
+\begin{DoxyCompactList}\small\item\em Contiene objetos globales para manejar el \doxylink{class_l_e_d}{LED}, la comunicación por puerto serie y otros módulos. \end{DoxyCompactList}\item 
+namespace \mbox{\hyperlink{namespace_loop}{Loop}}
+\begin{DoxyCompactList}\small\item\em Espacio de nombres para variables del bucle principal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa}{inicializar\+Plaquita}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa la placa y sus módulos. Actualmente no hace nada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff}{lucecitas}} ()
+\begin{DoxyCompactList}\small\item\em Realiza una secuencia de encendido y apagado del \doxylink{class_l_e_d}{LED}. Utiliza tiempos de espera definidos entre cambios de estado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\begin{DoxyCompactList}\small\item\em Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_l_e_d}{LED}} \mbox{\hyperlink{namespace_globales_ab111d6488b416ae3b584e786a283ee82}{Globales\+::el\+LED}} (7)
+\begin{DoxyCompactList}\small\item\em Objeto para controlar el \doxylink{class_l_e_d}{LED} conectado al pin 7. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_puerto_serie}{Puerto\+Serie}} \mbox{\hyperlink{namespace_globales_abcaa665203ee4dad9eaf09ad64aa7354}{Globales\+::el\+Puerto}} (115200)
+\begin{DoxyCompactList}\small\item\em Objeto para gestionar la comunicación por puerto serie a 115200 baudios. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_publicador}{Publicador}} \mbox{\hyperlink{namespace_globales_af2c541012072e5d61fe17517e3e61980}{Globales\+::el\+Publicador}}
+\begin{DoxyCompactList}\small\item\em Objeto para manejar la publicación de datos vía BLE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_medidor}{Medidor}} \mbox{\hyperlink{namespace_globales_ae99f35d2ec84b83cbbf433390e920956}{Globales\+::el\+Medidor}}
+\begin{DoxyCompactList}\small\item\em Objeto para gestionar las mediciones de CO2 y temperatura. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{namespace_loop_a41be37d8b3f6fee591134483a15b8987}{Loop\+::cont}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Implementación principal del programa que utiliza BLE para publicar datos de sensores. 
+
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!inicializarPlaquita@{inicializarPlaquita}}
+\index{inicializarPlaquita@{inicializarPlaquita}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{inicializarPlaquita()}{inicializarPlaquita()}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa} 
+void inicializar\+Plaquita (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa la placa y sus módulos. Actualmente no hace nada. 
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!loop@{loop}}
+\index{loop@{loop}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f} 
+void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. 
+
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!lucecitas@{lucecitas}}
+\index{lucecitas@{lucecitas}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{lucecitas()}{lucecitas()}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff} 
+void lucecitas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Realiza una secuencia de encendido y apagado del \doxylink{class_l_e_d}{LED}. Utiliza tiempos de espera definidos entre cambios de estado. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_1}}
+\end{DoxyImageNoCaption}
+ Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!setup@{setup}}
+\index{setup@{setup}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d} 
+void setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_2}}
+\end{DoxyImageNoCaption}
+ Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,14 @@
+<map id="PuertoSerie::escribir" name="PuertoSerie::escribir">
+<area shape="rect" id="Node000001" title="Escribe un mensaje a través del puerto serie." alt="" coords="338,131,477,157"/>
+<area shape="rect" id="Node000002" href="$class_servicio_en_emisora_1_1_caracteristica.html#ad93e0c5998aeb15c920cd5d6db7a0e3b" title="Activa la característica para que esté lista para operar." alt="" coords="120,5,269,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,123,337,92,289,62,264,51,266,46,291,58,340,88,381,119"/>
+<area shape="rect" id="Node000003" href="$class_emisora_b_l_e.html#a0f027a1c447357c5fe79200b36451731" title="Añade un servicio a la emisora BLE." alt="" coords="99,72,290,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="343,129,289,113,247,102,249,97,291,108,345,123"/>
+<area shape="rect" id="Node000004" href="$class_emisora_b_l_e.html#a8439d1e85ec8d630fcd33b01d8987d41" title="Emite un anuncio iBeacon con una carga libre." alt="" coords="104,123,285,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,147,286,147,286,141,322,141"/>
+<area shape="rect" id="Node000005" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,160,51,187"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="354,165,290,180,222,186,154,186,51,179,51,173,155,180,222,180,290,175,353,160"/>
+<area shape="rect" id="Node000006" href="$_hola_mundo_i_beacon_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación." alt="" coords="168,240,221,267"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="378,169,338,197,291,224,223,249,221,244,289,219,335,192,375,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="89,165,52,172,51,167,88,160"/>
+</map>

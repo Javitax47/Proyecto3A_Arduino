@@ -1,0 +1,118 @@
+\doxysection{Referencia de la clase Medidor}
+\hypertarget{class_medidor}{}\label{class_medidor}\index{Medidor@{Medidor}}
+
+
+Clase para simular la medición de CO2 y temperatura.  
+
+
+
+
+{\ttfamily \#include $<$Medidor.\+h$>$}
+
+
+
+Diagrama de colaboración de Medidor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_medidor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medidor_af8dd93b883c64f28bd898c4baaa73dc9}{Medidor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_medidor}{Medidor}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_medidor_a1d26e993a9198fac83d6edad4cc30bcf}{iniciar\+Medidor}} ()
+\begin{DoxyCompactList}\small\item\em Método para iniciar el medidor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_medidor_a203ae9be3a2bf0965bd9316fcd203e19}{medir\+CO2}} ()
+\begin{DoxyCompactList}\small\item\em Medir el nivel de CO2. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_medidor_a742eaebe02e1d1d67df55f7a73878421}{medir\+Temperatura}} ()
+\begin{DoxyCompactList}\small\item\em Medir la temperatura. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase para simular la medición de CO2 y temperatura. 
+
+Esta clase simula la medición de niveles de CO2 y temperatura. En un sistema real, esta clase podría interactuar con sensores reales para obtener lecturas. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_medidor_af8dd93b883c64f28bd898c4baaa73dc9}\index{Medidor@{Medidor}!Medidor@{Medidor}}
+\index{Medidor@{Medidor}!Medidor@{Medidor}}
+\doxysubsubsection{\texorpdfstring{Medidor()}{Medidor()}}
+{\footnotesize\ttfamily \label{class_medidor_af8dd93b883c64f28bd898c4baaa73dc9} 
+Medidor\+::\+Medidor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{class_medidor}{Medidor}. 
+
+Inicializa el medidor. Actualmente, no realiza ninguna acción en el constructor. 
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_medidor_a1d26e993a9198fac83d6edad4cc30bcf}\index{Medidor@{Medidor}!iniciarMedidor@{iniciarMedidor}}
+\index{iniciarMedidor@{iniciarMedidor}!Medidor@{Medidor}}
+\doxysubsubsection{\texorpdfstring{iniciarMedidor()}{iniciarMedidor()}}
+{\footnotesize\ttfamily \label{class_medidor_a1d26e993a9198fac83d6edad4cc30bcf} 
+void Medidor\+::iniciar\+Medidor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Método para iniciar el medidor. 
+
+Se utiliza para realizar cualquier configuración que no pueda hacerse en el constructor. Actualmente no realiza ninguna acción. Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_medidor_a203ae9be3a2bf0965bd9316fcd203e19}\index{Medidor@{Medidor}!medirCO2@{medirCO2}}
+\index{medirCO2@{medirCO2}!Medidor@{Medidor}}
+\doxysubsubsection{\texorpdfstring{medirCO2()}{medirCO2()}}
+{\footnotesize\ttfamily \label{class_medidor_a203ae9be3a2bf0965bd9316fcd203e19} 
+int Medidor\+::medir\+CO2 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Medir el nivel de CO2. 
+
+Devuelve un valor simulado de la medición de CO2.
+
+\begin{DoxyReturn}{Devuelve}
+int Valor del nivel de CO2 (simulado). 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Valor simulado de CO2.Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_medidor_a742eaebe02e1d1d67df55f7a73878421}\index{Medidor@{Medidor}!medirTemperatura@{medirTemperatura}}
+\index{medirTemperatura@{medirTemperatura}!Medidor@{Medidor}}
+\doxysubsubsection{\texorpdfstring{medirTemperatura()}{medirTemperatura()}}
+{\footnotesize\ttfamily \label{class_medidor_a742eaebe02e1d1d67df55f7a73878421} 
+int Medidor\+::medir\+Temperatura (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Medir la temperatura. 
+
+Devuelve un valor simulado de la medición de temperatura.
+
+\begin{DoxyReturn}{Devuelve}
+int Valor de la temperatura (simulado). 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Valor simulado de temperatura.Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph}
+\end{center}
+\end{figure}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+Hola\+Mundo\+IBeacon/\mbox{\hyperlink{_medidor_8h}{Medidor.\+h}}\end{DoxyCompactItemize}

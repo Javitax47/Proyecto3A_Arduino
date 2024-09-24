@@ -1,0 +1,7 @@
+<map id="HolaMundoIBeacon/EmisoraBLE.h" name="HolaMundoIBeacon/EmisoraBLE.h">
+<area shape="rect" id="Node000001" title="Clase para manejar la emisora BLE y la emisión de beacons." alt="" coords="5,5,193,48"/>
+<area shape="rect" id="Node000002" href="$_servicio_en_emisora_8h.html" title="Definición de la clase ServicioEnEmisora y Clase que representa una característica dentro de un servi..." alt="" coords="27,96,171,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,49,102,80,96,80,96,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="70,171,128,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,123,102,155,96,155,96,123"/>
+</map>

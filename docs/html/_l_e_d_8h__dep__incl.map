@@ -1,0 +1,5 @@
+<map id="HolaMundoIBeacon/LED.h" name="HolaMundoIBeacon/LED.h">
+<area shape="rect" id="Node000001" title="Definición de la clase LED para controlar un LED en un pin específico." alt="" coords="20,5,196,32"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html" title="Implementación principal del programa que utiliza BLE para publicar datos de sensores." alt="" coords="5,80,211,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,48,111,80,105,80,105,48"/>
+</map>

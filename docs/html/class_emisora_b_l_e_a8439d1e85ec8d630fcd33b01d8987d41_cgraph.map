@@ -1,0 +1,5 @@
+<map id="EmisoraBLE::emitirAnuncioIBeaconLibre" name="EmisoraBLE::emitirAnuncioIBeaconLibre">
+<area shape="rect" id="Node000001" title="Emite un anuncio iBeacon con una carga libre." alt="" coords="5,5,187,48"/>
+<area shape="rect" id="Node000002" href="$class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4" title="Escribe un mensaje a través del puerto serie." alt="" coords="235,13,374,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,24,219,24,219,29,187,29"/>
+</map>

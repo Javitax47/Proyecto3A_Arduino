@@ -1,24 +1,28 @@
 // -*- mode: c++ -*-
 
-// ----------------------------------------------------------
-// Jordi Bataller i Mascarell
-// 2019-07-07
-// ----------------------------------------------------------
 #ifndef EMISORA_H_INCLUIDO
 #define EMISORA_H_INCLUIDO
 
-// Buena introducción: https://learn.adafruit.com/introduction-to-bluetooth-low-energy/gap
-// https://os.mbed.com/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
-
-// fuente: https://www.instructables.com/id/Beaconeddystone-and-Adafruit-NRF52-Advertise-Your-/
-// https://github.com/nkolban/ESP32_BLE_Arduino/blob/master/src/BLEBeacon.h
-
-// https://os.mbed.com/blog/entry/BLE-Beacons-URIBeacon-AltBeacons-iBeacon/
-// https://learn.adafruit.com/bluefruit-nrf52-feather-learning-guide/bleadvertising
+/**
+ * @file EmisoraBLE.h
+ * @brief Clase para manejar la emisora BLE y la emisión de beacons.
+ * 
+ * Este archivo contiene la definición de la clase `EmisoraBLE` que
+ * permite gestionar la emisora BLE, emitir iBeacons y manejar servicios
+ * publicitarios a través del protocolo BLE.
+ */
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
 #include "ServicioEnEmisora.h"
+
+/**
+ * @class EmisoraBLE
+ * @brief Clase para manejar la emisora Bluetooth Low Energy (BLE).
+ * 
+ * Esta clase permite gestionar la activación de la emisora, la configuración de iBeacons, 
+ * y la adición de servicios BLE.
+ */
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
@@ -31,47 +35,41 @@ private:
 
 public:
 
-  // .........................................................
-  // .........................................................
+  /**
+   * @typedef CallbackConexionEstablecida
+   * @brief Tipo de callback para manejar conexiones establecidas.
+   * 
+   * @param connHandle Identificador del manejador de la conexión.
+   */
   using CallbackConexionEstablecida = void ( uint16_t connHandle );
+
+  /**
+     * @typedef CallbackConexionTerminada
+     * @brief Tipo de callback para manejar conexiones terminadas.
+     * 
+     * @param connHandle Identificador del manejador de la conexión.
+     * @param reason Razón por la cual se terminó la conexión.
+     */
   using CallbackConexionTerminada = void ( uint16_t connHandle, uint8_t reason);
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Constructor de la clase EmisoraBLE.
+     * 
+     * @param nombreEmisora_ Nombre de la emisora BLE.
+     * @param fabricanteID_ ID del fabricante para los beacons.
+     * @param txPower_ Potencia de transmisión de la emisora.
+     */
   EmisoraBLE( const char * nombreEmisora_, const uint16_t fabricanteID_,
 			  const int8_t txPower_ ) 
 	:
 	nombreEmisora( nombreEmisora_ ) ,
 	fabricanteID( fabricanteID_ ) ,
-	txPower( txPower_ )
-  {
-	// no encender ahora la emisora, tal vez sea por el println()
-	// que hace que todo falle si lo llamo en el contructor
-	// ( = antes que configuremos Serial )
-	// No parece que sea por el println,
-	// por tanto NO_encenderEmisora();
-  } // ()
+	txPower( txPower_ ){} // ()
 
-  // .........................................................
-  // .........................................................
-  /* creo que no me sirve esta versión porque parece
-	 que no se instalen los callbacks si la emisora no está encendida,
-	 pero no la puedo encender en el constructor 
-  EmisoraBLE( const char * nombreEmisora_, const uint16_t fabricanteID_,
-			  const int8_t txPower_,
-			  CallbackConexionEstablecida cbce,
-			  CallbackConexionTerminada cbct
-			  ) 
-	:
-	EmisoraBLE ( nombreEmisora_, fabricanteID_, txPower_ )
-  {
-	instalarCallbackConexionEstablecida( cbce );
-	instalarCallbackConexionTerminada( cbct );
-  } // ()
-  */
+  /**
+     * @brief Enciende la emisora BLE.
+     */
 	
-  // .........................................................
-  // .........................................................
   void encenderEmisora() {
 	// Serial.println ( "Bluefruit.begin() " );
 	 Bluefruit.begin(); 
@@ -80,8 +78,12 @@ public:
 	 (*this).detenerAnuncio();
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Enciende la emisora BLE con callbacks de conexión.
+     * 
+     * @param cbce Callback para conexión establecida.
+     * @param cbct Callback para conexión terminada.
+     */
   void encenderEmisora( CallbackConexionEstablecida cbce,
 						CallbackConexionTerminada cbct ) {
 
@@ -92,8 +94,9 @@ public:
 
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Detiene el anuncio BLE actual.
+     */
   void detenerAnuncio() {
 
 	if ( (*this).estaAnunciando() ) {
@@ -103,15 +106,23 @@ public:
 
   }  // ()
   
-  // .........................................................
-  // estaAnunciando() -> Boleano
-  // .........................................................
+   /**
+     * @brief Verifica si la emisora está anunciando.
+     * 
+     * @return true si la emisora está anunciando, false en caso contrario.
+     */
   bool estaAnunciando() {
 	return Bluefruit.Advertising.isRunning();
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Emite un iBeacon con los valores especificados.
+     * 
+     * @param beaconUUID UUID del iBeacon.
+     * @param major Valor mayor del iBeacon.
+     * @param minor Valor menor del iBeacon.
+     * @param rssi Valor de la señal de transmisión (RSSI).
+     */
   void emitirAnuncioIBeacon( uint8_t * beaconUUID, int16_t major, int16_t minor, uint8_t rssi ) {
 
 	//
@@ -200,6 +211,13 @@ public:
 
 	const uint8_t tamanyoCarga = strlen( carga );
   */
+
+  /**
+     * @brief Emite un anuncio iBeacon con una carga libre.
+     * 
+     * @param carga Datos que se desean transmitir.
+     * @param tamanyoCarga Tamaño de los datos.
+     */
   void emitirAnuncioIBeaconLibre( const char * carga, const uint8_t tamanyoCarga ) {
 
 	(*this).detenerAnuncio(); 
@@ -260,8 +278,12 @@ public:
 	Globales::elPuerto.escribir( "emitiriBeacon libre  Bluefruit.Advertising.start( 0 );  \n");
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Añade un servicio a la emisora BLE.
+     * 
+     * @param servicio Servicio BLE a añadir.
+     * @return true si el servicio fue añadido exitosamente, false en caso contrario.
+     */
   bool anyadirServicio( ServicioEnEmisora & servicio ) {
 
 	Globales::elPuerto.escribir( " Bluefruit.Advertising.addService( servicio ); \n");
@@ -279,13 +301,25 @@ public:
   } // ()
 
   
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Añade un servicio junto con sus características a la emisora BLE.
+     * 
+     * @param servicio Servicio BLE a añadir.
+     * @return true si el servicio y las características fueron añadidos exitosamente.
+     */
   bool anyadirServicioConSusCaracteristicas( ServicioEnEmisora & servicio ) { 
 	return (*this).anyadirServicio( servicio );
   } // 
 
-  // .........................................................
+  /**
+     * @brief Añade un servicio con múltiples características a la emisora BLE.
+     * 
+     * @tparam T Tipos de características adicionales.
+     * @param servicio Servicio BLE a añadir.
+     * @param caracteristica Primera característica.
+     * @param restoCaracteristicas Otras características adicionales.
+     * @return true si todo fue añadido correctamente.
+     */
   template <typename ... T>
   bool anyadirServicioConSusCaracteristicas( ServicioEnEmisora & servicio,
 											 ServicioEnEmisora::Caracteristica & caracteristica,
@@ -297,7 +331,13 @@ public:
 	
   } // ()
 
-  // .........................................................
+  /**
+     * @brief Añade un servicio y sus características y luego lo activa.
+     * 
+     * @tparam T Tipos de características adicionales.
+     * @param servicio Servicio BLE a añadir y activar.
+     * @return true si todo fue añadido y activado correctamente.
+     */
   template <typename ... T>
   bool anyadirServicioConSusCaracteristicasYActivar( ServicioEnEmisora & servicio,
 													 // ServicioEnEmisora::Caracteristica & caracteristica,
@@ -311,30 +351,34 @@ public:
 	
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Instala el callback para manejar la conexión establecida.
+     * 
+     * @param cb Callback de conexión establecida.
+     */
   void instalarCallbackConexionEstablecida( CallbackConexionEstablecida cb ) {
 	Bluefruit.Periph.setConnectCallback( cb );
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Instala el callback para manejar la desconexión.
+     * 
+     * @param cb Callback de desconexión.
+     */
   void instalarCallbackConexionTerminada( CallbackConexionTerminada cb ) {
 	Bluefruit.Periph.setDisconnectCallback( cb );
   } // ()
 
-  // .........................................................
-  // .........................................................
+  /**
+     * @brief Obtiene la conexión BLE a través del manejador.
+     * 
+     * @param connHandle Manejador de la conexión.
+     * @return Puntero a la conexión BLE.
+     */
   BLEConnection * getConexion( uint16_t connHandle ) {
 	return Bluefruit.Connection( connHandle );
   } // ()
 
 }; // class
 
-#endif
-
-// ----------------------------------------------------------
-// ----------------------------------------------------------
-// ----------------------------------------------------------
-// ----------------------------------------------------------
-
+#endif // EMISORA_H_INCLUIDO

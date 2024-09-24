@@ -1,0 +1,261 @@
+\doxysection{Referencia de la clase Servicio\+En\+Emisora\+::Caracteristica}
+\hypertarget{class_servicio_en_emisora_1_1_caracteristica}{}\label{class_servicio_en_emisora_1_1_caracteristica}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+
+
+Clase que representa una característica dentro de un servicio BLE.  
+
+
+
+
+{\ttfamily \#include $<$Servicio\+En\+Emisora.\+h$>$}
+
+
+
+Diagrama de colaboración de Servicio\+En\+Emisora\+::Caracteristica\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_servicio_en_emisora_1_1_caracteristica__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a639f47133a8406e84aa237c123fd2e63}{Caracteristica}} (const char \texorpdfstring{$\ast$}{*}nombre\+Caracteristica\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa la característica con su UUID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c}{Caracteristica}} (const char \texorpdfstring{$\ast$}{*}nombre\+Caracteristica\+\_\+, uint8\+\_\+t props, Secure\+Mode\+\_\+t permiso\+Read, Secure\+Mode\+\_\+t permiso\+Write, uint8\+\_\+t tam)
+\begin{DoxyCompactList}\small\item\em Constructor que permite definir propiedades y permisos de la característica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c}{asignar\+Propiedades\+Permisos\+YTamanyo\+Datos}} (uint8\+\_\+t props, Secure\+Mode\+\_\+t permiso\+Read, Secure\+Mode\+\_\+t permiso\+Write, uint8\+\_\+t tam)
+\begin{DoxyCompactList}\small\item\em Asigna propiedades, permisos y tamaño de datos de la característica. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac6642d92b4f2d80ee6c21081972987d7}{escribir\+Datos}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Escribe datos en la característica. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ae3369332d51fb6e70a300b54c3a4f95d}{notificar\+Datos}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em Notifica datos a los suscriptores de la característica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac3355c1918c2eddf58d34df1b30dd60d}{instalar\+Callback\+Caracteristica\+Escrita}} (\mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{Callback\+Caracteristica\+Escrita}} cb)
+\begin{DoxyCompactList}\small\item\em Instala un callback para cuando se escriben datos en la característica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b}{activar}} ()
+\begin{DoxyCompactList}\small\item\em Activa la característica para que esté lista para operar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos privados}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e}{asignar\+Propiedades}} (uint8\+\_\+t props)
+\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e}{asignar\+Permisos}} (Secure\+Mode\+\_\+t permiso\+Read, Secure\+Mode\+\_\+t permiso\+Write)
+\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54}{asignar\+Tamanyo\+Datos}} (uint8\+\_\+t tam)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_ac408acdaae053ae4c005f1f9162d60c7}{uuid\+Caracteristica}} \mbox{[}16\mbox{]}
+\item 
+BLECharacteristic \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}{la\+Caracteristica}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que representa una característica dentro de un servicio BLE. 
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a639f47133a8406e84aa237c123fd2e63}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!Caracteristica@{Caracteristica}}
+\index{Caracteristica@{Caracteristica}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{Caracteristica()}{Caracteristica()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a639f47133a8406e84aa237c123fd2e63} 
+Servicio\+En\+Emisora\+::\+Caracteristica\+::\+Caracteristica (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nombre\+Caracteristica\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que inicializa la característica con su UUID. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre\+Caracteristica\+\_\+} & Nombre que será convertido a UUID. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!Caracteristica@{Caracteristica}}
+\index{Caracteristica@{Caracteristica}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{Caracteristica()}{Caracteristica()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c} 
+Servicio\+En\+Emisora\+::\+Caracteristica\+::\+Caracteristica (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nombre\+Caracteristica\+\_\+}{, }\item[{uint8\+\_\+t}]{props}{, }\item[{Secure\+Mode\+\_\+t}]{permiso\+Read}{, }\item[{Secure\+Mode\+\_\+t}]{permiso\+Write}{, }\item[{uint8\+\_\+t}]{tam}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que permite definir propiedades y permisos de la característica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre\+Caracteristica\+\_\+} & Nombre de la característica. \\
+\hline
+{\em props} & Propiedades (lectura, escritura, notificación). \\
+\hline
+{\em permiso\+Read} & Permiso de lectura. \\
+\hline
+{\em permiso\+Write} & Permiso de escritura. \\
+\hline
+{\em tam} & Tamaño máximo de los datos. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!activar@{activar}}
+\index{activar@{activar}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{activar()}{activar()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::activar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activa la característica para que esté lista para operar. 
+
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!asignarPermisos@{asignarPermisos}}
+\index{asignarPermisos@{asignarPermisos}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{asignarPermisos()}{asignarPermisos()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::asignar\+Permisos (\begin{DoxyParamCaption}\item[{Secure\+Mode\+\_\+t}]{permiso\+Read}{, }\item[{Secure\+Mode\+\_\+t}]{permiso\+Write}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!asignarPropiedades@{asignarPropiedades}}
+\index{asignarPropiedades@{asignarPropiedades}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{asignarPropiedades()}{asignarPropiedades()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::asignar\+Propiedades (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{props}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!asignarPropiedadesPermisosYTamanyoDatos@{asignarPropiedadesPermisosYTamanyoDatos}}
+\index{asignarPropiedadesPermisosYTamanyoDatos@{asignarPropiedadesPermisosYTamanyoDatos}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{asignarPropiedadesPermisosYTamanyoDatos()}{asignarPropiedadesPermisosYTamanyoDatos()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::asignar\+Propiedades\+Permisos\+YTamanyo\+Datos (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{props}{, }\item[{Secure\+Mode\+\_\+t}]{permiso\+Read}{, }\item[{Secure\+Mode\+\_\+t}]{permiso\+Write}{, }\item[{uint8\+\_\+t}]{tam}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Asigna propiedades, permisos y tamaño de datos de la característica. 
+
+Gráfico de llamadas de esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c_cgraph}
+\end{center}
+\end{figure}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!asignarTamanyoDatos@{asignarTamanyoDatos}}
+\index{asignarTamanyoDatos@{asignarTamanyoDatos}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{asignarTamanyoDatos()}{asignarTamanyoDatos()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::asignar\+Tamanyo\+Datos (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{tam}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_ac6642d92b4f2d80ee6c21081972987d7}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!escribirDatos@{escribirDatos}}
+\index{escribirDatos@{escribirDatos}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{escribirDatos()}{escribirDatos()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_ac6642d92b4f2d80ee6c21081972987d7} 
+uint16\+\_\+t Servicio\+En\+Emisora\+::\+Caracteristica\+::escribir\+Datos (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Escribe datos en la característica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & Cadena de caracteres que se escribirá. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+uint16\+\_\+t Número de bytes escritos. 
+\end{DoxyReturn}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_ac3355c1918c2eddf58d34df1b30dd60d}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!instalarCallbackCaracteristicaEscrita@{instalarCallbackCaracteristicaEscrita}}
+\index{instalarCallbackCaracteristicaEscrita@{instalarCallbackCaracteristicaEscrita}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{instalarCallbackCaracteristicaEscrita()}{instalarCallbackCaracteristicaEscrita()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_ac3355c1918c2eddf58d34df1b30dd60d} 
+void Servicio\+En\+Emisora\+::\+Caracteristica\+::instalar\+Callback\+Caracteristica\+Escrita (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{Callback\+Caracteristica\+Escrita}}}]{cb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instala un callback para cuando se escriben datos en la característica. 
+
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_ae3369332d51fb6e70a300b54c3a4f95d}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!notificarDatos@{notificarDatos}}
+\index{notificarDatos@{notificarDatos}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{notificarDatos()}{notificarDatos()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_ae3369332d51fb6e70a300b54c3a4f95d} 
+uint16\+\_\+t Servicio\+En\+Emisora\+::\+Caracteristica\+::notificar\+Datos (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Notifica datos a los suscriptores de la característica. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em str} & Cadena de caracteres que será notificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+uint16\+\_\+t Número de bytes notificados. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!laCaracteristica@{laCaracteristica}}
+\index{laCaracteristica@{laCaracteristica}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{laCaracteristica}{laCaracteristica}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_a385b01fc1535fa1ba0cb62918d70cdcd} 
+BLECharacteristic Servicio\+En\+Emisora\+::\+Caracteristica\+::la\+Caracteristica\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_servicio_en_emisora_1_1_caracteristica_ac408acdaae053ae4c005f1f9162d60c7}\index{ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}!uuidCaracteristica@{uuidCaracteristica}}
+\index{uuidCaracteristica@{uuidCaracteristica}!ServicioEnEmisora::Caracteristica@{ServicioEnEmisora::Caracteristica}}
+\doxysubsubsection{\texorpdfstring{uuidCaracteristica}{uuidCaracteristica}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_1_1_caracteristica_ac408acdaae053ae4c005f1f9162d60c7} 
+uint8\+\_\+t Servicio\+En\+Emisora\+::\+Caracteristica\+::uuid\+Caracteristica\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},\ \textcolor{charliteral}{'2'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'4'},\ \textcolor{charliteral}{'5'},\ \textcolor{charliteral}{'6'},\ \textcolor{charliteral}{'7'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{charliteral}{'8'},\ \textcolor{charliteral}{'9'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'B'},\ \textcolor{charliteral}{'C'},\ \textcolor{charliteral}{'D'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'F'}}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+Hola\+Mundo\+IBeacon/\mbox{\hyperlink{_servicio_en_emisora_8h}{Servicio\+En\+Emisora.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto3A_Arduino: Referencia de la clase Publicador</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Proyecto3A_Arduino
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos públicos</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_publicador-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle"><div class="title">Referencia de la clase Publicador</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para publicar mediciones de CO2 y temperatura mediante BLE.  
+ <a href="#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_publicador_8h_source.html">Publicador.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboración de Publicador:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_publicador__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Tipos públicos</h2></td></tr>
+<tr class="memitem:a0dbad8398e97eaf1d6ecdd854f286d38" id="r_a0dbad8398e97eaf1d6ecdd854f286d38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dbad8398e97eaf1d6ecdd854f286d38">MedicionesID</a> { <a class="el" href="#a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638">CO2</a> = 11
+, <a class="el" href="#a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047">TEMPERATURA</a> = 12
+, <a class="el" href="#a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4">RUIDO</a> = 13
+ }</td></tr>
+<tr class="memdesc:a0dbad8398e97eaf1d6ecdd854f286d38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificadores de tipo de medición para el campo major de iBeacon.  <a href="#a0dbad8398e97eaf1d6ecdd854f286d38">Más...</a><br /></td></tr>
+<tr class="separator:a0dbad8398e97eaf1d6ecdd854f286d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aa6e6635cf76f5be0d84b8e7780156151" id="r_aa6e6635cf76f5be0d84b8e7780156151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6e6635cf76f5be0d84b8e7780156151">Publicador</a> ()</td></tr>
+<tr class="memdesc:aa6e6635cf76f5be0d84b8e7780156151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor de la clase <a class="el" href="class_publicador.html" title="Clase para publicar mediciones de CO2 y temperatura mediante BLE.">Publicador</a>.  <br /></td></tr>
+<tr class="separator:aa6e6635cf76f5be0d84b8e7780156151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f309e5dfd232d204c5d2952581fe16" id="r_a10f309e5dfd232d204c5d2952581fe16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f309e5dfd232d204c5d2952581fe16">encenderEmisora</a> ()</td></tr>
+<tr class="memdesc:a10f309e5dfd232d204c5d2952581fe16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enciende la emisora BLE.  <br /></td></tr>
+<tr class="separator:a10f309e5dfd232d204c5d2952581fe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed2009b9cec631024263659be882985" id="r_a2ed2009b9cec631024263659be882985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed2009b9cec631024263659be882985">publicarCO2</a> (int16_t valorCO2, uint8_t contador, long tiempoEspera)</td></tr>
+<tr class="memdesc:a2ed2009b9cec631024263659be882985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publica un valor de CO2 mediante un anuncio iBeacon.  <br /></td></tr>
+<tr class="separator:a2ed2009b9cec631024263659be882985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674ec7d8321b9792835cd935c6196dec" id="r_a674ec7d8321b9792835cd935c6196dec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a674ec7d8321b9792835cd935c6196dec">publicarTemperatura</a> (int16_t valorTemperatura, uint8_t contador, long tiempoEspera)</td></tr>
+<tr class="memdesc:a674ec7d8321b9792835cd935c6196dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publica un valor de temperatura mediante un anuncio iBeacon.  <br /></td></tr>
+<tr class="separator:a674ec7d8321b9792835cd935c6196dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:a86ef036c1b64668ac54dfe87b595aec5" id="r_a86ef036c1b64668ac54dfe87b595aec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_emisora_b_l_e.html">EmisoraBLE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86ef036c1b64668ac54dfe87b595aec5">laEmisora</a></td></tr>
+<tr class="memdesc:a86ef036c1b64668ac54dfe87b595aec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emisora BLE que se encarga de realizar los anuncios.  <br /></td></tr>
+<tr class="separator:a86ef036c1b64668ac54dfe87b595aec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a339fb2ba061a53478572ade00866408c" id="r_a339fb2ba061a53478572ade00866408c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a339fb2ba061a53478572ade00866408c">RSSI</a> = -53</td></tr>
+<tr class="memdesc:a339fb2ba061a53478572ade00866408c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nivel RSSI utilizado para los anuncios. Valor predeterminado.  <br /></td></tr>
+<tr class="separator:a339fb2ba061a53478572ade00866408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:afdd05d23d289af8d520938cbec79b93d" id="r_afdd05d23d289af8d520938cbec79b93d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdd05d23d289af8d520938cbec79b93d">beaconUUID</a> [16]</td></tr>
+<tr class="memdesc:afdd05d23d289af8d520938cbec79b93d"><td class="mdescLeft">&#160;</td><td class="mdescRight">UUID del beacon utilizado para identificar el origen de los anuncios.  <br /></td></tr>
+<tr class="separator:afdd05d23d289af8d520938cbec79b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Clase para publicar mediciones de CO2 y temperatura mediante BLE. </p>
+<p>Esta clase permite emitir anuncios BLE con los valores medidos de CO2 y temperatura. Se utiliza la clase <a class="el" href="class_emisora_b_l_e.html" title="Clase para manejar la emisora Bluetooth Low Energy (BLE).">EmisoraBLE</a> para manejar los anuncios de tipo iBeacon. </p>
+</div><h2 class="groupheader">Documentación de las enumeraciones miembro de la clase</h2>
+<a id="a0dbad8398e97eaf1d6ecdd854f286d38" name="a0dbad8398e97eaf1d6ecdd854f286d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dbad8398e97eaf1d6ecdd854f286d38">&#9670;&#160;</a></span>MedicionesID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a0dbad8398e97eaf1d6ecdd854f286d38">Publicador::MedicionesID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identificadores de tipo de medición para el campo major de iBeacon. </p>
+<p>Estos valores se utilizan para distinguir entre distintos tipos de mediciones en los anuncios. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638" name="a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638"></a>CO2&#160;</td><td class="fielddoc"><p>Identificador de la medición de CO2. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047" name="a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047"></a>TEMPERATURA&#160;</td><td class="fielddoc"><p>Identificador de la medición de temperatura. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4" name="a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4"></a>RUIDO&#160;</td><td class="fielddoc"><p>Identificador de la medición de ruido (no implementado). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de constructores y destructores</h2>
+<a id="aa6e6635cf76f5be0d84b8e7780156151" name="aa6e6635cf76f5be0d84b8e7780156151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e6635cf76f5be0d84b8e7780156151">&#9670;&#160;</a></span>Publicador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Publicador::Publicador </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor de la clase <a class="el" href="class_publicador.html" title="Clase para publicar mediciones de CO2 y temperatura mediante BLE.">Publicador</a>. </p>
+<p>Inicializa el publicador, pero no enciende la emisora BLE. La emisora debe encenderse explícitamente llamando a <code><a class="el" href="#a10f309e5dfd232d204c5d2952581fe16" title="Enciende la emisora BLE.">encenderEmisora()</a></code>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones miembro</h2>
+<a id="a10f309e5dfd232d204c5d2952581fe16" name="a10f309e5dfd232d204c5d2952581fe16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f309e5dfd232d204c5d2952581fe16">&#9670;&#160;</a></span>encenderEmisora()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Publicador::encenderEmisora </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enciende la emisora BLE. </p>
+<p>Este método debe ser llamado desde el setup del sistema para iniciar la emisora BLE. </p>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.svg" width="304" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2ed2009b9cec631024263659be882985" name="a2ed2009b9cec631024263659be882985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed2009b9cec631024263659be882985">&#9670;&#160;</a></span>publicarCO2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Publicador::publicarCO2 </td>
+          <td>(</td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>valorCO2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>contador</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>tiempoEspera</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Publica un valor de CO2 mediante un anuncio iBeacon. </p>
+<p>Emite un anuncio BLE con el valor de CO2 especificado, incluyendo un contador para diferenciar anuncios.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorCO2</td><td>Valor de la medición de CO2 (minor). </td></tr>
+    <tr><td class="paramname">contador</td><td>Contador para identificar la secuencia de anuncios (parte del major). </td></tr>
+    <tr><td class="paramname">tiempoEspera</td><td>Tiempo de espera antes de detener el anuncio. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_publicador_a2ed2009b9cec631024263659be882985_cgraph.svg" width="286" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_publicador_a2ed2009b9cec631024263659be882985_icgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a674ec7d8321b9792835cd935c6196dec" name="a674ec7d8321b9792835cd935c6196dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a674ec7d8321b9792835cd935c6196dec">&#9670;&#160;</a></span>publicarTemperatura()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Publicador::publicarTemperatura </td>
+          <td>(</td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>valorTemperatura</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>contador</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>tiempoEspera</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Publica un valor de temperatura mediante un anuncio iBeacon. </p>
+<p>Emite un anuncio BLE con el valor de temperatura especificado, incluyendo un contador para diferenciar anuncios.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">valorTemperatura</td><td>Valor de la medición de temperatura (minor). </td></tr>
+    <tr><td class="paramname">contador</td><td>Contador para identificar la secuencia de anuncios (parte del major). </td></tr>
+    <tr><td class="paramname">tiempoEspera</td><td>Tiempo de espera antes de detener el anuncio. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Gráfico de llamadas de esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.svg" width="331" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.svg" width="312" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de datos miembro</h2>
+<a id="afdd05d23d289af8d520938cbec79b93d" name="afdd05d23d289af8d520938cbec79b93d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd05d23d289af8d520938cbec79b93d">&#9670;&#160;</a></span>beaconUUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Publicador::beaconUUID[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= { </div>
+<div class="line">    <span class="charliteral">&#39;E&#39;</span>, <span class="charliteral">&#39;P&#39;</span>, <span class="charliteral">&#39;S&#39;</span>, <span class="charliteral">&#39;G&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;G&#39;</span>, <span class="charliteral">&#39;T&#39;</span>, <span class="charliteral">&#39;I&#39;</span>, </div>
+<div class="line">    <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;P&#39;</span>, <span class="charliteral">&#39;R&#39;</span>, <span class="charliteral">&#39;O&#39;</span>, <span class="charliteral">&#39;Y&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;3&#39;</span>, <span class="charliteral">&#39;A&#39;</span></div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>UUID del beacon utilizado para identificar el origen de los anuncios. </p>
+
+</div>
+</div>
+<a id="a86ef036c1b64668ac54dfe87b595aec5" name="a86ef036c1b64668ac54dfe87b595aec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ef036c1b64668ac54dfe87b595aec5">&#9670;&#160;</a></span>laEmisora</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_emisora_b_l_e.html">EmisoraBLE</a> Publicador::laEmisora</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;GTI-3A&quot;</span>,</div>
+<div class="line">    0x004c,</div>
+<div class="line">    4</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p>Emisora BLE que se encarga de realizar los anuncios. </p>
+<p>Nombre de la emisora BLE. ID del fabricante (Apple). Potencia de transmisión (txPower). </p>
+
+</div>
+</div>
+<a id="a339fb2ba061a53478572ade00866408c" name="a339fb2ba061a53478572ade00866408c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339fb2ba061a53478572ade00866408c">&#9670;&#160;</a></span>RSSI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int Publicador::RSSI = -53</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nivel RSSI utilizado para los anuncios. Valor predeterminado. </p>
+
+</div>
+</div>
+<hr/>La documentación de esta clase está generada del siguiente archivo:<ul>
+<li>HolaMundoIBeacon/<a class="el" href="_publicador_8h_source.html">Publicador.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

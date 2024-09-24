@@ -1,0 +1,7 @@
+<map id="EmisoraBLE::anyadirServicioConSusCaracteristicasYActivar" name="EmisoraBLE::anyadirServicioConSusCaracteristicasYActivar">
+<area shape="rect" id="Node000001" title="Añade un servicio y sus características y luego lo activa." alt="" coords="5,39,211,81"/>
+<area shape="rect" id="Node000002" href="$class_servicio_en_emisora.html#a387f170420610e1ba1fe71b471c1ca23" title="Activa el servicio y todas sus características." alt="" coords="284,5,424,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,43,268,36,269,41,212,49"/>
+<area shape="rect" id="Node000003" href="$class_emisora_b_l_e.html#a074a16066fc8ae37567a342e3df63bf5" title="Añade un servicio junto con sus características a la emisora BLE." alt="" coords="259,72,450,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,71,244,76,243,81,211,77"/>
+</map>

@@ -1,0 +1,184 @@
+\doxysection{Referencia de la clase Servicio\+En\+Emisora}
+\hypertarget{class_servicio_en_emisora}{}\label{class_servicio_en_emisora}\index{ServicioEnEmisora@{ServicioEnEmisora}}
+
+
+Clase que gestiona un servicio BLE con características.  
+
+
+
+
+{\ttfamily \#include $<$Servicio\+En\+Emisora.\+h$>$}
+
+
+
+Diagrama de colaboración de Servicio\+En\+Emisora\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_servicio_en_emisora__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}}
+\begin{DoxyCompactList}\small\item\em Clase que representa una característica dentro de un servicio BLE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Tipos públicos}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{Callback\+Caracteristica\+Escrita}} = void (uint16\+\_\+t conn\+\_\+handle, BLECharacteristic \texorpdfstring{$\ast$}{*} chr, uint8\+\_\+t \texorpdfstring{$\ast$}{*} data, uint16\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em Definición del tipo de callback que se ejecuta al escribir en una característica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_servicio_en_emisora_a17d9dcafb552b3e76bc7ff2e6fb238f2}{Servicio\+En\+Emisora}} (const char \texorpdfstring{$\ast$}{*}nombre\+Servicio\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor que inicializa el servicio con su UUID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_a59267e82dca13b83913e578efacce794}{escribe\+UUID}} ()
+\begin{DoxyCompactList}\small\item\em Escribe el UUID del servicio en el puerto serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf}{anyadir\+Caracteristica}} (\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}} \&car)
+\begin{DoxyCompactList}\small\item\em Añade una característica al servicio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23}{activar\+Servicio}} ()
+\begin{DoxyCompactList}\small\item\em Activa el servicio y todas sus características. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_servicio_en_emisora_a0d04b53b2379140293924ef1ecbfeebe}{operator BLEService \&}} ()
+\begin{DoxyCompactList}\small\item\em Operador de conversión a BLEService. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd}{uuid\+Servicio}} \mbox{[}16\mbox{]}
+\item 
+BLEService \mbox{\hyperlink{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}{el\+Servicio}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d}{las\+Caracteristicas}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que gestiona un servicio BLE con características. 
+
+Esta clase representa un servicio en una emisora BLE con soporte para múltiples características. 
+
+\doxysubsection{Documentación de los «\+Typedef» miembros de la clase}
+\Hypertarget{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}\index{ServicioEnEmisora@{ServicioEnEmisora}!CallbackCaracteristicaEscrita@{CallbackCaracteristicaEscrita}}
+\index{CallbackCaracteristicaEscrita@{CallbackCaracteristicaEscrita}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{CallbackCaracteristicaEscrita}{CallbackCaracteristicaEscrita}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8} 
+using \mbox{\hyperlink{class_servicio_en_emisora_aa21a5f11259198a76f03d037776e07f8}{Servicio\+En\+Emisora\+::\+Callback\+Caracteristica\+Escrita}} = void (uint16\+\_\+t conn\+\_\+handle, BLECharacteristic \texorpdfstring{$\ast$}{*} chr, uint8\+\_\+t \texorpdfstring{$\ast$}{*} data, uint16\+\_\+t len)}
+
+
+
+Definición del tipo de callback que se ejecuta al escribir en una característica. 
+
+
+
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_servicio_en_emisora_a17d9dcafb552b3e76bc7ff2e6fb238f2}\index{ServicioEnEmisora@{ServicioEnEmisora}!ServicioEnEmisora@{ServicioEnEmisora}}
+\index{ServicioEnEmisora@{ServicioEnEmisora}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{ServicioEnEmisora()}{ServicioEnEmisora()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a17d9dcafb552b3e76bc7ff2e6fb238f2} 
+Servicio\+En\+Emisora\+::\+Servicio\+En\+Emisora (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nombre\+Servicio\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor que inicializa el servicio con su UUID. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nombre\+Servicio\+\_\+} & Nombre del servicio que será convertido a UUID. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23}\index{ServicioEnEmisora@{ServicioEnEmisora}!activarServicio@{activarServicio}}
+\index{activarServicio@{activarServicio}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{activarServicio()}{activarServicio()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23} 
+void Servicio\+En\+Emisora\+::activar\+Servicio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Activa el servicio y todas sus características. 
+
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf}\index{ServicioEnEmisora@{ServicioEnEmisora}!anyadirCaracteristica@{anyadirCaracteristica}}
+\index{anyadirCaracteristica@{anyadirCaracteristica}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{anyadirCaracteristica()}{anyadirCaracteristica()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf} 
+void Servicio\+En\+Emisora\+::anyadir\+Caracteristica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}} \&}]{car}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade una característica al servicio. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em car} & Referencia a la característica que se añadirá. \\
+\hline
+\end{DoxyParams}
+Gráfico de llamadas a esta función\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_servicio_en_emisora_a59267e82dca13b83913e578efacce794}\index{ServicioEnEmisora@{ServicioEnEmisora}!escribeUUID@{escribeUUID}}
+\index{escribeUUID@{escribeUUID}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{escribeUUID()}{escribeUUID()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a59267e82dca13b83913e578efacce794} 
+void Servicio\+En\+Emisora\+::escribe\+UUID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Escribe el UUID del servicio en el puerto serie. 
+
+\Hypertarget{class_servicio_en_emisora_a0d04b53b2379140293924ef1ecbfeebe}\index{ServicioEnEmisora@{ServicioEnEmisora}!operator BLEService \&@{operator BLEService \&}}
+\index{operator BLEService \&@{operator BLEService \&}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{operator BLEService \&()}{operator BLEService \&()}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a0d04b53b2379140293924ef1ecbfeebe} 
+Servicio\+En\+Emisora\+::operator BLEService \& (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operador de conversión a BLEService. 
+
+Permite usar un objeto de esta clase donde se necesita un BLEService. 
+
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62}\index{ServicioEnEmisora@{ServicioEnEmisora}!elServicio@{elServicio}}
+\index{elServicio@{elServicio}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{elServicio}{elServicio}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a98d4770be02c0fff4cc9c67660fd3a62} 
+BLEService Servicio\+En\+Emisora\+::el\+Servicio\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d}\index{ServicioEnEmisora@{ServicioEnEmisora}!lasCaracteristicas@{lasCaracteristicas}}
+\index{lasCaracteristicas@{lasCaracteristicas}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{lasCaracteristicas}{lasCaracteristicas}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_ae585b790ccdf4367d3a9aaa452295b0d} 
+std\+::vector$<$\mbox{\hyperlink{class_servicio_en_emisora_1_1_caracteristica}{Caracteristica}} \texorpdfstring{$\ast$}{*}$>$ Servicio\+En\+Emisora\+::las\+Caracteristicas\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd}\index{ServicioEnEmisora@{ServicioEnEmisora}!uuidServicio@{uuidServicio}}
+\index{uuidServicio@{uuidServicio}!ServicioEnEmisora@{ServicioEnEmisora}}
+\doxysubsubsection{\texorpdfstring{uuidServicio}{uuidServicio}}
+{\footnotesize\ttfamily \label{class_servicio_en_emisora_a6c8dad351b6453c0a08a1c5e4a78c7dd} 
+uint8\+\_\+t Servicio\+En\+Emisora\+::uuid\+Servicio\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'0'},\ \textcolor{charliteral}{'1'},\ \textcolor{charliteral}{'2'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'4'},\ \textcolor{charliteral}{'5'},\ \textcolor{charliteral}{'6'},\ \textcolor{charliteral}{'7'},\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'8'},\ \textcolor{charliteral}{'9'},\ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'B'},\ \textcolor{charliteral}{'C'},\ \textcolor{charliteral}{'D'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'F'}}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+
+
+La documentación de esta clase está generada del siguiente archivo\+:\begin{DoxyCompactItemize}
+\item 
+Hola\+Mundo\+IBeacon/\mbox{\hyperlink{_servicio_en_emisora_8h}{Servicio\+En\+Emisora.\+h}}\end{DoxyCompactItemize}

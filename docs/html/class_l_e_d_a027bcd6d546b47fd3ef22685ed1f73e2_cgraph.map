@@ -1,0 +1,5 @@
+<map id="LED::LED" name="LED::LED">
+<area shape="rect" id="Node000001" title="Constructor de la clase LED." alt="" coords="5,5,87,32"/>
+<area shape="rect" id="Node000002" href="$class_l_e_d.html#a7f961959fa7405fec54de6121415db80" title="Apaga el LED." alt="" coords="135,5,229,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,16,119,16,119,21,87,21"/>
+</map>

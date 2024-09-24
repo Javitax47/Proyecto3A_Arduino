@@ -1,0 +1,15 @@
+<map id="setup" name="setup">
+<area shape="rect" id="Node000001" title="Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación." alt="" coords="5,132,59,159"/>
+<area shape="rect" id="Node000002" href="$class_publicador.html#a10f309e5dfd232d204c5d2952581fe16" title="Enciende la emisora BLE." alt="" coords="112,5,303,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,130,62,86,82,62,105,42,114,37,116,41,108,46,86,66,67,89,42,133"/>
+<area shape="rect" id="Node000003" href="$class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4" title="Escribe un mensaje a través del puerto serie." alt="" coords="138,56,277,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="48,129,74,110,106,92,123,85,125,90,108,97,77,115,51,134"/>
+<area shape="rect" id="Node000004" href="$_l_e_d_8h.html#a2fb17dd710d89b92e59a349551733fa0" title="Función auxiliar para pausar la ejecución por un tiempo determinado." alt="" coords="175,107,240,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="59,139,159,124,160,129,60,144"/>
+<area shape="rect" id="Node000005" href="$class_puerto_serie.html#acdb696d30440a38dac61f5f73625935a" title="Espera un pequeño tiempo antes de que el puerto serie esté disponible." alt="" coords="107,157,308,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="60,146,96,152,95,157,59,152"/>
+<area shape="rect" id="Node000006" href="$_hola_mundo_i_beacon_8ino.html#a555a607e0a0ed0a3f553843b6e96a5aa" title="Inicializa la placa y sus módulos. Actualmente no hace nada." alt="" coords="146,208,268,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="51,157,77,176,108,194,133,203,131,208,106,198,74,181,48,161"/>
+<area shape="rect" id="Node000007" href="$class_medidor.html#a1d26e993a9198fac83d6edad4cc30bcf" title="Método para iniciar el medidor." alt="" coords="130,259,285,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="42,158,67,201,86,225,108,245,117,250,114,254,105,249,82,228,62,204,37,161"/>
+</map>

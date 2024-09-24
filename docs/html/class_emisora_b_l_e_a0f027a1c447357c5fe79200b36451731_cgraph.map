@@ -1,0 +1,5 @@
+<map id="EmisoraBLE::anyadirServicio" name="EmisoraBLE::anyadirServicio">
+<area shape="rect" id="Node000001" title="Añade un servicio a la emisora BLE." alt="" coords="5,5,197,32"/>
+<area shape="rect" id="Node000002" href="$class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4" title="Escribe un mensaje a través del puerto serie." alt="" coords="245,5,384,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,16,229,16,229,21,197,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="LED::brillar" name="LED::brillar">
+<area shape="rect" id="Node000001" title="Hace que el LED brille por un tiempo determinado." alt="" coords="220,5,306,32"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html#a27ffed2fef5d69b87e240022e59c59ff" title="Realiza una secuencia de encendido y apagado del LED. Utiliza tiempos de espera definidos entre cambi..." alt="" coords="99,5,172,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,21,172,21,172,16,204,16"/>
+<area shape="rect" id="Node000003" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,5,51,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,21,51,21,51,16,83,16"/>
+</map>

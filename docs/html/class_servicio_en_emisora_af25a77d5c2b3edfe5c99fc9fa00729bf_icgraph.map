@@ -1,0 +1,5 @@
+<map id="ServicioEnEmisora::anyadirCaracteristica" name="ServicioEnEmisora::anyadirCaracteristica">
+<area shape="rect" id="Node000001" title="Añade una característica al servicio." alt="" coords="245,5,389,48"/>
+<area shape="rect" id="Node000002" href="$class_emisora_b_l_e.html#aa589659b63ae877910eab1b39a93a339" title="Añade un servicio con múltiples características a la emisora BLE." alt="" coords="5,5,197,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,29,197,29,197,24,229,24"/>
+</map>

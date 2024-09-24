@@ -1,0 +1,5 @@
+<map id="ServicioEnEmisora::Caracteristica::activar" name="ServicioEnEmisora::Caracteristica::activar">
+<area shape="rect" id="Node000001" title="Activa la característica para que esté lista para operar." alt="" coords="5,5,155,48"/>
+<area shape="rect" id="Node000002" href="$class_puerto_serie.html#ab1b6cecc098aa30e5704dc294deec1f4" title="Escribe un mensaje a través del puerto serie." alt="" coords="203,13,342,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,24,188,24,188,29,155,29"/>
+</map>

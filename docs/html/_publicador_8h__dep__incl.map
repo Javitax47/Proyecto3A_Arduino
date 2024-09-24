@@ -1,0 +1,5 @@
+<map id="HolaMundoIBeacon/Publicador.h" name="HolaMundoIBeacon/Publicador.h">
+<area shape="rect" id="Node000001" title="Definición de la clase Publicador para emitir anuncios BLE de CO2 y temperatura." alt="" coords="5,5,217,32"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html" title="Implementación principal del programa que utiliza BLE para publicar datos de sensores." alt="" coords="8,80,214,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,48,114,80,108,80,108,48"/>
+</map>

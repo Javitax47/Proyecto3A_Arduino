@@ -1,0 +1,5 @@
+<map id="Publicador::publicarTemperatura" name="Publicador::publicarTemperatura">
+<area shape="rect" id="Node000001" title="Publica un valor de temperatura mediante un anuncio iBeacon." alt="" coords="99,5,306,32"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,5,51,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,21,51,21,51,16,83,16"/>
+</map>
