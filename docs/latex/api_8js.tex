@@ -1,0 +1,52 @@
+\doxysection{Referencia del archivo src/app/js/api.js}
+\hypertarget{api_8js}{}\label{api_8js}\index{src/app/js/api.js@{src/app/js/api.js}}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+async function \mbox{\hyperlink{api_8js_aed71bcaa7583f8de555cdde8eb40223f}{fetch\+Latest\+Sensor\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Función asíncrona para obtener los datos más recientes de CO2 y temperatura del servidor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+window \mbox{\hyperlink{api_8js_a43397fd3516cd230995b3edbbadff48b}{onload}}
+\begin{DoxyCompactList}\small\item\em Función que se ejecuta al cargar la página. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{api_8js_aed71bcaa7583f8de555cdde8eb40223f}\index{api.js@{api.js}!fetchLatestSensorData@{fetchLatestSensorData}}
+\index{fetchLatestSensorData@{fetchLatestSensorData}!api.js@{api.js}}
+\doxysubsubsection{\texorpdfstring{fetchLatestSensorData()}{fetchLatestSensorData()}}
+{\footnotesize\ttfamily \label{api_8js_aed71bcaa7583f8de555cdde8eb40223f} 
+async function fetch\+Latest\+Sensor\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función asíncrona para obtener los datos más recientes de CO2 y temperatura del servidor. 
+
+Esta función realiza una solicitud a la API del servidor para obtener los últimos datos de los sensores de CO2 y temperatura. Los datos se utilizan para actualizar la interfaz de usuario con los valores actuales.
+
+@async @function fetch\+Latest\+Sensor\+Data \begin{DoxyReturn}{Devuelve}
+\{Promise$<$void$>$\} No devuelve ningún valor. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentación de variables}
+\Hypertarget{api_8js_a43397fd3516cd230995b3edbbadff48b}\index{api.js@{api.js}!onload@{onload}}
+\index{onload@{onload}!api.js@{api.js}}
+\doxysubsubsection{\texorpdfstring{onload}{onload}}
+{\footnotesize\ttfamily \label{api_8js_a43397fd3516cd230995b3edbbadff48b} 
+window onload}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{api_8js_aed71bcaa7583f8de555cdde8eb40223f}{fetchLatestSensorData}}();\ }
+\DoxyCodeLine{\ \ \ \ setInterval(\mbox{\hyperlink{api_8js_aed71bcaa7583f8de555cdde8eb40223f}{fetchLatestSensorData}},\ 1000);\ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Función que se ejecuta al cargar la página. 
+
+Llama a la función {\ttfamily fetch\+Latest\+Sensor\+Data} para obtener los datos iniciales de los sensores y configura un intervalo para actualizar los datos cada 5 segundos. 

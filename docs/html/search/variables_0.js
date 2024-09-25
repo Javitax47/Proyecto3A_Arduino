@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['beaconuuid_0',['beaconUUID',['../class_publicador.html#afdd05d23d289af8d520938cbec79b93d',1,'Publicador']]]
+  ['onload_0',['onload',['../api_8js.html#a43397fd3516cd230995b3edbbadff48b',1,'api.js']]]
 ];
