@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Clase para publicar mediciones de CO2 y temperatura mediante BLE.">
+<g id="a_Node000001"><a xlink:title="Clase para publicar mediciones de ozono y temperatura mediante BLE.">
 <polygon fill="#999999" stroke="none" points="151.5,-116 40.5,-116 40.5,0 151.5,0 151.5,-116"/>
 <text text-anchor="start" x="73.12" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">Publicador</text>
 <text text-anchor="start" x="44.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -23,7 +23,7 @@
 <text text-anchor="start" x="44.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="54.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">encenderEmisora()</text>
 <text text-anchor="start" x="44.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="54.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">publicarCO2()</text>
+<text text-anchor="start" x="54.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">publicarozono()</text>
 <text text-anchor="start" x="44.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="54.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">publicarTemperatura()</text>
 <polygon fill="#666666" stroke="#666666" points="40.5,-98 40.5,-98 151.5,-98 151.5,-98 40.5,-98"/>

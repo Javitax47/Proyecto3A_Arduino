@@ -1,5 +1,5 @@
 <map id="EmisoraBLE::emitirAnuncioIBeaconLibre" name="EmisoraBLE::emitirAnuncioIBeaconLibre">
 <area shape="rect" id="Node000001" title="Emite un anuncio iBeacon con una carga libre." alt="" coords="99,5,280,48"/>
-<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,13,51,40"/>
+<area shape="rect" id="Node000002" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos v..." alt="" coords="5,13,51,40"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,29,51,29,51,24,83,24"/>
 </map>

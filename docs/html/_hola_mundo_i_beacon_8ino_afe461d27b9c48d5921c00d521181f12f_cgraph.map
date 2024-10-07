@@ -1,5 +1,5 @@
 <map id="loop" name="loop">
-<area shape="rect" id="Node000001" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,224,51,251"/>
+<area shape="rect" id="Node000001" title="Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos v..." alt="" coords="5,224,51,251"/>
 <area shape="rect" id="Node000002" href="$class_emisora_b_l_e.html#aeede390b7a6502baecb48e9db77120b4" title="Detiene el anuncio BLE actual." alt="" coords="99,5,291,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="28,223,33,188,44,142,65,92,79,69,97,49,112,37,115,41,100,53,84,72,70,95,49,143,38,189,33,224"/>
 <area shape="rect" id="Node000003" href="$class_emisora_b_l_e.html#a8439d1e85ec8d630fcd33b01d8987d41" title="Emite un anuncio iBeacon con una carga libre." alt="" coords="104,107,286,149"/>
@@ -10,12 +10,12 @@
 <area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="35,250,42,276,55,307,74,338,100,362,140,378,196,389,263,395,337,398,484,396,600,390,601,396,485,402,337,404,263,401,195,394,138,383,97,366,70,341,50,309,37,277,30,252"/>
 <area shape="rect" id="Node000006" href="$_hola_mundo_i_beacon_8ino.html#a27ffed2fef5d69b87e240022e59c59ff" title="Realiza una secuencia de encendido y apagado del LED. Utiliza tiempos de espera definidos entre cambi..." alt="" coords="158,427,232,453"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="34,251,40,282,51,324,71,368,101,406,121,420,144,429,142,434,118,425,97,410,67,371,46,326,34,283,28,251"/>
-<area shape="rect" id="Node000010" href="$class_medidor.html#a203ae9be3a2bf0965bd9316fcd203e19" title="Medir el nivel de CO2." alt="" coords="128,275,262,301"/>
+<area shape="rect" id="Node000010" href="$class_medidor.html#a64af072efeb9b6ff3fa4f261d9e23494" title="Medir el nivel de ozono." alt="" coords="124,275,266,301"/>
 <area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="52,242,135,267,133,272,50,247"/>
 <area shape="rect" id="Node000011" href="$class_medidor.html#a742eaebe02e1d1d67df55f7a73878421" title="Medir la temperatura." alt="" coords="105,325,284,352"/>
 <area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="40,249,65,281,100,311,111,317,108,321,97,316,61,284,36,252"/>
-<area shape="rect" id="Node000012" href="$class_publicador.html#a2ed2009b9cec631024263659be882985" title="Publica un valor de CO2 mediante un anuncio iBeacon." alt="" coords="362,199,524,225"/>
-<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="50,227,98,216,227,205,346,205,346,210,227,211,99,221,52,233"/>
+<area shape="rect" id="Node000012" href="$class_publicador.html#a3bb0a20cbfb541728b68fdaacc1ee7e9" title="Publica un valor de ozono mediante un anuncio iBeacon." alt="" coords="358,199,528,225"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="50,227,98,216,225,206,342,205,342,210,225,211,99,221,52,233"/>
 <area shape="rect" id="Node000013" href="$class_publicador.html#a674ec7d8321b9792835cd935c6196dec" title="Publica un valor de temperatura mediante un anuncio iBeacon." alt="" coords="339,275,546,301"/>
 <area shape="poly" id="edge16_Node000001_Node000013" title=" " alt="" coords="51,236,155,245,291,260,350,269,350,274,291,265,154,250,51,242"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="286,115,357,106,358,111,286,120"/>

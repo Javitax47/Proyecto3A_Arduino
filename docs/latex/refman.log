@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.24)  25 SEP 2024 13:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.24)  7 OCT 2024 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,14 +746,14 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count354
 \l__pdf_internal_box=\box124
 )
-No file refman.aux.
+(./refman.aux)
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
 LaTeX Font Info:    ... okay on input line 210.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
 LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
+LaTeX Font Info:    Checking deng defaults for OT1/cmr/m/n on input line 210.
 LaTeX Font Info:    ... okay on input line 210.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
 LaTeX Font Info:    ... okay on input line 210.
@@ -866,7 +866,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 [1
 
 
-{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/
+{c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlivpdmap/pdftex.map}{c:/texlive/2024/
 texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 [2
@@ -1129,6 +1129,9 @@ LaTeX Warning: Reference `_puerto_serie_8h' on page 7 undefined on input line 8
 LaTeX Warning: Reference `_servicio_en_emisora_8h' on page 7 undefined on input
  line 9.
 
+
+LaTeX Warning: Reference `_ozono_8ino' on page 7 undefined on input line 10.
+
 )
 
 [7]
@@ -1162,7 +1165,7 @@ LaTeX Info: Redefining \% on input line 246.
 Cap\'{\i }tulo 6.
 (./class_servicio_en_emisora_1_1_caracteristica.tex <./class_servicio_en_emisor
 a_1_1_caracteristica__coll__graph.pdf>
-<class_servicio_en_emisora_1_1_caracteristica__coll__graph.pdf, id=174, 228.855
+<class_servicio_en_emisora_1_1_caracteristica__coll__graph.pdf, id=176, 228.855
 pt x 329.23pt>
 File: class_servicio_en_emisora_1_1_caracteristica__coll__graph.pdf Graphic fil
 e (type pdf)
@@ -1196,7 +1199,7 @@ Package longtable Warning: Column widths have changed
  <./class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160
 c0c_cgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed160c0c
-_cgraph.pdf, id=235, 634.37pt x 224.84pt>
+_cgraph.pdf, id=237, 634.37pt x 224.84pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed1
 60c0c_cgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a646c15ae6b57fc25d144d2e2ed16
@@ -1207,7 +1210,7 @@ Package pdftex.def Info: class_servicio_en_emisora_1_1_caracteristica_a646c15ae
  <./class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0
 e3b_cgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a0e3b
-_cgraph.pdf, id=243, 334.24875pt x 112.42pt>
+_cgraph.pdf, id=245, 334.24875pt x 112.42pt>
 File: class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7
 a0e3b_cgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_ad93e0c5998aeb15c920cd5d6db7a
@@ -1222,7 +1225,7 @@ LaTeX Info: Redefining \% on input line 130.
 [13] <./class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65e
 a84482e_icgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84482e
-_icgraph.pdf, id=262, 621.32124pt x 124.465pt>
+_icgraph.pdf, id=264, 621.32124pt x 124.465pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea8
 4482e_icgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a0b9429aace3771c7809a9b65ea84
@@ -1233,7 +1236,7 @@ ce3771c7809a9b65ea84482e_icgraph.pdf  used on input line 135.
  <./class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d0
 59e_icgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d059e
-_icgraph.pdf, id=271, 634.37pt x 124.465pt>
+_icgraph.pdf, id=273, 634.37pt x 124.465pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50
 d059e_icgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a1d99a13ca16b3306b11e6d7ad50d
@@ -1244,7 +1247,7 @@ a16b3306b11e6d7ad50d059e_icgraph.pdf  used on input line 148.
  <./class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c11
 14c_cgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c
-_cgraph.pdf, id=279, 454.69875pt x 224.84pt>
+_cgraph.pdf, id=281, 454.69875pt x 224.84pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c
 1114c_cgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1
@@ -1255,7 +1258,7 @@ Package pdftex.def Info: class_servicio_en_emisora_1_1_caracteristica_a7fe53370
  <./class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c11
 14c_icgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1114c
-_icgraph.pdf, id=287, 429.605pt x 124.465pt>
+_icgraph.pdf, id=289, 429.605pt x 124.465pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c
 1114c_icgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a7fe53370615887c50304300457c1
@@ -1270,7 +1273,7 @@ LaTeX Info: Redefining \% on input line 175.
 [14] <./class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e6845
 8821f54_icgraph.pdf>
 <class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e68458821f54
-_icgraph.pdf, id=306, 620.3175pt x 124.465pt>
+_icgraph.pdf, id=308, 620.3175pt x 124.465pt>
 File: class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e684588
 21f54_icgraph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora_1_1_caracteristica_a224fe13056debc329ea6e6845882
@@ -1303,7 +1306,7 @@ Underfull \hbox (badness 10000) detected at line 231
  []
 
 ) (./class_emisora_b_l_e.tex <./class_emisora_b_l_e__coll__graph.pdf>
-<class_emisora_b_l_e__coll__graph.pdf, id=329, 273.02pt x 409.53pt>
+<class_emisora_b_l_e__coll__graph.pdf, id=331, 273.02pt x 409.53pt>
 File: class_emisora_b_l_e__coll__graph.pdf Graphic file (type pdf)
 <use class_emisora_b_l_e__coll__graph.pdf>
 Package pdftex.def Info: class_emisora_b_l_e__coll__graph.pdf  used on input li
@@ -1349,7 +1352,7 @@ Underfull \hbox (badness 10000) detected at line 148
  []
 
  <./class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph.pdf>
-<class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph.pdf, id=417, 365.
+<class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph.pdf, id=419, 365.
 365pt x 100.375pt>
 File: class_emisora_b_l_e_a0f027a1c447357c5fe79200b36451731_cgraph.pdf Graphic 
 file (type pdf)
@@ -1372,7 +1375,7 @@ Underfull \hbox (badness 10000) detected at line 173
  []
 
  <./class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph.pdf>
-<class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph.pdf, id=438, 415
+<class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph.pdf, id=440, 415
 .5525pt x 162.6075pt>
 File: class_emisora_b_l_e_a074a16066fc8ae37567a342e3df63bf5_icgraph.pdf Graphic
  file (type pdf)
@@ -1399,7 +1402,7 @@ Underfull \hbox (badness 10000) detected at line 208
  []
 
  <./class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph.pdf>
-<class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph.pdf, id=459, 404.
+<class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph.pdf, id=461, 404.
 51125pt x 162.6075pt>
 File: class_emisora_b_l_e_aa589659b63ae877910eab1b39a93a339_cgraph.pdf Graphic 
 file (type pdf)
@@ -1422,7 +1425,7 @@ Underfull \hbox (badness 10000) detected at line 239
  []
 
  <./class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph.pdf>
-<class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph.pdf, id=468, 415.
+<class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph.pdf, id=470, 415.
 5525pt x 162.6075pt>
 File: class_emisora_b_l_e_a0a0673823174ce9ffb96fb1c0dfb11ab_cgraph.pdf Graphic 
 file (type pdf)
@@ -1435,66 +1438,66 @@ cgraph.pdf  used on input line 246.
 LaTeX Info: Redefining \. on input line 249.
 LaTeX Info: Redefining \% on input line 249.
 [21] <./class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.pdf>
-<class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.pdf, id=486, 295
+<class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.pdf, id=488, 295
 .1025pt x 100.375pt>
 File: class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.pdf Graphic
  file (type pdf)
 <use class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_icgraph.pdf>
 Package pdftex.def Info: class_emisora_b_l_e_aeede390b7a6502baecb48e9db77120b4_
-icgraph.pdf  used on input line 263.
+icgraph.pdf  used on input line 264.
 (pdftex.def)             Requested size: 294.0pt x 100.00255pt.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.14 on input line 286.
+(longtable)                in table 6.14 on input line 287.
 
 
 
-LaTeX Info: Redefining \. on input line 292.
-LaTeX Info: Redefining \% on input line 292.
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
 [22]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.15 on input line 303.
+(longtable)                in table 6.15 on input line 304.
 
  <./class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.pdf>
-<class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.pdf, id=504, 358.
+<class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.pdf, id=506, 358.
 33875pt x 112.42pt>
 File: class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.pdf Graphic 
 file (type pdf)
 <use class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_cgraph.pdf>
 Package pdftex.def Info: class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_
-cgraph.pdf  used on input line 308.
+cgraph.pdf  used on input line 309.
 (pdftex.def)             Requested size: 350.0pt x 109.81061pt.
  <./class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.pdf>
-<class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.pdf, id=512, 287
+<class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.pdf, id=514, 287
 .0725pt x 112.42pt>
 File: class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.pdf Graphic
  file (type pdf)
 <use class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_icgraph.pdf>
 Package pdftex.def Info: class_emisora_b_l_e_a8439d1e85ec8d630fcd33b01d8987d41_
-icgraph.pdf  used on input line 315.
+icgraph.pdf  used on input line 317.
 (pdftex.def)             Requested size: 286.0pt x 112.00288pt.
  <./class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.pdf>
-<class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.pdf, id=521, 422
+<class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.pdf, id=523, 422
 .57875pt x 100.375pt>
 File: class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.pdf Graphic
  file (type pdf)
 <use class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_icgraph.pdf>
 Package pdftex.def Info: class_emisora_b_l_e_a31f9c768b91b9e353f693f509af3ea73_
-icgraph.pdf  used on input line 333.
+icgraph.pdf  used on input line 334.
 (pdftex.def)             Requested size: 350.0pt x 83.13814pt.
 
 
-LaTeX Info: Redefining \. on input line 341.
-LaTeX Info: Redefining \% on input line 341.
+LaTeX Info: Redefining \. on input line 342.
+LaTeX Info: Redefining \% on input line 342.
 [23]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.16 on input line 352.
+(longtable)                in table 6.16 on input line 353.
 
  <./class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph.pdf>
-<class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph.pdf, id=543, 422.
+<class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph.pdf, id=545, 422.
 57875pt x 200.75pt>
 File: class_emisora_b_l_e_ada243f2f1185a7d66ea33de6bdb06590_cgraph.pdf Graphic 
 file (type pdf)
@@ -1526,7 +1529,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 6.18 on input line 406.
 
  <./class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph.pdf>
-<class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph.pdf, id=563, 416
+<class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph.pdf, id=565, 416
 .55624pt x 112.42pt>
 File: class_emisora_b_l_e_ae15e223776af83a8cac07564c168d0b9_icgraph.pdf Graphic
  file (type pdf)
@@ -1540,7 +1543,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 6.19 on input line 428.
 
  <./class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph.pdf>
-<class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph.pdf, id=572, 416
+<class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph.pdf, id=574, 416
 .55624pt x 112.42pt>
 File: class_emisora_b_l_e_a2bb6b319046a10641619c1388f7fe351_icgraph.pdf Graphic
  file (type pdf)
@@ -1553,7 +1556,7 @@ icgraph.pdf  used on input line 433.
 LaTeX Info: Redefining \. on input line 459.
 LaTeX Info: Redefining \% on input line 459.
 [25]) (./class_l_e_d.tex <./class_l_e_d__coll__graph.pdf>
-<class_l_e_d__coll__graph.pdf, id=595, 149.55875pt x 212.795pt>
+<class_l_e_d__coll__graph.pdf, id=597, 149.55875pt x 212.795pt>
 File: class_l_e_d__coll__graph.pdf Graphic file (type pdf)
 <use class_l_e_d__coll__graph.pdf>
 Package pdftex.def Info: class_l_e_d__coll__graph.pdf  used on input line 18.
@@ -1568,7 +1571,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 6.20 on input line 65.
 
  <./class_l_e_d_a027bcd6d546b47fd3ef22685ed1f73e2_cgraph.pdf>
-<class_l_e_d_a027bcd6d546b47fd3ef22685ed1f73e2_cgraph.pdf, id=638, 248.93pt x 1
+<class_l_e_d_a027bcd6d546b47fd3ef22685ed1f73e2_cgraph.pdf, id=640, 248.93pt x 1
 00.375pt>
 File: class_l_e_d_a027bcd6d546b47fd3ef22685ed1f73e2_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1577,7 +1580,7 @@ Package pdftex.def Info: class_l_e_d_a027bcd6d546b47fd3ef22685ed1f73e2_cgraph.p
 df  used on input line 70.
 (pdftex.def)             Requested size: 248.0pt x 100.00255pt.
  <./class_l_e_d_a9b1361dbee5de756d142b1a2c3e685da_cgraph.pdf>
-<class_l_e_d_a9b1361dbee5de756d142b1a2c3e685da_cgraph.pdf, id=648, 272.01625pt 
+<class_l_e_d_a9b1361dbee5de756d142b1a2c3e685da_cgraph.pdf, id=650, 272.01625pt 
 x 138.5175pt>
 File: class_l_e_d_a9b1361dbee5de756d142b1a2c3e685da_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1590,200 +1593,200 @@ df  used on input line 90.
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
 [27] <./class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.pdf>
-<class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.pdf, id=673, 423.5825pt 
+<class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.pdf, id=675, 423.5825pt 
 x 176.66pt>
 File: class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.pdf Graphic file (t
 ype pdf)
 <use class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.pdf>
 Package pdftex.def Info: class_l_e_d_a7f961959fa7405fec54de6121415db80_icgraph.
-pdf  used on input line 107.
+pdf  used on input line 108.
 (pdftex.def)             Requested size: 350.0pt x 145.97542pt.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.21 on input line 126.
+(longtable)                in table 6.21 on input line 127.
 
  <./class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.pdf>
-<class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.pdf, id=686, 262.9825pt x
+<class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.pdf, id=688, 262.9825pt x
  176.66pt>
 File: class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.pdf Graphic file (ty
 pe pdf)
 <use class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.pdf>
 Package pdftex.def Info: class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_cgraph.p
-df  used on input line 131.
+df  used on input line 132.
 (pdftex.def)             Requested size: 262.0pt x 176.00722pt.
 
 
-LaTeX Info: Redefining \. on input line 134.
-LaTeX Info: Redefining \% on input line 134.
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
 [28] <./class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.pdf>
-<class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.pdf, id=704, 307.1475pt 
+<class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.pdf, id=706, 307.1475pt 
 x 100.375pt>
 File: class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.pdf Graphic file (t
 ype pdf)
 <use class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.pdf>
 Package pdftex.def Info: class_l_e_d_a7431e9efb39a2890f75b4e235b8f617e_icgraph.
-pdf  used on input line 138.
+pdf  used on input line 140.
 (pdftex.def)             Requested size: 306.0pt x 100.00562pt.
  <./class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.pdf>
-<class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.pdf, id=713, 433.62pt x 
+<class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.pdf, id=715, 433.62pt x 
 138.5175pt>
 File: class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.pdf Graphic file (t
 ype pdf)
 <use class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.pdf>
 Package pdftex.def Info: class_l_e_d_a58660bafc0f4d6016392feabac555812_icgraph.
-pdf  used on input line 155.
+pdf  used on input line 158.
 (pdftex.def)             Requested size: 350.0pt x 111.81175pt.
 
 
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
 [29]) (./class_medidor.tex <./class_medidor__coll__graph.pdf>
-<class_medidor__coll__graph.pdf, id=734, 182.6825pt x 180.675pt>
+<class_medidor__coll__graph.pdf, id=736, 182.6825pt x 180.675pt>
 File: class_medidor__coll__graph.pdf Graphic file (type pdf)
 <use class_medidor__coll__graph.pdf>
-Package pdftex.def Info: class_medidor__coll__graph.pdf  used on input line 18.
+Package pdftex.def Info: class_medidor__coll__graph.pdf  used on input line 19.
 
 (pdftex.def)             Requested size: 182.0pt x 180.00737pt.
 
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 [30] <./class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph.pdf>
-<class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph.pdf, id=771, 274.02374
+<class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph.pdf, id=773, 274.02374
 pt x 100.375pt>
 File: class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph.pdf Graphic file 
 (type pdf)
 <use class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgraph.pdf>
 Package pdftex.def Info: class_medidor_a1d26e993a9198fac83d6edad4cc30bcf_icgrap
-h.pdf  used on input line 67.
+h.pdf  used on input line 68.
 (pdftex.def)             Requested size: 273.0pt x 100.00716pt.
 
-Underfull \hbox (badness 10000) detected at line 82
+Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
- <./class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgraph.pdf>
-<class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgraph.pdf, id=779, 251.94125
+ <./class_medidor_a64af072efeb9b6ff3fa4f261d9e23494_icgraph.pdf>
+<class_medidor_a64af072efeb9b6ff3fa4f261d9e23494_icgraph.pdf, id=781, 257.96375
 pt x 100.375pt>
-File: class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgraph.pdf Graphic file 
+File: class_medidor_a64af072efeb9b6ff3fa4f261d9e23494_icgraph.pdf Graphic file 
 (type pdf)
-<use class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgraph.pdf>
-Package pdftex.def Info: class_medidor_a203ae9be3a2bf0965bd9316fcd203e19_icgrap
-h.pdf  used on input line 89.
-(pdftex.def)             Requested size: 251.0pt x 100.00102pt.
+<use class_medidor_a64af072efeb9b6ff3fa4f261d9e23494_icgraph.pdf>
+Package pdftex.def Info: class_medidor_a64af072efeb9b6ff3fa4f261d9e23494_icgrap
+h.pdf  used on input line 91.
+(pdftex.def)             Requested size: 257.0pt x 100.00868pt.
 
 
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
 [31]
-Underfull \hbox (badness 10000) detected at line 104
+Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
 
  <./class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph.pdf>
-<class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph.pdf, id=799, 286.06876
+<class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph.pdf, id=801, 286.06876
 pt x 100.375pt>
 File: class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph.pdf Graphic file 
 (type pdf)
 <use class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgraph.pdf>
 Package pdftex.def Info: class_medidor_a742eaebe02e1d1d67df55f7a73878421_icgrap
-h.pdf  used on input line 111.
+h.pdf  used on input line 114.
 (pdftex.def)             Requested size: 285.0pt x 100.00102pt.
 )
 (./class_publicador.tex <./class_publicador__coll__graph.pdf>
-<class_publicador__coll__graph.pdf, id=808, 273.02pt x 574.145pt>
+<class_publicador__coll__graph.pdf, id=810, 273.02pt x 574.145pt>
 File: class_publicador__coll__graph.pdf Graphic file (type pdf)
 <use class_publicador__coll__graph.pdf>
 Package pdftex.def Info: class_publicador__coll__graph.pdf  used on input line 
-18.
+19.
 (pdftex.def)             Requested size: 261.54631pt x 550.0pt.
 
 
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
 [32]
 
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 [33]
 
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
 [34]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.22 on input line 83.
+(longtable)                in table 6.22 on input line 84.
 
  <./class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.pdf>
-<class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.pdf, id=871, 301.12
+<class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.pdf, id=873, 301.12
 5pt x 100.375pt>
 File: class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.pdf Graphic fi
 le (type pdf)
 <use class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph.pdf>
 Package pdftex.def Info: class_publicador_a10f309e5dfd232d204c5d2952581fe16_icg
-raph.pdf  used on input line 114.
+raph.pdf  used on input line 115.
 (pdftex.def)             Requested size: 300.0pt x 100.00868pt.
 
 
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+LaTeX Info: Redefining \. on input line 138.
+LaTeX Info: Redefining \% on input line 138.
 [35]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.23 on input line 137.
+(longtable)                in table 6.23 on input line 138.
 
- <./class_publicador_a2ed2009b9cec631024263659be882985_cgraph.pdf>
-<class_publicador_a2ed2009b9cec631024263659be882985_cgraph.pdf, id=893, 287.072
-5pt x 100.375pt>
-File: class_publicador_a2ed2009b9cec631024263659be882985_cgraph.pdf Graphic fil
-e (type pdf)
-<use class_publicador_a2ed2009b9cec631024263659be882985_cgraph.pdf>
-Package pdftex.def Info: class_publicador_a2ed2009b9cec631024263659be882985_cgr
-aph.pdf  used on input line 142.
-(pdftex.def)             Requested size: 286.0pt x 100.00255pt.
- <./class_publicador_a2ed2009b9cec631024263659be882985_icgraph.pdf>
-<class_publicador_a2ed2009b9cec631024263659be882985_icgraph.pdf, id=901, 273.02
+ <./class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgraph.pdf>
+<class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgraph.pdf, id=895, 293.095
 pt x 100.375pt>
-File: class_publicador_a2ed2009b9cec631024263659be882985_icgraph.pdf Graphic fi
+File: class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgraph.pdf Graphic fil
+e (type pdf)
+<use class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgraph.pdf>
+Package pdftex.def Info: class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgr
+aph.pdf  used on input line 144.
+(pdftex.def)             Requested size: 292.0pt x 99.9995pt.
+ <./class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icgraph.pdf>
+<class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icgraph.pdf, id=903, 279.04
+25pt x 100.375pt>
+File: class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icgraph.pdf Graphic fi
 le (type pdf)
-<use class_publicador_a2ed2009b9cec631024263659be882985_icgraph.pdf>
-Package pdftex.def Info: class_publicador_a2ed2009b9cec631024263659be882985_icg
-raph.pdf  used on input line 149.
-(pdftex.def)             Requested size: 272.0pt x 100.00562pt.
+<use class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icgraph.pdf>
+Package pdftex.def Info: class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icg
+raph.pdf  used on input line 152.
+(pdftex.def)             Requested size: 278.0pt x 100.00255pt.
 
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 6.24 on input line 172.
+(longtable)                in table 6.24 on input line 175.
 
  <./class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.pdf>
-<class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.pdf, id=909, 321.2pt
+<class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.pdf, id=911, 321.2pt
  x 100.375pt>
 File: class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.pdf Graphic fil
 e (type pdf)
 <use class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph.pdf>
 Package pdftex.def Info: class_publicador_a674ec7d8321b9792835cd935c6196dec_cgr
-aph.pdf  used on input line 177.
+aph.pdf  used on input line 180.
 (pdftex.def)             Requested size: 320.0pt x 100.00255pt.
 
 
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
 [36] <./class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.pdf>
-<class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.pdf, id=926, 307.14
+<class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.pdf, id=928, 307.14
 75pt x 100.375pt>
 File: class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.pdf Graphic fi
 le (type pdf)
 <use class_publicador_a674ec7d8321b9792835cd935c6196dec_icgraph.pdf>
 Package pdftex.def Info: class_publicador_a674ec7d8321b9792835cd935c6196dec_icg
-raph.pdf  used on input line 184.
+raph.pdf  used on input line 188.
 (pdftex.def)             Requested size: 306.0pt x 100.00562pt.
 
 
-LaTeX Info: Redefining \. on input line 241.
-LaTeX Info: Redefining \% on input line 241.
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
 [37]) (./class_puerto_serie.tex <./class_puerto_serie__coll__graph.pdf>
-<class_puerto_serie__coll__graph.pdf, id=946, 182.6825pt x 164.615pt>
+<class_puerto_serie__coll__graph.pdf, id=948, 182.6825pt x 164.615pt>
 File: class_puerto_serie__coll__graph.pdf Graphic file (type pdf)
 <use class_puerto_serie__coll__graph.pdf>
 Package pdftex.def Info: class_puerto_serie__coll__graph.pdf  used on input lin
@@ -1807,30 +1810,30 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 6.27 on input line 80.
 
  <./class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_icgraph.pdf>
-<class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_icgraph.pdf, id=982, 435.
+<class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_icgraph.pdf, id=984, 435.
 6275pt x 277.035pt>
 File: class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_icgraph.pdf Graphic 
 file (type pdf)
 <use class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_icgraph.pdf>
 Package pdftex.def Info: class_puerto_serie_ab1b6cecc098aa30e5704dc294deec1f4_i
-cgraph.pdf  used on input line 85.
+cgraph.pdf  used on input line 86.
 (pdftex.def)             Requested size: 350.0pt x 222.5794pt.
  <./class_puerto_serie_acdb696d30440a38dac61f5f73625935a_icgraph.pdf>
-<class_puerto_serie_acdb696d30440a38dac61f5f73625935a_icgraph.pdf, id=990, 308.
+<class_puerto_serie_acdb696d30440a38dac61f5f73625935a_icgraph.pdf, id=992, 308.
 15125pt x 100.375pt>
 File: class_puerto_serie_acdb696d30440a38dac61f5f73625935a_icgraph.pdf Graphic 
 file (type pdf)
 <use class_puerto_serie_acdb696d30440a38dac61f5f73625935a_icgraph.pdf>
 Package pdftex.def Info: class_puerto_serie_acdb696d30440a38dac61f5f73625935a_i
-cgraph.pdf  used on input line 102.
+cgraph.pdf  used on input line 103.
 (pdftex.def)             Requested size: 307.0pt x 100.00716pt.
 
 
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
 [39]) (./class_servicio_en_emisora.tex <./class_servicio_en_emisora__coll__grap
 h.pdf>
-<class_servicio_en_emisora__coll__graph.pdf, id=1009, 203.76125pt x 228.855pt>
+<class_servicio_en_emisora__coll__graph.pdf, id=1011, 203.76125pt x 228.855pt>
 File: class_servicio_en_emisora__coll__graph.pdf Graphic file (type pdf)
 <use class_servicio_en_emisora__coll__graph.pdf>
 Package pdftex.def Info: class_servicio_en_emisora__coll__graph.pdf  used on in
@@ -1857,7 +1860,7 @@ Package longtable Warning: Column widths have changed
 
  <./class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23_icgraph.pdf>
 <class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23_icgraph.pdf, id=10
-63, 376.40625pt x 112.42pt>
+65, 376.40625pt x 112.42pt>
 File: class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23_icgraph.pdf G
 raphic file (type pdf)
 <use class_servicio_en_emisora_a387f170420610e1ba1fe71b471c1ca23_icgraph.pdf>
@@ -1871,7 +1874,7 @@ Package longtable Warning: Column widths have changed
 
  <./class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf_icgraph.pdf>
 <class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf_icgraph.pdf, id=10
-72, 369.38pt x 112.42pt>
+74, 369.38pt x 112.42pt>
 File: class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf_icgraph.pdf G
 raphic file (type pdf)
 <use class_servicio_en_emisora_af25a77d5c2b3edfe5c99fc9fa00729bf_icgraph.pdf>
@@ -1895,13 +1898,13 @@ LaTeX Info: Redefining \% on input line 254.
 ]
 Cap\'{\i }tulo 7.
 (./_emisora_b_l_e_8h.tex <./_emisora_b_l_e_8h__incl.pdf>
-<_emisora_b_l_e_8h__incl.pdf, id=1107, 221.82875pt x 224.84pt>
+<_emisora_b_l_e_8h__incl.pdf, id=1109, 221.82875pt x 224.84pt>
 File: _emisora_b_l_e_8h__incl.pdf Graphic file (type pdf)
 <use _emisora_b_l_e_8h__incl.pdf>
 Package pdftex.def Info: _emisora_b_l_e_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 221.0pt x 223.9989pt.
  <./_emisora_b_l_e_8h__dep__incl.pdf>
-<_emisora_b_l_e_8h__dep__incl.pdf, id=1115, 234.8775pt x 180.675pt>
+<_emisora_b_l_e_8h__dep__incl.pdf, id=1117, 234.8775pt x 180.675pt>
 File: _emisora_b_l_e_8h__dep__incl.pdf Graphic file (type pdf)
 <use _emisora_b_l_e_8h__dep__incl.pdf>
 Package pdftex.def Info: _emisora_b_l_e_8h__dep__incl.pdf  used on input line 2
@@ -1922,43 +1925,43 @@ LaTeX Info: Redefining \% on input line 120.
 LaTeX Info: Redefining \. on input line 202.
 LaTeX Info: Redefining \% on input line 202.
 [48]) (./_hola_mundo_i_beacon_8ino.tex <./_hola_mundo_i_beacon_8ino__incl.pdf>
-<_hola_mundo_i_beacon_8ino__incl.pdf, id=1198, 558.085pt x 281.05pt>
+<_hola_mundo_i_beacon_8ino__incl.pdf, id=1200, 558.085pt x 281.05pt>
 File: _hola_mundo_i_beacon_8ino__incl.pdf Graphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino__incl.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino__incl.pdf  used on input lin
-e 18.
+e 19.
 (pdftex.def)             Requested size: 350.0pt x 176.26477pt.
 
 
-LaTeX Info: Redefining \. on input line 20.
-LaTeX Info: Redefining \% on input line 20.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
 [49]
 
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
 [50] <./_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph.pdf
 >
 <_hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph.pdf, id=12
-41, 248.93pt x 100.375pt>
+56, 248.93pt x 100.375pt>
 File: _hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph.pdf G
 raphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e96a5aa_icgraph.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino_a555a607e0a0ed0a3f553843b6e9
-6a5aa_icgraph.pdf  used on input line 74.
+6a5aa_icgraph.pdf  used on input line 87.
 (pdftex.def)             Requested size: 248.0pt x 100.00255pt.
  <./_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
-<_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf, id=124
-9, 605.26125pt x 474.77374pt>
+<_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf, id=126
+4, 605.26125pt x 474.77374pt>
 File: _hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf Gr
 aphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f_cgraph.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d52118
-1f12f_cgraph.pdf  used on input line 91.
+1f12f_cgraph.pdf  used on input line 105.
 (pdftex.def)             Requested size: 350.0pt x 274.54309pt.
 
 
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
 [51]
 
 ! LaTeX Error: File `dot_inline_dotgraph_1' not found.
@@ -1967,28 +1970,32 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.106 ...aspectratio=true]{dot_inline_dotgraph_1}}
+l.120 ...aspectratio=true]{dot_inline_dotgraph_1}}
                                                   
 ? 
  <./_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.pdf>
-<_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.pdf, id=127
-0, 354.32375pt x 176.66pt>
+<_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.pdf, id=128
+4, 354.32375pt x 176.66pt>
 File: _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.pdf Gr
 aphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59
-c59ff_cgraph.pdf  used on input line 112.
+c59ff_cgraph.pdf  used on input line 126.
 (pdftex.def)             Requested size: 350.0pt x 174.50845pt.
  <./_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph.pdf>
 <_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph.pdf, id=12
-78, 205.76875pt x 100.375pt>
+92, 205.76875pt x 100.375pt>
 File: _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph.pdf G
 raphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_icgraph.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59
-c59ff_icgraph.pdf  used on input line 119.
+c59ff_icgraph.pdf  used on input line 134.
 (pdftex.def)             Requested size: 205.0pt x 100.00102pt.
 
+
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+[52]
 
 ! LaTeX Error: File `dot_inline_dotgraph_2' not found.
 
@@ -1996,98 +2003,116 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 ...aspectratio=true]{dot_inline_dotgraph_2}}
+l.149 ...aspectratio=true]{dot_inline_dotgraph_2}}
                                                   
 ? 
  <./_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf>
-<_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf, id=128
-6, 308.15125pt x 291.0875pt>
+<_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf, id=130
+8, 308.15125pt x 291.0875pt>
 File: _hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf Gr
 aphic file (type pdf)
 <use _hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.pdf>
 Package pdftex.def Info: _hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b67
-5f11d_cgraph.pdf  used on input line 140.
+5f11d_cgraph.pdf  used on input line 155.
 (pdftex.def)             Requested size: 307.0pt x 290.02078pt.
-)
-(./_l_e_d_8h.tex
 
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-[52] <./_l_e_d_8h__dep__incl.pdf>
-<_l_e_d_8h__dep__incl.pdf, id=1305, 234.8775pt x 168.63pt>
+
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
+[53]) (./_l_e_d_8h.tex <./_l_e_d_8h__dep__incl.pdf>
+<_l_e_d_8h__dep__incl.pdf, id=1330, 234.8775pt x 168.63pt>
 File: _l_e_d_8h__dep__incl.pdf Graphic file (type pdf)
 <use _l_e_d_8h__dep__incl.pdf>
 Package pdftex.def Info: _l_e_d_8h__dep__incl.pdf  used on input line 12.
 (pdftex.def)             Requested size: 234.0pt x 167.99916pt.
 
 
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
-[53]
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[54]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 7.1 on input line 47.
 
  <./_l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pdf>
-<_l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pdf, id=1331, 492.84125pt 
+<_l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pdf, id=1359, 492.84125pt 
 x 291.0875pt>
 File: _l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pdf Graphic file (typ
 e pdf)
 <use _l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pdf>
 Package pdftex.def Info: _l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0_icgraph.pd
-f  used on input line 52.
+f  used on input line 53.
 (pdftex.def)             Requested size: 350.0pt x 206.7313pt.
 )
 (./_l_e_d_8h_source.tex
 
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
-[54]) (./_medidor_8h.tex <./_medidor_8h__dep__incl.pdf>
-<_medidor_8h__dep__incl.pdf, id=1376, 234.8775pt x 168.63pt>
+[55]) (./_medidor_8h.tex <./_medidor_8h__dep__incl.pdf>
+<_medidor_8h__dep__incl.pdf, id=1405, 234.8775pt x 168.63pt>
 File: _medidor_8h__dep__incl.pdf Graphic file (type pdf)
 <use _medidor_8h__dep__incl.pdf>
-Package pdftex.def Info: _medidor_8h__dep__incl.pdf  used on input line 12.
+Package pdftex.def Info: _medidor_8h__dep__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 234.0pt x 167.99916pt.
 
 
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
-[55]) (./_medidor_8h_source.tex) (./_publicador_8h.tex <./_publicador_8h__dep__
-incl.pdf>
-<_publicador_8h__dep__incl.pdf, id=1403, 239.89626pt x 168.63pt>
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+[56]) (./_medidor_8h_source.tex
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 4
+0.
+
+(c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)) (./_ozono_8ino.tex <./_ozono_8ino__incl.pdf>
+<_ozono_8ino__incl.pdf, id=1436, 213.79875pt x 168.63pt>
+File: _ozono_8ino__incl.pdf Graphic file (type pdf)
+<use _ozono_8ino__incl.pdf>
+Package pdftex.def Info: _ozono_8ino__incl.pdf  used on input line 10.
+(pdftex.def)             Requested size: 213.0pt x 167.99916pt.
+
+
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+[57]
+
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
+[58]) (./_publicador_8h.tex <./_publicador_8h__dep__incl.pdf>
+<_publicador_8h__dep__incl.pdf, id=1485, 239.89626pt x 168.63pt>
 File: _publicador_8h__dep__incl.pdf Graphic file (type pdf)
 <use _publicador_8h__dep__incl.pdf>
-Package pdftex.def Info: _publicador_8h__dep__incl.pdf  used on input line 12.
+Package pdftex.def Info: _publicador_8h__dep__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 239.0pt x 168.00174pt.
+)
+(./_publicador_8h_source.tex
 
-
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
-[56]) (./_publicador_8h_source.tex) (./_puerto_serie_8h.tex
-
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-[57] <./_puerto_serie_8h__dep__incl.pdf>
-<_puerto_serie_8h__dep__incl.pdf, id=1451, 244.915pt x 168.63pt>
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+[59]) (./_puerto_serie_8h.tex <./_puerto_serie_8h__dep__incl.pdf>
+<_puerto_serie_8h__dep__incl.pdf, id=1529, 244.915pt x 168.63pt>
 File: _puerto_serie_8h__dep__incl.pdf Graphic file (type pdf)
 <use _puerto_serie_8h__dep__incl.pdf>
 Package pdftex.def Info: _puerto_serie_8h__dep__incl.pdf  used on input line 12
 .
 (pdftex.def)             Requested size: 244.0pt x 168.00432pt.
-) (./_puerto_serie_8h_source.tex)
-(./_servicio_en_emisora_8h.tex
+
+
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+[60]) (./_puerto_serie_8h_source.tex) (./_servicio_en_emisora_8h.tex
 
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-[58] <./_servicio_en_emisora_8h__incl.pdf>
-<_servicio_en_emisora_8h__incl.pdf, id=1478, 220.825pt x 168.63pt>
+[61] <./_servicio_en_emisora_8h__incl.pdf>
+<_servicio_en_emisora_8h__incl.pdf, id=1563, 220.825pt x 168.63pt>
 File: _servicio_en_emisora_8h__incl.pdf Graphic file (type pdf)
 <use _servicio_en_emisora_8h__incl.pdf>
 Package pdftex.def Info: _servicio_en_emisora_8h__incl.pdf  used on input line 
 13.
 (pdftex.def)             Requested size: 220.0pt x 168.00688pt.
  <./_servicio_en_emisora_8h__dep__incl.pdf>
-<_servicio_en_emisora_8h__dep__incl.pdf, id=1486, 234.8775pt x 248.93pt>
+<_servicio_en_emisora_8h__dep__incl.pdf, id=1571, 234.8775pt x 248.93pt>
 File: _servicio_en_emisora_8h__dep__incl.pdf Graphic file (type pdf)
 <use _servicio_en_emisora_8h__dep__incl.pdf>
 Package pdftex.def Info: _servicio_en_emisora_8h__dep__incl.pdf  used on input 
@@ -2097,7 +2122,7 @@ line 20.
 
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
-[59]
+[62]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 7.2 on input line 60.
@@ -2115,7 +2140,7 @@ Underfull \hbox (badness 10000) detected at line 68
 
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
-[60]
+[63]
 
 Package longtable Warning: Column widths have changed
 (longtable)                in table 7.4 on input line 89.
@@ -2129,11 +2154,17 @@ Underfull \hbox (badness 10000) detected at line 90
 
 LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
-[61]) (./_r_e_a_d_m_e_8md.tex)
+[64]) (./_r_e_a_d_m_e_8md.tex)
 
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
-[62]
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+[65]
+
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+[66
+
+]
 No file refman.ind.
 
 Package longtable Warning: Table widths have changed. Rerun LaTeX.
@@ -2159,17 +2190,17 @@ Package rerunfilecheck Warning: File `refman.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  20345302A86CDA0445A81DD372966E0F;35453.
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  22F20644AE232C138CEFED9695060BED;38614.
  ) 
 Here is how much of TeX's memory you used:
- 20533 strings out of 473579
- 361670 string characters out of 5732263
- 749799 words of memory out of 5000000
- 42574 multiletter control sequences out of 15000+600000
- 614085 words of font info for 106 fonts, out of 8000000 for 9000
+ 20636 strings out of 473579
+ 364459 string characters out of 5732263
+ 749857 words of memory out of 5000000
+ 42625 multiletter control sequences out of 15000+600000
+ 614378 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,16n,117p,672b,797s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,117p,680b,797s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist
@@ -2181,10 +2212,10 @@ ve/2024/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1
 /urw/helvetic/uhvb8ac.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/
 uhvr8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (64 pages, 1101374 bytes).
+Output written on refman.pdf (68 pages, 1121097 bytes).
 PDF statistics:
- 1746 PDF objects out of 2073 (max. 8388607)
- 1447 compressed objects within 15 object streams
- 466 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1844 PDF objects out of 2073 (max. 8388607)
+ 1538 compressed objects within 16 object streams
+ 506 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
 

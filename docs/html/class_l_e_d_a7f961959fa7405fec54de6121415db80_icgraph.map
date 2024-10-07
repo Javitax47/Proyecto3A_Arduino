@@ -8,6 +8,6 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="360,91,310,109,309,104,358,86"/>
 <area shape="rect" id="Node000004" href="$_hola_mundo_i_beacon_8ino.html#a27ffed2fef5d69b87e240022e59c59ff" title="Realiza una secuencia de encendido y apagado del LED. Utiliza tiempos de espera definidos entre cambi..." alt="" coords="99,56,172,83"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="210,72,173,72,173,67,210,67"/>
-<area shape="rect" id="Node000005" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,56,51,83"/>
+<area shape="rect" id="Node000005" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos v..." alt="" coords="5,56,51,83"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="83,72,51,72,51,67,83,67"/>
 </map>

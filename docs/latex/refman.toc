@@ -88,7 +88,7 @@
 \contentsline {subsubsection}{\numberline {6.4.2.1}Medidor()}{31}{subsubsection.6.4.2.1}%
 \contentsline {subsection}{\numberline {6.4.3}Documentación de funciones miembro}{31}{subsection.6.4.3}%
 \contentsline {subsubsection}{\numberline {6.4.3.1}iniciarMedidor()}{31}{subsubsection.6.4.3.1}%
-\contentsline {subsubsection}{\numberline {6.4.3.2}medirCO2()}{31}{subsubsection.6.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}medirozono()}{31}{subsubsection.6.4.3.2}%
 \contentsline {subsubsection}{\numberline {6.4.3.3}medirTemperatura()}{32}{subsubsection.6.4.3.3}%
 \contentsline {section}{\numberline {6.5}Referencia de la clase Publicador}{33}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Descripción detallada}{34}{subsection.6.5.1}%
@@ -98,7 +98,7 @@
 \contentsline {subsubsection}{\numberline {6.5.3.1}Publicador()}{35}{subsubsection.6.5.3.1}%
 \contentsline {subsection}{\numberline {6.5.4}Documentación de funciones miembro}{35}{subsection.6.5.4}%
 \contentsline {subsubsection}{\numberline {6.5.4.1}encenderEmisora()}{35}{subsubsection.6.5.4.1}%
-\contentsline {subsubsection}{\numberline {6.5.4.2}publicarCO2()}{35}{subsubsection.6.5.4.2}%
+\contentsline {subsubsection}{\numberline {6.5.4.2}publicarozono()}{35}{subsubsection.6.5.4.2}%
 \contentsline {subsubsection}{\numberline {6.5.4.3}publicarTemperatura()}{36}{subsubsection.6.5.4.3}%
 \contentsline {subsection}{\numberline {6.5.5}Documentación de datos miembro}{37}{subsection.6.5.5}%
 \contentsline {subsubsection}{\numberline {6.5.5.1}beaconUUID}{37}{subsubsection.6.5.5.1}%
@@ -136,25 +136,43 @@
 \contentsline {subsubsection}{\numberline {7.3.2.1}inicializarPlaquita()}{51}{subsubsection.7.3.2.1}%
 \contentsline {subsubsection}{\numberline {7.3.2.2}loop()}{51}{subsubsection.7.3.2.2}%
 \contentsline {subsubsection}{\numberline {7.3.2.3}lucecitas()}{52}{subsubsection.7.3.2.3}%
-\contentsline {subsubsection}{\numberline {7.3.2.4}setup()}{52}{subsubsection.7.3.2.4}%
-\contentsline {section}{\numberline {7.4}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED.h}{53}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Descripción detallada}{54}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Documentación de funciones}{54}{subsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.2.1}esperar()}{54}{subsubsection.7.4.2.1}%
-\contentsline {section}{\numberline {7.5}LED.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Medidor.h}{55}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Descripción detallada}{56}{subsection.7.6.1}%
-\contentsline {section}{\numberline {7.7}Medidor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.7.7}%
-\contentsline {section}{\numberline {7.8}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Publicador.h}{56}{section.7.8}%
-\contentsline {subsection}{\numberline {7.8.1}Descripción detallada}{57}{subsection.7.8.1}%
-\contentsline {section}{\numberline {7.9}Publicador.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.7.9}%
-\contentsline {section}{\numberline {7.10}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.h}{58}{section.7.10}%
-\contentsline {subsection}{\numberline {7.10.1}Descripción detallada}{58}{subsection.7.10.1}%
-\contentsline {section}{\numberline {7.11}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{58}{section.7.11}%
-\contentsline {section}{\numberline {7.12}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.h}{59}{section.7.12}%
-\contentsline {subsection}{\numberline {7.12.1}Descripción detallada}{60}{subsection.7.12.1}%
-\contentsline {subsection}{\numberline {7.12.2}Documentación de funciones}{60}{subsection.7.12.2}%
-\contentsline {subsubsection}{\numberline {7.12.2.1}alReves()}{60}{subsubsection.7.12.2.1}%
-\contentsline {subsubsection}{\numberline {7.12.2.2}stringAUint8AlReves()}{60}{subsubsection.7.12.2.2}%
-\contentsline {section}{\numberline {7.13}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{61}{section.7.13}%
-\contentsline {section}{\numberline {7.14}Referencia del archivo README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md}{62}{section.7.14}%
+\contentsline {subsubsection}{\numberline {7.3.2.4}setup()}{53}{subsubsection.7.3.2.4}%
+\contentsline {subsection}{\numberline {7.3.3}Documentación de variables}{53}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}M}{53}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}TIA\_GAIN}{54}{subsubsection.7.3.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.3.3}Vgas0}{54}{subsubsection.7.3.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.4}VgasPin}{54}{subsubsection.7.3.3.4}%
+\contentsline {subsubsection}{\numberline {7.3.3.5}VrefPin}{54}{subsubsection.7.3.3.5}%
+\contentsline {subsubsection}{\numberline {7.3.3.6}VtempPin}{54}{subsubsection.7.3.3.6}%
+\contentsline {section}{\numberline {7.4}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}LED.h}{54}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Descripción detallada}{55}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Documentación de funciones}{55}{subsection.7.4.2}%
+\contentsline {subsubsection}{\numberline {7.4.2.1}esperar()}{55}{subsubsection.7.4.2.1}%
+\contentsline {section}{\numberline {7.5}LED.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Medidor.h}{56}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Descripción detallada}{57}{subsection.7.6.1}%
+\contentsline {section}{\numberline {7.7}Medidor.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ozono/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ozono.ino}{58}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Documentación de funciones}{58}{subsection.7.8.1}%
+\contentsline {subsubsection}{\numberline {7.8.1.1}loop()}{58}{subsubsection.7.8.1.1}%
+\contentsline {subsubsection}{\numberline {7.8.1.2}setup()}{58}{subsubsection.7.8.1.2}%
+\contentsline {subsection}{\numberline {7.8.2}Documentación de variables}{58}{subsection.7.8.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.1}M}{58}{subsubsection.7.8.2.1}%
+\contentsline {subsubsection}{\numberline {7.8.2.2}TIA\_GAIN}{59}{subsubsection.7.8.2.2}%
+\contentsline {subsubsection}{\numberline {7.8.2.3}Vgas0}{59}{subsubsection.7.8.2.3}%
+\contentsline {subsubsection}{\numberline {7.8.2.4}VgasPin}{59}{subsubsection.7.8.2.4}%
+\contentsline {subsubsection}{\numberline {7.8.2.5}VrefPin}{59}{subsubsection.7.8.2.5}%
+\contentsline {subsubsection}{\numberline {7.8.2.6}VtempPin}{59}{subsubsection.7.8.2.6}%
+\contentsline {section}{\numberline {7.9}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Publicador.h}{59}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}Descripción detallada}{60}{subsection.7.9.1}%
+\contentsline {section}{\numberline {7.10}Publicador.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{60}{section.7.10}%
+\contentsline {section}{\numberline {7.11}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.h}{61}{section.7.11}%
+\contentsline {subsection}{\numberline {7.11.1}Descripción detallada}{61}{subsection.7.11.1}%
+\contentsline {section}{\numberline {7.12}Puerto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Serie.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{61}{section.7.12}%
+\contentsline {section}{\numberline {7.13}Referencia del archivo Hola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mundo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IBeacon/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.h}{62}{section.7.13}%
+\contentsline {subsection}{\numberline {7.13.1}Descripción detallada}{63}{subsection.7.13.1}%
+\contentsline {subsection}{\numberline {7.13.2}Documentación de funciones}{63}{subsection.7.13.2}%
+\contentsline {subsubsection}{\numberline {7.13.2.1}alReves()}{63}{subsubsection.7.13.2.1}%
+\contentsline {subsubsection}{\numberline {7.13.2.2}stringAUint8AlReves()}{63}{subsubsection.7.13.2.2}%
+\contentsline {section}{\numberline {7.14}Servicio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}En\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Emisora.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{64}{section.7.14}%
+\contentsline {section}{\numberline {7.15}Referencia del archivo README.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}md}{65}{section.7.15}%

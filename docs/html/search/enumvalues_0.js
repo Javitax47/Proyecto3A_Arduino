@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['co2_0',['CO2',['../class_publicador.html#a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638',1,'Publicador']]]
+  ['ozono_0',['ozono',['../class_publicador.html#a0dbad8398e97eaf1d6ecdd854f286d38a1b5d7258bd94a6e41a0ffd03b9bf2ead',1,'Publicador']]]
 ];

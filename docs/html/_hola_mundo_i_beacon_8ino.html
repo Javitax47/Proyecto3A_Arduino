@@ -131,11 +131,23 @@ Funciones</h2></td></tr>
 <tr class="memdesc:a27ffed2fef5d69b87e240022e59c59ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una secuencia de encendido y apagado del <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a>. Utiliza tiempos de espera definidos entre cambios de estado.  <br /></td></tr>
 <tr class="separator:a27ffed2fef5d69b87e240022e59c59ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f" id="r_afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
-<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.  <br /></td></tr>
+<tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.  <br /></td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ad75472877d9ab304d2a53534cdfe6dac" id="r_ad75472877d9ab304d2a53534cdfe6dac"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad75472877d9ab304d2a53534cdfe6dac">VgasPin</a> = 5</td></tr>
+<tr class="separator:ad75472877d9ab304d2a53534cdfe6dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41235e5ec1f6bdc467c4f09f33c7a37e" id="r_a41235e5ec1f6bdc467c4f09f33c7a37e"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41235e5ec1f6bdc467c4f09f33c7a37e">VrefPin</a> = 28</td></tr>
+<tr class="separator:a41235e5ec1f6bdc467c4f09f33c7a37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabea629587b88730ed188cfb4b05466d" id="r_aabea629587b88730ed188cfb4b05466d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabea629587b88730ed188cfb4b05466d">VtempPin</a> = 29</td></tr>
+<tr class="separator:aabea629587b88730ed188cfb4b05466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852a120a95edd2d0da0506e047bee222" id="r_a852a120a95edd2d0da0506e047bee222"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a852a120a95edd2d0da0506e047bee222">Vgas0</a> = 0.0</td></tr>
+<tr class="separator:a852a120a95edd2d0da0506e047bee222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372859d33cee1743497c8aaca90c604a" id="r_a372859d33cee1743497c8aaca90c604a"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372859d33cee1743497c8aaca90c604a">TIA_GAIN</a> = 499.0</td></tr>
+<tr class="separator:a372859d33cee1743497c8aaca90c604a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aaf1d6f7787b9a848a60f9826e39ed5" id="r_a7aaf1d6f7787b9a848a60f9826e39ed5"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aaf1d6f7787b9a848a60f9826e39ed5">M</a> = 1 / (<a class="el" href="#a372859d33cee1743497c8aaca90c604a">TIA_GAIN</a> * 1e-9 * 1e3)</td></tr>
+<tr class="separator:a7aaf1d6f7787b9a848a60f9826e39ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab111d6488b416ae3b584e786a283ee82" id="r_ab111d6488b416ae3b584e786a283ee82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_l_e_d.html">LED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#ab111d6488b416ae3b584e786a283ee82">Globales::elLED</a> (7)</td></tr>
 <tr class="memdesc:ab111d6488b416ae3b584e786a283ee82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para controlar el <a class="el" href="class_l_e_d.html" title="Clase para controlar un LED conectado a un pin específico.">LED</a> conectado al pin 7.  <br /></td></tr>
 <tr class="separator:ab111d6488b416ae3b584e786a283ee82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +158,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:af2c541012072e5d61fe17517e3e61980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para manejar la publicación de datos vía BLE.  <br /></td></tr>
 <tr class="separator:af2c541012072e5d61fe17517e3e61980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99f35d2ec84b83cbbf433390e920956" id="r_ae99f35d2ec84b83cbbf433390e920956"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_medidor.html">Medidor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_globales.html#ae99f35d2ec84b83cbbf433390e920956">Globales::elMedidor</a></td></tr>
-<tr class="memdesc:ae99f35d2ec84b83cbbf433390e920956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para gestionar las mediciones de CO2 y temperatura.  <br /></td></tr>
+<tr class="memdesc:ae99f35d2ec84b83cbbf433390e920956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para gestionar las mediciones de ozono y temperatura.  <br /></td></tr>
 <tr class="separator:ae99f35d2ec84b83cbbf433390e920956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41be37d8b3f6fee591134483a15b8987" id="r_a41be37d8b3f6fee591134483a15b8987"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_loop.html#a41be37d8b3f6fee591134483a15b8987">Loop::cont</a> = 0</td></tr>
 <tr class="separator:a41be37d8b3f6fee591134483a15b8987"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,7 +205,7 @@ Gráfico de llamadas a esta función:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon. </p>
+<p>Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon. </p>
 <div class="dynheader">
 Gráfico de llamadas de esta función:</div>
 <div class="dyncontent">
@@ -264,6 +276,91 @@ Gráfico de llamadas de esta función:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="314" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="a7aaf1d6f7787b9a848a60f9826e39ed5" name="a7aaf1d6f7787b9a848a60f9826e39ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aaf1d6f7787b9a848a60f9826e39ed5">&#9670;&#160;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float M = 1 / (<a class="el" href="#a372859d33cee1743497c8aaca90c604a">TIA_GAIN</a> * 1e-9 * 1e3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a372859d33cee1743497c8aaca90c604a" name="a372859d33cee1743497c8aaca90c604a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372859d33cee1743497c8aaca90c604a">&#9670;&#160;</a></span>TIA_GAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float TIA_GAIN = 499.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a852a120a95edd2d0da0506e047bee222" name="a852a120a95edd2d0da0506e047bee222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852a120a95edd2d0da0506e047bee222">&#9670;&#160;</a></span>Vgas0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Vgas0 = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad75472877d9ab304d2a53534cdfe6dac" name="ad75472877d9ab304d2a53534cdfe6dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75472877d9ab304d2a53534cdfe6dac">&#9670;&#160;</a></span>VgasPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int VgasPin = 5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41235e5ec1f6bdc467c4f09f33c7a37e" name="a41235e5ec1f6bdc467c4f09f33c7a37e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41235e5ec1f6bdc467c4f09f33c7a37e">&#9670;&#160;</a></span>VrefPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int VrefPin = 28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabea629587b88730ed188cfb4b05466d" name="aabea629587b88730ed188cfb4b05466d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabea629587b88730ed188cfb4b05466d">&#9670;&#160;</a></span>VtempPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int VtempPin = 29</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

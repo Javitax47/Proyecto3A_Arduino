@@ -16,6 +16,16 @@
 
 // --------------------------------------------------------------
 
+// Define analog input pins
+const int VgasPin = 5;   // Pin connected to Vgas
+const int VrefPin = 28;   // Pin connected to Vref
+const int VtempPin = 29;  // Pin connected to Vtemp
+
+// Calibration constants
+float Vgas0 = 0.0;        // Baseline voltage in clean air (to be set during calibration)
+const float TIA_GAIN = 499.0;   // Gain for the Ozone sensor
+const float M = 1 / (TIA_GAIN * 1e-9 * 1e3);  // Calibration factor for Ozone sensor
+
 /**
  * @namespace Globales
  * @brief Contiene objetos globales para manejar el LED, la comunicación por puerto serie y otros módulos.
@@ -49,7 +59,7 @@ namespace Globales {
   Publicador elPublicador;
 
   /**
-   * @brief Objeto para gestionar las mediciones de CO2 y temperatura.
+   * @brief Objeto para gestionar las mediciones de ozono y temperatura.
    */
   Medidor elMedidor;
 
@@ -82,10 +92,25 @@ void inicializarPlaquita () {
  * @enddot
  */
 void setup() {
+  Serial.begin(9600);
+  // Initialize ADC pins
+  pinMode(VgasPin, INPUT);
+  pinMode(VrefPin, INPUT);
+  pinMode(VtempPin, INPUT);
 
   Globales::elPuerto.esperarDisponible();
 
   inicializarPlaquita();
+
+  // Allow the sensor to stabilize for an hour (calibration in clean air)
+  Serial.println("Allowing sensor to stabilize...");
+  //delay(3600000); // Wait for 1 hour
+  delay(10000); // Wait for 10 seconds
+  
+  // Read Vgas0 in clean air
+  Vgas0 = analogRead(VgasPin) * (3.0 / 1023.0);  // Read and convert to voltage
+  Serial.print("Vgas0 (Clean air baseline): ");
+  Serial.println(Vgas0, 4);
 
   // Enciende la emisora BLE
   Globales::elPublicador.encenderEmisora();
@@ -120,13 +145,13 @@ inline void lucecitas() {
   using namespace Globales;
 
   elLED.brillar( 100 ); // 100 encendido
-  esperar ( 400 ); //  100 apagado
+  esperar ( 400 ); //  400 apagado
   elLED.brillar( 100 ); // 100 encendido
-  esperar ( 400 ); //  100 apagado
+  esperar ( 400 ); //  400 apagado
   Globales::elLED.brillar( 100 ); // 100 encendido
-  esperar ( 400 ); //  100 apagado
+  esperar ( 400 ); //  400 apagado
   Globales::elLED.brillar( 1000 ); // 1000 encendido
-  esperar ( 1000 ); //  100 apagado
+  esperar ( 400 ); //  400 apagado
 } // ()
 
 // --------------------------------------------------------------
@@ -143,7 +168,7 @@ namespace Loop {
 
 /**
  * @brief Función principal (loop) del programa.
- * Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.
+ * Ejecuta mediciones de ozono y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio iBeacon.
  */
 void loop () {
 
@@ -159,10 +184,10 @@ void loop () {
   // Secuencia de luces
   lucecitas();
 
-  // Mide el valor de CO2 y lo publica
-  int valorCO2 = elMedidor.medirCO2();
+  // Mide el valor de ozono y lo publica
+  int valorozono = elMedidor.medirozono();
   
-  elPublicador.publicarCO2( valorCO2,
+  elPublicador.publicarozono( valorozono,
 							cont,
 							1000 // intervalo de emisión
 							);
@@ -187,7 +212,7 @@ void loop () {
 
   elPublicador.laEmisora.emitirAnuncioIBeaconLibre ( &datos[0], 21 );
 
-  esperar( 2000 );
+  esperar( 100 );
 
   elPublicador.laEmisora.detenerAnuncio();
 

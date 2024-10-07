@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uuidcaracteristica_0',['uuidCaracteristica',['../class_servicio_en_emisora_1_1_caracteristica.html#ac408acdaae053ae4c005f1f9162d60c7',1,'ServicioEnEmisora::Caracteristica']]],
-  ['uuidservicio_1',['uuidServicio',['../class_servicio_en_emisora.html#a6c8dad351b6453c0a08a1c5e4a78c7dd',1,'ServicioEnEmisora']]]
+  ['tia_5fgain_0',['TIA_GAIN',['../_hola_mundo_i_beacon_8ino.html#a372859d33cee1743497c8aaca90c604a',1,'TIA_GAIN:&#160;HolaMundoIBeacon.ino'],['../_ozono_8ino.html#a372859d33cee1743497c8aaca90c604a',1,'TIA_GAIN:&#160;Ozono.ino']]],
+  ['txpower_1',['txPower',['../class_emisora_b_l_e.html#aa62d2364ae61d48e27ebe6da63732e0d',1,'EmisoraBLE']]]
 ];

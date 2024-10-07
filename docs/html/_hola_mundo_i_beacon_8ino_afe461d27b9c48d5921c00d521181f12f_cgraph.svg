@@ -58,7 +58,7 @@ var sectionId = 'dynsection-2';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía...">
+<g id="a_Node000001"><a xlink:title="Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos v...">
 <polygon fill="#999999" stroke="#666666" points="34,-229 0,-229 0,-209 34,-209 34,-229"/>
 <text text-anchor="middle" x="17" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">loop</text>
 </a>
@@ -158,9 +158,9 @@ var sectionId = 'dynsection-2';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="class_medidor.html#a203ae9be3a2bf0965bd9316fcd203e19" target="_top" xlink:title="Medir el nivel de CO2.">
-<polygon fill="white" stroke="#666666" points="192.5,-191 91.75,-191 91.75,-171 192.5,-171 192.5,-191"/>
-<text text-anchor="middle" x="142.12" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">Medidor::medirCO2</text>
+<g id="a_Node000010"><a xlink:href="class_medidor.html#a64af072efeb9b6ff3fa4f261d9e23494" target="_top" xlink:title="Medir el nivel de ozono.">
+<polygon fill="white" stroke="#666666" points="195.5,-191 88.75,-191 88.75,-171 195.5,-171 195.5,-191"/>
+<text text-anchor="middle" x="142.12" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00">Medidor::medirozono</text>
 </a>
 </g>
 </g>
@@ -194,9 +194,9 @@ var sectionId = 'dynsection-2';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="class_publicador.html#a2ed2009b9cec631024263659be882985" target="_top" xlink:title="Publica un valor de CO2 mediante un anuncio iBeacon.">
-<polygon fill="white" stroke="#666666" points="388.88,-248 267.12,-248 267.12,-228 388.88,-228 388.88,-248"/>
-<text text-anchor="middle" x="328" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Publicador::publicarCO2</text>
+<g id="a_Node000012"><a xlink:href="class_publicador.html#a3bb0a20cbfb541728b68fdaacc1ee7e9" target="_top" xlink:title="Publica un valor de ozono mediante un anuncio iBeacon.">
+<polygon fill="white" stroke="#666666" points="391.88,-248 264.12,-248 264.12,-228 391.88,-228 391.88,-248"/>
+<text text-anchor="middle" x="328" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Publicador::publicarozono</text>
 </a>
 </g>
 </g>
@@ -204,8 +204,8 @@ var sectionId = 'dynsection-2';
 <g id="edge14_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
 <g id="a_edge14_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M34.18,-224.45C44.34,-227.6 57.78,-231.26 70,-233 132.13,-241.83 203.54,-242.47 255.3,-241.25"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="255.28,-244.75 265.18,-240.99 255.09,-237.76 255.28,-244.75"/>
+<path fill="none" stroke="#63b8ff" d="M34.18,-224.45C44.34,-227.6 57.78,-231.26 70,-233 131,-241.67 200.95,-242.44 252.46,-241.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="252.39,-244.82 262.3,-241.07 252.22,-237.82 252.39,-244.82"/>
 </a>
 </g>
 </g>

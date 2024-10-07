@@ -87,8 +87,8 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Proyecto3A_Arduino </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2_javier_2_desktop_2_g_t_i_23o_2_proyecto__medio__amb_2_proyecto3_a___arduino_2_r_e_a_d_m_e"></a></p>
-<p>Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como CO2 y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.</p>
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a></p>
+<p>Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como ozono y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Tabla de Contenidos</h1>
 <ul>
@@ -106,7 +106,7 @@ Descripción</h1>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Características</h1>
 <ul>
-<li>Publicación de datos de mediciones (CO2, temperatura, ruido).</li>
+<li>Publicación de datos de mediciones (ozono, temperatura, ruido).</li>
 <li>Interfaz de comunicación por puerto serie.</li>
 <li>Soporte para múltiples características en un servicio BLE.</li>
 <li>Posibilidad de añadir características dinámicamente.</li>
@@ -134,9 +134,9 @@ Instalación</h1>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Uso</h1>
 <ol type="1">
-<li><b>Inicializar la Emisora</b>: Llama al método encenderEmisora() en el setup() de tu programa para activar la emisora BLE.</li>
+<li><b>Inicializar la Emisora</b>: Llama al método encenderEmisora() en el <a class="el" href="_hola_mundo_i_beacon_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación.">setup()</a> de tu programa para activar la emisora BLE.</li>
 <li><b>Publicar Mediciones</b>:<ul>
-<li>Utiliza publicarCO2(valorCO2, contador, tiempoEspera) para publicar el nivel de CO2.</li>
+<li>Utiliza publicarozono(valorozono, contador, tiempoEspera) para publicar el nivel de ozono.</li>
 <li>Utiliza publicarTemperatura(valorTemperatura, contador, tiempoEspera) para publicar la temperatura.</li>
 </ul>
 </li>

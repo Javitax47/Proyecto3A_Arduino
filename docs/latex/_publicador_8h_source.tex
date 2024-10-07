@@ -12,8 +12,8 @@
 \DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00024\ \ \ }
 \DoxyCodeLine{00028\ \ \ uint8\_t\ \mbox{\hyperlink{class_publicador_afdd05d23d289af8d520938cbec79b93d}{beaconUUID}}[16]\ =\ \{\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'I'},\ }
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'Y'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'Q'},\ \textcolor{charliteral}{'U'},\ \textcolor{charliteral}{'I'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'J'},\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'V'},\ \textcolor{charliteral}{'I'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}}
 \DoxyCodeLine{00031\ \ \ \ \ \};}
 \DoxyCodeLine{00032\ }
 \DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
@@ -27,7 +27,7 @@
 \DoxyCodeLine{00047\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_publicador_a339fb2ba061a53478572ade00866408c}{RSSI}}\ =\ -\/53;}
 \DoxyCodeLine{00048\ }
 \DoxyCodeLine{00055\ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{MedicionesID}}\ \ \{}
-\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}{CO2}}\ =\ 11,\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a1b5d7258bd94a6e41a0ffd03b9bf2ead}{ozono}}\ =\ 11,\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047}{TEMPERATURA}}\ =\ 12,\ }
 \DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4}{RUIDO}}\ =\ 13\ \ \ \ \ \ \ \ }
 \DoxyCodeLine{00059\ \ \ \};}
@@ -40,11 +40,11 @@
 \DoxyCodeLine{00076\ \ \ \ \ (*this).laEmisora.encenderEmisora();}
 \DoxyCodeLine{00077\ \ \ \}}
 \DoxyCodeLine{00078\ }
-\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_publicador_a2ed2009b9cec631024263659be882985}{publicarCO2}}(\ int16\_t\ valorCO2,\ uint8\_t\ contador,\ \textcolor{keywordtype}{long}\ tiempoEspera\ )\ \{}
-\DoxyCodeLine{00089\ \ \ \ \ uint16\_t\ major\ =\ (\mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}{MedicionesID::CO2}}\ <<\ 8)\ +\ contador;}
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9}{publicarozono}}(\ int16\_t\ valorozono,\ uint8\_t\ contador,\ \textcolor{keywordtype}{long}\ tiempoEspera\ )\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ uint16\_t\ major\ =\ (\mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a1b5d7258bd94a6e41a0ffd03b9bf2ead}{MedicionesID::ozono}}\ <<\ 8)\ +\ contador;}
 \DoxyCodeLine{00090\ \ \ \ \ (*this).laEmisora.emitirAnuncioIBeacon(\ (*this).beaconUUID,\ }
 \DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ major,}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ valorCO2,\ \textcolor{comment}{//\ minor}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ valorozono,\ \textcolor{comment}{//\ minor}}
 \DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (*this).RSSI\ \textcolor{comment}{//\ rssi}}
 \DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{_l_e_d_8h_a2fb17dd710d89b92e59a349551733fa0}{esperar}}(\ tiempoEspera\ );}

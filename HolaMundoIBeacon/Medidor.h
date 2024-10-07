@@ -5,17 +5,17 @@
 
 /**
  * @file Medidor.h
- * @brief Definición de la clase Medidor para medir CO2 y temperatura.
+ * @brief Definición de la clase Medidor para medir ozono y temperatura.
  * 
- * Esta clase proporciona una interfaz para simular mediciones de CO2 y temperatura
+ * Esta clase proporciona una interfaz para simular mediciones de ozono y temperatura
  * en un sistema. Los valores de medición están actualmente codificados.
  */
 
 /**
  * @class Medidor
- * @brief Clase para simular la medición de CO2 y temperatura.
+ * @brief Clase para simular la medición de ozono y temperatura.
  * 
- * Esta clase simula la medición de niveles de CO2 y temperatura. En un sistema real,
+ * Esta clase simula la medición de niveles de ozono y temperatura. En un sistema real,
  * esta clase podría interactuar con sensores reales para obtener lecturas.
  */
 class Medidor {
@@ -41,14 +41,25 @@ public:
   }
 
   /**
-   * @brief Medir el nivel de CO2.
+   * @brief Medir el nivel de ozono.
    * 
-   * Devuelve un valor simulado de la medición de CO2.
+   * Devuelve un valor simulado de la medición de ozono.
    * 
-   * @return int Valor del nivel de CO2 (simulado).
+   * @return int Valor del nivel de ozono (simulado).
    */
-  int medirCO2() {
-    return 235; /**< Valor simulado de CO2. */
+  int medirozono() {
+    // Read Vgas, Vref, and Vtemp
+    float Vgas = analogRead(VgasPin) * (3.0 / 1023.0);  // Convert ADC value to voltage
+    float Vref = analogRead(VrefPin) * (3.0 / 1023.0);  // Convert ADC value to voltage
+    float Vtemp = analogRead(VtempPin) * (3.0 / 1023.0); // Convert ADC value to voltage
+
+    // Calculate gas concentration (Ozone) in ppm
+    float Cx = fabs((Vgas - Vgas0) * (1/M));
+
+    // Print the results
+    Serial.print("Ozone Concentration (ppm): "); Serial.println(Cx, 4);
+
+    return Cx;
   }
 
   /**
@@ -59,7 +70,16 @@ public:
    * @return int Valor de la temperatura (simulado).
    */
   int medirTemperatura() {
-    return 12; /**< Valor simulado de temperatura. */
+    // Read Vtemp
+    float Vtemp = analogRead(VtempPin) * (3.0 / 1023.0); // Convert ADC value to voltage, 1023 = 2^10 bits
+
+    // Calculate temperature (°C)
+    float temperature = (87.0 / 3) * Vtemp - 18.0;
+
+    // Print the results
+    Serial.print("Temperature (°C): "); Serial.println(temperature, 2);
+
+    return temperature;
   }
 
 }; // class Medidor

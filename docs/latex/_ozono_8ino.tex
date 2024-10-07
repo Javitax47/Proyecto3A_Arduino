@@ -1,0 +1,88 @@
+\doxysection{Referencia del archivo Hola\+Mundo\+IBeacon/\+Ozono/\+Ozono.ino}
+\hypertarget{_ozono_8ino}{}\label{_ozono_8ino}\index{HolaMundoIBeacon/Ozono/Ozono.ino@{HolaMundoIBeacon/Ozono/Ozono.ino}}
+{\ttfamily \#include "{}Wire.\+h"{}}\newline
+{\ttfamily \#include $<$bluefruit.\+h$>$}\newline
+Gráfico de dependencias incluidas en Ozono.\+ino\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{_ozono_8ino__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_ozono_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup}} ()
+\item 
+void \mbox{\hyperlink{_ozono_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_ozono_8ino_ad75472877d9ab304d2a53534cdfe6dac}{Vgas\+Pin}} = 5
+\item 
+const int \mbox{\hyperlink{_ozono_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e}{Vref\+Pin}} = 28
+\item 
+const int \mbox{\hyperlink{_ozono_8ino_aabea629587b88730ed188cfb4b05466d}{Vtemp\+Pin}} = 29
+\item 
+float \mbox{\hyperlink{_ozono_8ino_a852a120a95edd2d0da0506e047bee222}{Vgas0}} = 0.\+0
+\item 
+const float \mbox{\hyperlink{_ozono_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} = 499.\+0
+\item 
+const float \mbox{\hyperlink{_ozono_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5}{M}} = 1 / (\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} \texorpdfstring{$\ast$}{*} 1e-\/9 \texorpdfstring{$\ast$}{*} 1e3)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{_ozono_8ino_afe461d27b9c48d5921c00d521181f12f}\index{Ozono.ino@{Ozono.ino}!loop@{loop}}
+\index{loop@{loop}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily \label{_ozono_8ino_afe461d27b9c48d5921c00d521181f12f} 
+void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_ozono_8ino_a4fc01d736fe50cf5b977f755b675f11d}\index{Ozono.ino@{Ozono.ino}!setup@{setup}}
+\index{setup@{setup}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily \label{_ozono_8ino_a4fc01d736fe50cf5b977f755b675f11d} 
+void setup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de variables}
+\Hypertarget{_ozono_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5}\index{Ozono.ino@{Ozono.ino}!M@{M}}
+\index{M@{M}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \label{_ozono_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5} 
+const float M = 1 / (\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} \texorpdfstring{$\ast$}{*} 1e-\/9 \texorpdfstring{$\ast$}{*} 1e3)}
+
+\Hypertarget{_ozono_8ino_a372859d33cee1743497c8aaca90c604a}\index{Ozono.ino@{Ozono.ino}!TIA\_GAIN@{TIA\_GAIN}}
+\index{TIA\_GAIN@{TIA\_GAIN}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{TIA\_GAIN}{TIA\_GAIN}}
+{\footnotesize\ttfamily \label{_ozono_8ino_a372859d33cee1743497c8aaca90c604a} 
+const float TIA\+\_\+\+GAIN = 499.\+0}
+
+\Hypertarget{_ozono_8ino_a852a120a95edd2d0da0506e047bee222}\index{Ozono.ino@{Ozono.ino}!Vgas0@{Vgas0}}
+\index{Vgas0@{Vgas0}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{Vgas0}{Vgas0}}
+{\footnotesize\ttfamily \label{_ozono_8ino_a852a120a95edd2d0da0506e047bee222} 
+float Vgas0 = 0.\+0}
+
+\Hypertarget{_ozono_8ino_ad75472877d9ab304d2a53534cdfe6dac}\index{Ozono.ino@{Ozono.ino}!VgasPin@{VgasPin}}
+\index{VgasPin@{VgasPin}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{VgasPin}{VgasPin}}
+{\footnotesize\ttfamily \label{_ozono_8ino_ad75472877d9ab304d2a53534cdfe6dac} 
+const int Vgas\+Pin = 5}
+
+\Hypertarget{_ozono_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e}\index{Ozono.ino@{Ozono.ino}!VrefPin@{VrefPin}}
+\index{VrefPin@{VrefPin}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{VrefPin}{VrefPin}}
+{\footnotesize\ttfamily \label{_ozono_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e} 
+const int Vref\+Pin = 28}
+
+\Hypertarget{_ozono_8ino_aabea629587b88730ed188cfb4b05466d}\index{Ozono.ino@{Ozono.ino}!VtempPin@{VtempPin}}
+\index{VtempPin@{VtempPin}!Ozono.ino@{Ozono.ino}}
+\doxysubsubsection{\texorpdfstring{VtempPin}{VtempPin}}
+{\footnotesize\ttfamily \label{_ozono_8ino_aabea629587b88730ed188cfb4b05466d} 
+const int Vtemp\+Pin = 29}
+

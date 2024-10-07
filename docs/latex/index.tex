@@ -1,10 +1,10 @@
 \chapter{Proyecto3\+A\+\_\+\+Arduino}
 \hypertarget{index}{}\label{index}\index{Proyecto3A\_Arduino@{Proyecto3A\_Arduino}}
-\label{index_md__c_1_2_users_2_javier_2_desktop_2_g_t_i_23o_2_proyecto__medio__amb_2_proyecto3_a___arduino_2_r_e_a_d_m_e}%
-\Hypertarget{index_md__c_1_2_users_2_javier_2_desktop_2_g_t_i_23o_2_proyecto__medio__amb_2_proyecto3_a___arduino_2_r_e_a_d_m_e}%
+\label{index_md__r_e_a_d_m_e}%
+\Hypertarget{index_md__r_e_a_d_m_e}%
 
 
-Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como CO2 y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Tabla de Contenidos}{Tabla de Contenidos}}\label{index_autotoc_md1}
+Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como ozono y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.\hypertarget{index_autotoc_md1}{}\doxysection{\texorpdfstring{Tabla de Contenidos}{Tabla de Contenidos}}\label{index_autotoc_md1}
 
 \begin{DoxyItemize}
 \item Descripción
@@ -18,7 +18,7 @@ Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la p
 La emisora BLE está diseñada para transmitir datos de medición a través de un servicio BLE. Este programa utiliza clases para encapsular la funcionalidad de la emisora, las características y el servicio BLE, facilitando su reutilización y mantenimiento.\hypertarget{index_autotoc_md3}{}\doxysection{\texorpdfstring{Características}{Características}}\label{index_autotoc_md3}
 
 \begin{DoxyItemize}
-\item Publicación de datos de mediciones (CO2, temperatura, ruido).
+\item Publicación de datos de mediciones (ozono, temperatura, ruido).
 \item Interfaz de comunicación por puerto serie.
 \item Soporte para múltiples características en un servicio BLE.
 \item Posibilidad de añadir características dinámicamente.
@@ -48,10 +48,10 @@ La emisora BLE está diseñada para transmitir datos de medición a través de u
 \end{DoxyEnumerate}\hypertarget{index_autotoc_md5}{}\doxysection{\texorpdfstring{Uso}{Uso}}\label{index_autotoc_md5}
 
 \begin{DoxyEnumerate}
-\item {\bfseries{Inicializar la Emisora}}\+: Llama al método encender\+Emisora() en el setup() de tu programa para activar la emisora BLE.
+\item {\bfseries{Inicializar la Emisora}}\+: Llama al método encender\+Emisora() en el \doxylink{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d}{setup()} de tu programa para activar la emisora BLE.
 \item {\bfseries{Publicar Mediciones}}\+:
 \begin{DoxyItemize}
-\item Utiliza publicar\+CO2(valor\+CO2, contador, tiempo\+Espera) para publicar el nivel de CO2.
+\item Utiliza publicarozono(valorozono, contador, tiempo\+Espera) para publicar el nivel de ozono.
 \item Utiliza publicar\+Temperatura(valor\+Temperatura, contador, tiempo\+Espera) para publicar la temperatura.
 \end{DoxyItemize}
 \item {\bfseries{Verificar Datos}}\+: Conecta un dispositivo BLE y utiliza una aplicación compatible para verificar los datos publicados.

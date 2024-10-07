@@ -11,7 +11,8 @@ Implementación principal del programa que utiliza BLE para publicar datos de se
 {\ttfamily \#include "{}Emisora\+BLE.\+h"{}}\newline
 {\ttfamily \#include "{}Publicador.\+h"{}}\newline
 {\ttfamily \#include "{}Medidor.\+h"{}}\newline
-Gráfico de dependencias incluidas en Hola\+Mundo\+IBeacon.\+ino\+:\nopagebreak
+Gráfico de dependencias incluidas en Hola\+Mundo\+IBeacon.\+ino\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -35,9 +36,21 @@ void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11
 void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff}{lucecitas}} ()
 \begin{DoxyCompactList}\small\item\em Realiza una secuencia de encendido y apagado del \doxylink{class_l_e_d}{LED}. Utiliza tiempos de espera definidos entre cambios de estado. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12f}{loop}} ()
-\begin{DoxyCompactList}\small\item\em Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_ad75472877d9ab304d2a53534cdfe6dac}{Vgas\+Pin}} = 5
+\item 
+const int \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e}{Vref\+Pin}} = 28
+\item 
+const int \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_aabea629587b88730ed188cfb4b05466d}{Vtemp\+Pin}} = 29
+\item 
+float \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a852a120a95edd2d0da0506e047bee222}{Vgas0}} = 0.\+0
+\item 
+const float \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} = 499.\+0
+\item 
+const float \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5}{M}} = 1 / (\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} \texorpdfstring{$\ast$}{*} 1e-\/9 \texorpdfstring{$\ast$}{*} 1e3)
 \item 
 \mbox{\hyperlink{class_l_e_d}{LED}} \mbox{\hyperlink{namespace_globales_ab111d6488b416ae3b584e786a283ee82}{Globales\+::el\+LED}} (7)
 \begin{DoxyCompactList}\small\item\em Objeto para controlar el \doxylink{class_l_e_d}{LED} conectado al pin 7. \end{DoxyCompactList}\item 
@@ -46,7 +59,7 @@ void \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_afe461d27b9c48d5921c00d521181f12
 \mbox{\hyperlink{class_publicador}{Publicador}} \mbox{\hyperlink{namespace_globales_af2c541012072e5d61fe17517e3e61980}{Globales\+::el\+Publicador}}
 \begin{DoxyCompactList}\small\item\em Objeto para manejar la publicación de datos vía BLE. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_medidor}{Medidor}} \mbox{\hyperlink{namespace_globales_ae99f35d2ec84b83cbbf433390e920956}{Globales\+::el\+Medidor}}
-\begin{DoxyCompactList}\small\item\em Objeto para gestionar las mediciones de CO2 y temperatura. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Objeto para gestionar las mediciones de ozono y temperatura. \end{DoxyCompactList}\item 
 uint8\+\_\+t \mbox{\hyperlink{namespace_loop_a41be37d8b3f6fee591134483a15b8987}{Loop\+::cont}} = 0
 \end{DoxyCompactItemize}
 
@@ -82,9 +95,10 @@ void loop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
-Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. 
+Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos vía BLE y maneja la emisión de un anuncio i\+Beacon. 
 
-Gráfico de llamadas de esta función\+:\nopagebreak
+Gráfico de llamadas de esta función\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -112,7 +126,8 @@ Realiza una secuencia de encendido y apagado del \doxylink{class_l_e_d}{LED}. Ut
 \includegraphics[width=350pt]{_hola_mundo_i_beacon_8ino_a27ffed2fef5d69b87e240022e59c59ff_cgraph}
 \end{center}
 \end{figure}
-Gráfico de llamadas a esta función\+:\nopagebreak
+Gráfico de llamadas a esta función\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -140,3 +155,42 @@ Función de configuración (setup). Inicializa los módulos de comunicación, me
 \includegraphics[width=307pt]{_hola_mundo_i_beacon_8ino_a4fc01d736fe50cf5b977f755b675f11d_cgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Documentación de variables}
+\Hypertarget{_hola_mundo_i_beacon_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!M@{M}}
+\index{M@{M}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{M}{M}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5} 
+const float M = 1 / (\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}{TIA\+\_\+\+GAIN}} \texorpdfstring{$\ast$}{*} 1e-\/9 \texorpdfstring{$\ast$}{*} 1e3)}
+
+\Hypertarget{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!TIA\_GAIN@{TIA\_GAIN}}
+\index{TIA\_GAIN@{TIA\_GAIN}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{TIA\_GAIN}{TIA\_GAIN}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a372859d33cee1743497c8aaca90c604a} 
+const float TIA\+\_\+\+GAIN = 499.\+0}
+
+\Hypertarget{_hola_mundo_i_beacon_8ino_a852a120a95edd2d0da0506e047bee222}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!Vgas0@{Vgas0}}
+\index{Vgas0@{Vgas0}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{Vgas0}{Vgas0}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a852a120a95edd2d0da0506e047bee222} 
+float Vgas0 = 0.\+0}
+
+\Hypertarget{_hola_mundo_i_beacon_8ino_ad75472877d9ab304d2a53534cdfe6dac}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!VgasPin@{VgasPin}}
+\index{VgasPin@{VgasPin}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{VgasPin}{VgasPin}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_ad75472877d9ab304d2a53534cdfe6dac} 
+const int Vgas\+Pin = 5}
+
+\Hypertarget{_hola_mundo_i_beacon_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!VrefPin@{VrefPin}}
+\index{VrefPin@{VrefPin}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{VrefPin}{VrefPin}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e} 
+const int Vref\+Pin = 28}
+
+\Hypertarget{_hola_mundo_i_beacon_8ino_aabea629587b88730ed188cfb4b05466d}\index{HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}!VtempPin@{VtempPin}}
+\index{VtempPin@{VtempPin}!HolaMundoIBeacon.ino@{HolaMundoIBeacon.ino}}
+\doxysubsubsection{\texorpdfstring{VtempPin}{VtempPin}}
+{\footnotesize\ttfamily \label{_hola_mundo_i_beacon_8ino_aabea629587b88730ed188cfb4b05466d} 
+const int Vtemp\+Pin = 29}
+

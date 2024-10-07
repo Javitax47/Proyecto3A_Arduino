@@ -4,16 +4,16 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="498,122,471,88,439,53,417,35,420,30,442,49,475,84,503,118"/>
 <area shape="rect" id="Node000003" href="$_hola_mundo_i_beacon_8ino.html#a27ffed2fef5d69b87e240022e59c59ff" title="Realiza una secuencia de encendido y apagado del LED. Utiliza tiempos de espera definidos entre cambi..." alt="" coords="166,56,239,83"/>
 <area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="486,126,439,104,386,90,332,80,239,73,240,67,332,75,387,84,441,99,488,121"/>
-<area shape="rect" id="Node000004" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de CO2 y temperatura, publica los datos vía..." alt="" coords="5,132,51,159"/>
+<area shape="rect" id="Node000004" href="$_hola_mundo_i_beacon_8ino.html#afe461d27b9c48d5921c00d521181f12f" title="Función principal (loop) del programa. Ejecuta mediciones de ozono y temperatura, publica los datos v..." alt="" coords="5,132,51,159"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="473,143,440,141,325,139,213,140,51,147,51,141,213,135,325,134,440,136,473,138"/>
-<area shape="rect" id="Node000005" href="$class_publicador.html#a2ed2009b9cec631024263659be882985" title="Publica un valor de CO2 mediante un anuncio iBeacon." alt="" coords="121,157,284,184"/>
-<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="473,152,284,167,284,162,473,146"/>
+<area shape="rect" id="Node000005" href="$class_publicador.html#a3bb0a20cbfb541728b68fdaacc1ee7e9" title="Publica un valor de ozono mediante un anuncio iBeacon." alt="" coords="117,157,288,184"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="473,152,288,167,288,161,472,146"/>
 <area shape="rect" id="Node000006" href="$class_publicador.html#a674ec7d8321b9792835cd935c6196dec" title="Publica un valor de temperatura mediante un anuncio iBeacon." alt="" coords="99,208,306,235"/>
 <area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="474,159,262,210,261,205,472,154"/>
 <area shape="rect" id="Node000007" href="$_hola_mundo_i_beacon_8ino.html#a4fc01d736fe50cf5b977f755b675f11d" title="Función de configuración (setup). Inicializa los módulos de comunicación, medición y publicación." alt="" coords="370,259,424,285"/>
 <area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="503,172,475,206,442,242,420,260,417,256,439,238,471,203,498,169"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,36,240,63,239,57,338,31"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,85,100,104,49,134,47,129,98,99,150,80"/>
-<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="105,159,51,151,52,146,106,154"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="102,159,51,151,52,146,102,153"/>
 <area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="114,205,97,198,68,181,43,161,46,157,71,176,100,194,116,200"/>
 </map>

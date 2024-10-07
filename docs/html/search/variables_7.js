@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['txpower_0',['txPower',['../class_emisora_b_l_e.html#aa62d2364ae61d48e27ebe6da63732e0d',1,'EmisoraBLE']]]
+  ['rssi_0',['RSSI',['../class_publicador.html#a339fb2ba061a53478572ade00866408c',1,'Publicador']]]
 ];

@@ -2,7 +2,7 @@
 \hypertarget{class_publicador}{}\label{class_publicador}\index{Publicador@{Publicador}}
 
 
-Clase para publicar mediciones de CO2 y temperatura mediante BLE.  
+Clase para publicar mediciones de ozono y temperatura mediante BLE.  
 
 
 
@@ -11,7 +11,8 @@ Clase para publicar mediciones de CO2 y temperatura mediante BLE.
 
 
 
-Diagrama de colaboración de Publicador\+:\nopagebreak
+Diagrama de colaboración de Publicador\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,7 +22,7 @@ Diagrama de colaboración de Publicador\+:\nopagebreak
 \doxysubsubsection*{Tipos públicos}
 \begin{DoxyCompactItemize}
 \item 
-enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Mediciones\+ID}} \{ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}{CO2}} = 11
+enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Mediciones\+ID}} \{ \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a1b5d7258bd94a6e41a0ffd03b9bf2ead}{ozono}} = 11
 , \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047}{TEMPERATURA}} = 12
 , \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38ad30d25e445bf4115dfd39ddcdb665ca4}{RUIDO}} = 13
  \}
@@ -33,8 +34,8 @@ enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Medici
 \begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_publicador}{Publicador}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_publicador_a10f309e5dfd232d204c5d2952581fe16}{encender\+Emisora}} ()
 \begin{DoxyCompactList}\small\item\em Enciende la emisora BLE. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_publicador_a2ed2009b9cec631024263659be882985}{publicar\+CO2}} (int16\+\_\+t valor\+CO2, uint8\+\_\+t contador, long tiempo\+Espera)
-\begin{DoxyCompactList}\small\item\em Publica un valor de CO2 mediante un anuncio i\+Beacon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9}{publicarozono}} (int16\+\_\+t valorozono, uint8\+\_\+t contador, long tiempo\+Espera)
+\begin{DoxyCompactList}\small\item\em Publica un valor de ozono mediante un anuncio i\+Beacon. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_publicador_a674ec7d8321b9792835cd935c6196dec}{publicar\+Temperatura}} (int16\+\_\+t valor\+Temperatura, uint8\+\_\+t contador, long tiempo\+Espera)
 \begin{DoxyCompactList}\small\item\em Publica un valor de temperatura mediante un anuncio i\+Beacon. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Atributos públicos}
@@ -52,9 +53,9 @@ uint8\+\_\+t \mbox{\hyperlink{class_publicador_afdd05d23d289af8d520938cbec79b93d
 
 
 \doxysubsection{Descripción detallada}
-Clase para publicar mediciones de CO2 y temperatura mediante BLE. 
+Clase para publicar mediciones de ozono y temperatura mediante BLE. 
 
-Esta clase permite emitir anuncios BLE con los valores medidos de CO2 y temperatura. Se utiliza la clase \doxylink{class_emisora_b_l_e}{Emisora\+BLE} para manejar los anuncios de tipo i\+Beacon. 
+Esta clase permite emitir anuncios BLE con los valores medidos de ozono y temperatura. Se utiliza la clase \doxylink{class_emisora_b_l_e}{Emisora\+BLE} para manejar los anuncios de tipo i\+Beacon. 
 
 \doxysubsection{Documentación de las enumeraciones miembro de la clase}
 \Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}\index{Publicador@{Publicador}!MedicionesID@{MedicionesID}}
@@ -68,8 +69,8 @@ enum \mbox{\hyperlink{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38}{Public
 Identificadores de tipo de medición para el campo major de i\+Beacon. 
 
 Estos valores se utilizan para distinguir entre distintos tipos de mediciones en los anuncios. \begin{DoxyEnumFields}[2]{Valores de enumeraciones}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{CO2@{CO2}!Publicador@{Publicador}}\index{Publicador@{Publicador}!CO2@{CO2}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a32fd7e9cb7b0274a336e9dc35614f638}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
-CO2&Identificador de la medición de CO2. \\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ozono@{ozono}!Publicador@{Publicador}}\index{Publicador@{Publicador}!ozono@{ozono}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38a1b5d7258bd94a6e41a0ffd03b9bf2ead}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
+ozono&Identificador de la medición de ozono. \\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{TEMPERATURA@{TEMPERATURA}!Publicador@{Publicador}}\index{Publicador@{Publicador}!TEMPERATURA@{TEMPERATURA}}}\Hypertarget{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38aba4e4bf52d95cc981259e2a2192e6047}\label{class_publicador_a0dbad8398e97eaf1d6ecdd854f286d38} 
@@ -114,39 +115,41 @@ Este método debe ser llamado desde el setup del sistema para iniciar la emisora
 \includegraphics[width=300pt]{class_publicador_a10f309e5dfd232d204c5d2952581fe16_icgraph}
 \end{center}
 \end{figure}
-\Hypertarget{class_publicador_a2ed2009b9cec631024263659be882985}\index{Publicador@{Publicador}!publicarCO2@{publicarCO2}}
-\index{publicarCO2@{publicarCO2}!Publicador@{Publicador}}
-\doxysubsubsection{\texorpdfstring{publicarCO2()}{publicarCO2()}}
-{\footnotesize\ttfamily \label{class_publicador_a2ed2009b9cec631024263659be882985} 
-void Publicador\+::publicar\+CO2 (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{valor\+CO2}{, }\item[{uint8\+\_\+t}]{contador}{, }\item[{long}]{tiempo\+Espera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\Hypertarget{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9}\index{Publicador@{Publicador}!publicarozono@{publicarozono}}
+\index{publicarozono@{publicarozono}!Publicador@{Publicador}}
+\doxysubsubsection{\texorpdfstring{publicarozono()}{publicarozono()}}
+{\footnotesize\ttfamily \label{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9} 
+void Publicador\+::publicarozono (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{valorozono}{, }\item[{uint8\+\_\+t}]{contador}{, }\item[{long}]{tiempo\+Espera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
-Publica un valor de CO2 mediante un anuncio i\+Beacon. 
+Publica un valor de ozono mediante un anuncio i\+Beacon. 
 
-Emite un anuncio BLE con el valor de CO2 especificado, incluyendo un contador para diferenciar anuncios.
+Emite un anuncio BLE con el valor de ozono especificado, incluyendo un contador para diferenciar anuncios.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em valor\+CO2} & Valor de la medición de CO2 (minor). \\
+{\em valorozono} & Valor de la medición de ozono (minor). \\
 \hline
 {\em contador} & Contador para identificar la secuencia de anuncios (parte del major). \\
 \hline
 {\em tiempo\+Espera} & Tiempo de espera antes de detener el anuncio. \\
 \hline
 \end{DoxyParams}
-Gráfico de llamadas de esta función\+:\nopagebreak
+Gráfico de llamadas de esta función\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=286pt]{class_publicador_a2ed2009b9cec631024263659be882985_cgraph}
+\includegraphics[width=292pt]{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_cgraph}
 \end{center}
 \end{figure}
-Gráfico de llamadas a esta función\+:\nopagebreak
+Gráfico de llamadas a esta función\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=272pt]{class_publicador_a2ed2009b9cec631024263659be882985_icgraph}
+\includegraphics[width=278pt]{class_publicador_a3bb0a20cbfb541728b68fdaacc1ee7e9_icgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_publicador_a674ec7d8321b9792835cd935c6196dec}\index{Publicador@{Publicador}!publicarTemperatura@{publicarTemperatura}}
@@ -177,7 +180,8 @@ Gráfico de llamadas de esta función\+:\nopagebreak
 \includegraphics[width=320pt]{class_publicador_a674ec7d8321b9792835cd935c6196dec_cgraph}
 \end{center}
 \end{figure}
-Gráfico de llamadas a esta función\+:\nopagebreak
+Gráfico de llamadas a esta función\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -196,8 +200,8 @@ uint8\+\_\+t Publicador\+::beacon\+UUID\mbox{[}16\mbox{]}\hspace{0.3cm}{\ttfamil
 {\bfseries Valor inicial\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{=\ \{\ }
-\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'S'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'G'},\ \textcolor{charliteral}{'T'},\ \textcolor{charliteral}{'I'},\ }
-\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'Y'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}}
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'Q'},\ \textcolor{charliteral}{'U'},\ \textcolor{charliteral}{'I'},\ \textcolor{charliteral}{'P'},\ \textcolor{charliteral}{'O'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'J'},\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{charliteral}{'A'},\ \textcolor{charliteral}{'V'},\ \textcolor{charliteral}{'I'},\ \textcolor{charliteral}{'E'},\ \textcolor{charliteral}{'R'},\ \textcolor{charliteral}{'-\/'},\ \textcolor{charliteral}{'3'},\ \textcolor{charliteral}{'A'}}
 \DoxyCodeLine{\ \ \ \ \}}
 
 \end{DoxyCode}

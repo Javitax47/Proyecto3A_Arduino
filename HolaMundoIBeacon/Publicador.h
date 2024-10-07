@@ -5,17 +5,17 @@
 
 /**
  * @file Publicador.h
- * @brief Definición de la clase Publicador para emitir anuncios BLE de CO2 y temperatura.
+ * @brief Definición de la clase Publicador para emitir anuncios BLE de ozono y temperatura.
  * 
- * Esta clase utiliza una emisora BLE para emitir datos de CO2 y temperatura mediante beacons iBeacon.
+ * Esta clase utiliza una emisora BLE para emitir datos de ozono y temperatura mediante beacons iBeacon.
  * Los anuncios se envían con un formato específico que incluye un UUID, major y minor.
  */
 
 /**
  * @class Publicador
- * @brief Clase para publicar mediciones de CO2 y temperatura mediante BLE.
+ * @brief Clase para publicar mediciones de ozono y temperatura mediante BLE.
  * 
- * Esta clase permite emitir anuncios BLE con los valores medidos de CO2 y temperatura.
+ * Esta clase permite emitir anuncios BLE con los valores medidos de ozono y temperatura.
  * Se utiliza la clase EmisoraBLE para manejar los anuncios de tipo iBeacon.
  */
 class Publicador {
@@ -26,8 +26,8 @@ private:
    * @brief UUID del beacon utilizado para identificar el origen de los anuncios.
    */
   uint8_t beaconUUID[16] = { 
-	'E', 'P', 'S', 'G', '-', 'G', 'T', 'I', 
-	'-', 'P', 'R', 'O', 'Y', '-', '3', 'A'
+	'E', 'Q', 'U', 'I', 'P', 'O', '-', 'J', 
+	'A', 'V', 'I', 'E', 'R', '-', '3', 'A'
 	};
 
 public:
@@ -53,7 +53,7 @@ public:
    * Estos valores se utilizan para distinguir entre distintos tipos de mediciones en los anuncios.
    */
   enum MedicionesID  {
-	CO2 = 11,         /**< Identificador de la medición de CO2. */
+	ozono = 11,         /**< Identificador de la medición de ozono. */
 	TEMPERATURA = 12, /**< Identificador de la medición de temperatura. */
 	RUIDO = 13        /**< Identificador de la medición de ruido (no implementado). */
   };
@@ -77,19 +77,19 @@ public:
   }
 
   /**
-   * @brief Publica un valor de CO2 mediante un anuncio iBeacon.
+   * @brief Publica un valor de ozono mediante un anuncio iBeacon.
    * 
-   * Emite un anuncio BLE con el valor de CO2 especificado, incluyendo un contador para diferenciar anuncios.
+   * Emite un anuncio BLE con el valor de ozono especificado, incluyendo un contador para diferenciar anuncios.
    * 
-   * @param valorCO2 Valor de la medición de CO2 (minor).
+   * @param valorozono Valor de la medición de ozono (minor).
    * @param contador Contador para identificar la secuencia de anuncios (parte del major).
    * @param tiempoEspera Tiempo de espera antes de detener el anuncio.
    */
-  void publicarCO2( int16_t valorCO2, uint8_t contador, long tiempoEspera ) {
-	uint16_t major = (MedicionesID::CO2 << 8) + contador;
+  void publicarozono( int16_t valorozono, uint8_t contador, long tiempoEspera ) {
+	uint16_t major = (MedicionesID::ozono << 8) + contador;
 	(*this).laEmisora.emitirAnuncioIBeacon( (*this).beaconUUID, 
 											major,
-											valorCO2, // minor
+											valorozono, // minor
 											(*this).RSSI // rssi
 									);
 	esperar( tiempoEspera );

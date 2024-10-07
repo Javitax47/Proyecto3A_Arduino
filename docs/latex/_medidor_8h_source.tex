@@ -18,16 +18,36 @@
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Código\ de\ inicialización\ si\ es\ necesario\ en\ el\ futuro.}}
 \DoxyCodeLine{00041\ \ \ \}}
 \DoxyCodeLine{00042\ }
-\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_medidor_a203ae9be3a2bf0965bd9316fcd203e19}{medirCO2}}()\ \{}
-\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ 235;\ }
-\DoxyCodeLine{00052\ \ \ \}}
-\DoxyCodeLine{00053\ }
-\DoxyCodeLine{00061\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_medidor_a742eaebe02e1d1d67df55f7a73878421}{medirTemperatura}}()\ \{}
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{return}\ 12;\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_medidor_a64af072efeb9b6ff3fa4f261d9e23494}{medirozono}}()\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Read\ Vgas,\ Vref,\ and\ Vtemp}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ Vgas\ =\ analogRead(\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_ad75472877d9ab304d2a53534cdfe6dac}{VgasPin}})\ *\ (3.0\ /\ 1023.0);\ \ \textcolor{comment}{//\ Convert\ ADC\ value\ to\ voltage}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{float}\ Vref\ =\ analogRead(\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a41235e5ec1f6bdc467c4f09f33c7a37e}{VrefPin}})\ *\ (3.0\ /\ 1023.0);\ \ \textcolor{comment}{//\ Convert\ ADC\ value\ to\ voltage}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{float}\ Vtemp\ =\ analogRead(\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_aabea629587b88730ed188cfb4b05466d}{VtempPin}})\ *\ (3.0\ /\ 1023.0);\ \textcolor{comment}{//\ Convert\ ADC\ value\ to\ voltage}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ Calculate\ gas\ concentration\ (Ozone)\ in\ ppm}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ Cx\ =\ fabs((Vgas\ -\/\ \mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a852a120a95edd2d0da0506e047bee222}{Vgas0}})\ *\ (1/\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_a7aaf1d6f7787b9a848a60f9826e39ed5}{M}}));}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Print\ the\ results}}
+\DoxyCodeLine{00060\ \ \ \ \ Serial.print(\textcolor{stringliteral}{"{}Ozone\ Concentration\ (ppm):\ "{}});\ Serial.println(Cx,\ 4);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{return}\ Cx;}
 \DoxyCodeLine{00063\ \ \ \}}
 \DoxyCodeLine{00064\ }
-\DoxyCodeLine{00065\ \};\ \textcolor{comment}{//\ class\ Medidor}}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIDOR\_H\_INCLUIDO}}
+\DoxyCodeLine{00072\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_medidor_a742eaebe02e1d1d67df55f7a73878421}{medirTemperatura}}()\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ Read\ Vtemp}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{float}\ Vtemp\ =\ analogRead(\mbox{\hyperlink{_hola_mundo_i_beacon_8ino_aabea629587b88730ed188cfb4b05466d}{VtempPin}})\ *\ (3.0\ /\ 1023.0);\ \textcolor{comment}{//\ Convert\ ADC\ value\ to\ voltage,\ 1023\ =\ 2\string^10\ bits}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ Calculate\ temperature\ (°C)}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{float}\ temperature\ =\ (87.0\ /\ 3)\ *\ Vtemp\ -\/\ 18.0;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{//\ Print\ the\ results}}
+\DoxyCodeLine{00080\ \ \ \ \ Serial.print(\textcolor{stringliteral}{"{}Temperature\ (°C):\ "{}});\ Serial.println(temperature,\ 2);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{return}\ temperature;}
+\DoxyCodeLine{00083\ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \};\ \textcolor{comment}{//\ class\ Medidor}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MEDIDOR\_H\_INCLUIDO}}
 
 \end{DoxyCode}

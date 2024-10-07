@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Definición de la clase Medidor para medir CO2 y temperatura.">
+<g id="a_Node000001"><a xlink:title="Definición de la clase Medidor para medir ozono y temperatura.">
 <polygon fill="#999999" stroke="#666666" points="150.62,-88 3.38,-88 3.38,-68 150.62,-68 150.62,-88"/>
 <text text-anchor="middle" x="77" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">HolaMundoIBeacon/Medidor.h</text>
 </a>

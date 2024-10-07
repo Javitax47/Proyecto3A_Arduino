@@ -113,25 +113,50 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_medidor.html#a203ae9be3a2bf0965bd9316fcd203e19">   50</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_medidor.html#a203ae9be3a2bf0965bd9316fcd203e19">medirCO2</a>() {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> 235; </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
-</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">   61</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">medirTemperatura</a>() {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> 12; </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_medidor.html#a64af072efeb9b6ff3fa4f261d9e23494">   50</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_medidor.html#a64af072efeb9b6ff3fa4f261d9e23494">medirozono</a>() {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Read Vgas, Vref, and Vtemp</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">float</span> Vgas = analogRead(<a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#ad75472877d9ab304d2a53534cdfe6dac">VgasPin</a>) * (3.0 / 1023.0);  <span class="comment">// Convert ADC value to voltage</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">float</span> Vref = analogRead(<a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#a41235e5ec1f6bdc467c4f09f33c7a37e">VrefPin</a>) * (3.0 / 1023.0);  <span class="comment">// Convert ADC value to voltage</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">float</span> Vtemp = analogRead(<a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#aabea629587b88730ed188cfb4b05466d">VtempPin</a>) * (3.0 / 1023.0); <span class="comment">// Convert ADC value to voltage</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// Calculate gas concentration (Ozone) in ppm</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">float</span> Cx = fabs((Vgas - <a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#a852a120a95edd2d0da0506e047bee222">Vgas0</a>) * (1/<a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#a7aaf1d6f7787b9a848a60f9826e39ed5">M</a>));</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// Print the results</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    Serial.print(<span class="stringliteral">&quot;Ozone Concentration (ppm): &quot;</span>); Serial.println(Cx, 4);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> Cx;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}; <span class="comment">// class Medidor</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">   72</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">medirTemperatura</a>() {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// Read Vtemp</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">float</span> Vtemp = analogRead(<a class="code hl_variable" href="_hola_mundo_i_beacon_8ino.html#aabea629587b88730ed188cfb4b05466d">VtempPin</a>) * (3.0 / 1023.0); <span class="comment">// Convert ADC value to voltage, 1023 = 2^10 bits</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Calculate temperature (°C)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">float</span> temperature = (87.0 / 3) * Vtemp - 18.0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// Print the results</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    Serial.print(<span class="stringliteral">&quot;Temperature (°C): &quot;</span>); Serial.println(temperature, 2);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> temperature;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  }</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#endif </span><span class="comment">// MEDIDOR_H_INCLUIDO</span></div>
-<div class="ttc" id="aclass_medidor_html"><div class="ttname"><a href="class_medidor.html">Medidor</a></div><div class="ttdoc">Clase para simular la medición de CO2 y temperatura.</div><div class="ttdef"><b>Definition</b> Medidor.h:21</div></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}; <span class="comment">// class Medidor</span></div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif </span><span class="comment">// MEDIDOR_H_INCLUIDO</span></div>
+<div class="ttc" id="a_hola_mundo_i_beacon_8ino_html_a41235e5ec1f6bdc467c4f09f33c7a37e"><div class="ttname"><a href="_hola_mundo_i_beacon_8ino.html#a41235e5ec1f6bdc467c4f09f33c7a37e">VrefPin</a></div><div class="ttdeci">const int VrefPin</div><div class="ttdef"><b>Definition</b> HolaMundoIBeacon.ino:21</div></div>
+<div class="ttc" id="a_hola_mundo_i_beacon_8ino_html_a7aaf1d6f7787b9a848a60f9826e39ed5"><div class="ttname"><a href="_hola_mundo_i_beacon_8ino.html#a7aaf1d6f7787b9a848a60f9826e39ed5">M</a></div><div class="ttdeci">const float M</div><div class="ttdef"><b>Definition</b> HolaMundoIBeacon.ino:27</div></div>
+<div class="ttc" id="a_hola_mundo_i_beacon_8ino_html_a852a120a95edd2d0da0506e047bee222"><div class="ttname"><a href="_hola_mundo_i_beacon_8ino.html#a852a120a95edd2d0da0506e047bee222">Vgas0</a></div><div class="ttdeci">float Vgas0</div><div class="ttdef"><b>Definition</b> HolaMundoIBeacon.ino:25</div></div>
+<div class="ttc" id="a_hola_mundo_i_beacon_8ino_html_aabea629587b88730ed188cfb4b05466d"><div class="ttname"><a href="_hola_mundo_i_beacon_8ino.html#aabea629587b88730ed188cfb4b05466d">VtempPin</a></div><div class="ttdeci">const int VtempPin</div><div class="ttdef"><b>Definition</b> HolaMundoIBeacon.ino:22</div></div>
+<div class="ttc" id="a_hola_mundo_i_beacon_8ino_html_ad75472877d9ab304d2a53534cdfe6dac"><div class="ttname"><a href="_hola_mundo_i_beacon_8ino.html#ad75472877d9ab304d2a53534cdfe6dac">VgasPin</a></div><div class="ttdeci">const int VgasPin</div><div class="ttdef"><b>Definition</b> HolaMundoIBeacon.ino:20</div></div>
+<div class="ttc" id="aclass_medidor_html"><div class="ttname"><a href="class_medidor.html">Medidor</a></div><div class="ttdoc">Clase para simular la medición de ozono y temperatura.</div><div class="ttdef"><b>Definition</b> Medidor.h:21</div></div>
 <div class="ttc" id="aclass_medidor_html_a1d26e993a9198fac83d6edad4cc30bcf"><div class="ttname"><a href="class_medidor.html#a1d26e993a9198fac83d6edad4cc30bcf">Medidor::iniciarMedidor</a></div><div class="ttdeci">void iniciarMedidor()</div><div class="ttdoc">Método para iniciar el medidor.</div><div class="ttdef"><b>Definition</b> Medidor.h:39</div></div>
-<div class="ttc" id="aclass_medidor_html_a203ae9be3a2bf0965bd9316fcd203e19"><div class="ttname"><a href="class_medidor.html#a203ae9be3a2bf0965bd9316fcd203e19">Medidor::medirCO2</a></div><div class="ttdeci">int medirCO2()</div><div class="ttdoc">Medir el nivel de CO2.</div><div class="ttdef"><b>Definition</b> Medidor.h:50</div></div>
-<div class="ttc" id="aclass_medidor_html_a742eaebe02e1d1d67df55f7a73878421"><div class="ttname"><a href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">Medidor::medirTemperatura</a></div><div class="ttdeci">int medirTemperatura()</div><div class="ttdoc">Medir la temperatura.</div><div class="ttdef"><b>Definition</b> Medidor.h:61</div></div>
+<div class="ttc" id="aclass_medidor_html_a64af072efeb9b6ff3fa4f261d9e23494"><div class="ttname"><a href="class_medidor.html#a64af072efeb9b6ff3fa4f261d9e23494">Medidor::medirozono</a></div><div class="ttdeci">int medirozono()</div><div class="ttdoc">Medir el nivel de ozono.</div><div class="ttdef"><b>Definition</b> Medidor.h:50</div></div>
+<div class="ttc" id="aclass_medidor_html_a742eaebe02e1d1d67df55f7a73878421"><div class="ttname"><a href="class_medidor.html#a742eaebe02e1d1d67df55f7a73878421">Medidor::medirTemperatura</a></div><div class="ttdeci">int medirTemperatura()</div><div class="ttdoc">Medir la temperatura.</div><div class="ttdef"><b>Definition</b> Medidor.h:72</div></div>
 <div class="ttc" id="aclass_medidor_html_af8dd93b883c64f28bd898c4baaa73dc9"><div class="ttname"><a href="class_medidor.html#af8dd93b883c64f28bd898c4baaa73dc9">Medidor::Medidor</a></div><div class="ttdeci">Medidor()</div><div class="ttdoc">Constructor de la clase Medidor.</div><div class="ttdef"><b>Definition</b> Medidor.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
