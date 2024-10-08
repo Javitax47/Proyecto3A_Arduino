@@ -17,14 +17,15 @@
 // --------------------------------------------------------------
 
 // Define analog input pins
-const int VgasPin = 5;   // Pin connected to Vgas
+const int VgasPin = A5;   // Pin connected to Vgas
 const int VrefPin = 28;   // Pin connected to Vref
 const int VtempPin = 29;  // Pin connected to Vtemp
 
 // Calibration constants
-float Vgas0 = 0.0;        // Baseline voltage in clean air (to be set during calibration)
+const int Voffset = 0;
 const float TIA_GAIN = 499.0;   // Gain for the Ozone sensor
-const float M = 1 / (TIA_GAIN * 1e-9 * 1e3);  // Calibration factor for Ozone sensor
+const float SENSITIVITY_CODE = 44.26;
+const float M = SENSITIVITY_CODE * TIA_GAIN * 1e-9 * 1e3;  // Calibration factor for Ozone sensor
 
 /**
  * @namespace Globales
@@ -106,11 +107,6 @@ void setup() {
   Serial.println("Allowing sensor to stabilize...");
   //delay(3600000); // Wait for 1 hour
   delay(10000); // Wait for 10 seconds
-  
-  // Read Vgas0 in clean air
-  Vgas0 = analogRead(VgasPin) * (3.0 / 1023.0);  // Read and convert to voltage
-  Serial.print("Vgas0 (Clean air baseline): ");
-  Serial.println(Vgas0, 4);
 
   // Enciende la emisora BLE
   Globales::elPublicador.encenderEmisora();

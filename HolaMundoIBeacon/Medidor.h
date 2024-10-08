@@ -21,7 +21,6 @@
 class Medidor {
 
 public:
-
   /**
    * @brief Constructor de la clase Medidor.
    * 
@@ -51,12 +50,16 @@ public:
     // Read Vgas, Vref, and Vtemp
     float Vgas = analogRead(VgasPin) * (3.0 / 1023.0);  // Convert ADC value to voltage
     float Vref = analogRead(VrefPin) * (3.0 / 1023.0);  // Convert ADC value to voltage
-    float Vtemp = analogRead(VtempPin) * (3.0 / 1023.0); // Convert ADC value to voltage
+    
+    float Vgas0 = Voffset + Vref;
 
     // Calculate gas concentration (Ozone) in ppm
-    float Cx = fabs((Vgas - Vgas0) * (1/M));
+    float Cx = (Vgas - Vgas0) * (1/M);
 
     // Print the results
+    // Print the results
+    Serial.print("Vgas: "); Serial.println(Vgas, 4);
+    Serial.print("Vref: "); Serial.println(Vref, 4);
     Serial.print("Ozone Concentration (ppm): "); Serial.println(Cx, 4);
 
     return Cx;
