@@ -1,6 +1,6 @@
 # Proyecto3A_Arduino
 
-Est proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como ozono y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.
+Este proyecto implementa una emisora Bluetooth Low Energy (BLE) que permite la publicación de datos de sensores, como ozono y temperatura, utilizando la arquitectura de clases en C++. Utiliza un servicio BLE para transmitir datos a dispositivos conectados.
 
 ## Tabla de Contenidos
 
